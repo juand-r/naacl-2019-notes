@@ -13,7 +13,7 @@ Notes on NAACL 2019
   - :bowling: [Learning with Limited Data](#learning-with-limited-data-bowling)
   - :key::book: [Keyphrase extraction](#keyphrase-extraction-keybook)
   - :spider_web: [Knowledge Graph Completion](#knowledge-graph-completion-spider_web)
-  - :book: [Reading Comprehension](#reading-comprehension-book)
+  - :book::question: [Reading Comprehension and Question Answering](#reading-comprehension--and-question-answering-bookquestion)
 - [Applications](#applications)
   - :hospital: [Clinical and biomedical applications](#clinical-and-biomedical-applications-hospital)
   - :shield::computer: [Cybersecurity applications](#cybersecurity-applications-shieldcomputer)
@@ -96,7 +96,7 @@ Notes on NAACL 2019
 
 - Graph Pattern Entity Ranking Model for Knowledge Graph Completion. Takuma Ebisu and Ryutaro Ichise
 
-### Reading Comprehension :book:
+### Reading Comprehension and Question Answering :book::question:
 
 ## Applications
 

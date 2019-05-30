@@ -15,7 +15,8 @@ Notes on NAACL 2019
 ## Text Generation and Stylometry :memo::mag:
 
 - (Could not attend) AudioCaps: Generating Captions for Audios in The Wild. 
-
+- (Could not attend) “President Vows to Cut <Taxes> Hair”: Dataset and Analysis of Creative Text Editing for Humorous Headlines.
+  
 ## Text Classification :paperclips:
 
 ## Named Entity Recognition :cityscape::boy:

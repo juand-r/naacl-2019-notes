@@ -76,7 +76,9 @@ Notes on NAACL 2019
 
 ### Domain Adaptation
 
-- Simplified Neural Unsupervised Domain Adaptation
+- (Poster) **Simplified Neural Unsupervised Domain Adaptation. Timothy Miller**
+- (Poster) Curriculum Learning for Domain Adaptation in Neural Machine Translation. Xuan Zhang, Pamela Shapiro, Gaurav Kumar, Paul McNamee, Marine Carpuat and Kevin Duh
+- (Poster) Non-Parametric Adaptation for Neural Machine Translation. Ankur Bapna and Orhan Firat
 
 ## Keyphrase Extraction :key::book:
 
@@ -108,7 +110,7 @@ Notes on NAACL 2019
 - (Could not attend) **Combining Sentiment Lexica with a Multi-View Variational Autoencoder**
 - (Could not attend) Frowning Frodo, Wincing Leia, and a Seriously Great Friendship: Learning to Classify Emotional Relationships of Fictional Characters
 - (Poster) PAWS: Paraphrase Adversaries from Word Scrambling
-
+- (Poster) **Value-based Search in Execution Space for Mapping Instructions to Programs.**
 
 ### Oral
 

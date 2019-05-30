@@ -1,27 +1,27 @@
 # naacl-2019-notes
 Notes on NAACL 2019
 
-- Topics
-  - [Language Models](#language-models)
-  - [Word representations](#word-representations)
-- Tasks
+- [Topics](#topics)
+  - [Language Models](#language-models-speech_balloon)
+  - [Word representations](#word-representations-abcd)
+- [Tasks](#tasks)
   - :memo::mag: [Text Generation and Stylometry](#text-generation-and-stylometry-memomag)
   - :paperclips: [Text Classification](#text-classification-paperclips)
   - :cityscape::boy: [Named Entity Recognition](#named-entity-recognition-cityscapeboy)
   - :bowling: [Learning with Limited Data](#learning-with-limited-data-bowling)
   - :key::book: [Keyphrase extraction](#keyphrase-extraction-keybook)
-- Applications
+- [Applications](#applications)
   - :hospital: [Clinical and biomedical applications](#clinical-and-biomedical-applications-hospital)
   - :shield::computer: [Cybersecurity applications](#cybersecurity-applications-shieldcomputer)
 - [Other](#other)
 
 # Topics
 
-## Language Models
+## Language Models :speech_balloon:
 
-- Serial Recall Effects in Neural Language Modeling. Hassan Hajipoor, Hadi Amiri, Maseud Rahgozar and Farhad Oroumchian
+- (Could not attend) Serial Recall Effects in Neural Language Modeling. Hassan Hajipoor, Hadi Amiri, Maseud Rahgozar and Farhad Oroumchian
 
-## Word representations
+## Word representations :abcd:
 
 - (Poster; Could not attend) A Systematic Study of Leveraging Subword Information for Learning Word Representations.
 
@@ -54,6 +54,7 @@ Notes on NAACL 2019
 
 - (Could not attend) Keyphrase Generation: A Text Summarization Struggle. Erion Çano and Ondřej Bojar
 
+# Applications
 
 ## Clinical and Biomedical Applications :hospital:
 

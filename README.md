@@ -51,6 +51,7 @@ Notes on NAACL 2019
 - (Poster) Fixed That for You: Generating Contrastive Claims with Semantic Edits. Christopher Hidey and Kathy McKeown
 - (Could not attend) AudioCaps: Generating Captions for Audios in The Wild. 
 - (Could not attend) “President Vows to Cut <Taxes> Hair”: Dataset and Analysis of Creative Text Editing for Humorous Headlines.
+- (Could not attend) An Empirical Investigation of Global and Local Normalization for Recurrent Neural Sequence Models Using a Continuous Relaxation to Beam Search.
 - (Poster; Could not attend) Improved Lexically Constrained Decoding for Translation and Monolingual Rewriting
   
 ### Summarization and Simplification
@@ -111,10 +112,12 @@ Notes on NAACL 2019
 - (Could not attend) Frowning Frodo, Wincing Leia, and a Seriously Great Friendship: Learning to Classify Emotional Relationships of Fictional Characters
 - (Poster) PAWS: Paraphrase Adversaries from Word Scrambling
 - (Poster) **Value-based Search in Execution Space for Mapping Instructions to Programs.**
+- (Poster) **Text Processing Like Humans Do: Visually Attacking and Shielding NLP Systems**
 
 ### Oral
 
 - (Could not attend) Mutual Information Maximization for Simple and Accurate Part-Of-Speech Induction. Karl Stratos
 - (Could not attend) Unsupervised Latent Tree Induction with Deep Inside-Outside Recursive Auto-Encoders. Andrew Drozdov, Patrick Verga, Mohit Yadav, Mohit Iyyer and Andrew McCallum
-- 
+- (Could not attend) Locale-agnostic Universal domain Clasification Model in Spoken Language Understanding
+
 

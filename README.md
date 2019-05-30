@@ -63,6 +63,7 @@ Notes on NAACL 2019
 #### Summarization and Simplification
 
 - (Could not attend) SEQˆ3: Differentiable Sequence-to-Sequence-to-Sequence Autoencoder for Unsupervised Abstractive Sentence Compression.
+- (Could not attend) Abstractive Summarization of Reddit Posts with Multi-level Memory Networks. Byeongchang Kim, Hyunwoo Kim and Gunhee Kim
 
   
 ### Text Classification :paperclips:
@@ -104,8 +105,8 @@ Notes on NAACL 2019
 
 ### Reading Comprehension and Question Answering :book::question:
 
-- DROP: A Reading Comprehension Benchmark Requiring Discrete Reasoning Over Paragraphs. Dheeru Dua, Yizhong Wang, Pradeep Dasigi, Gabriel Stanovsky, Sameer Singh and Matt Gardner
-
+- (Poster) DROP: A Reading Comprehension Benchmark Requiring Discrete Reasoning Over Paragraphs. Dheeru Dua, Yizhong Wang, Pradeep Dasigi, Gabriel Stanovsky, Sameer Singh and Matt Gardner
+- (Could not attend) Improving Machine Reading Comprehension with General Reading Strategies. Kai Sun, Dian Yu, Dong Yu and Claire Cardie
 
 ## Applications
 
@@ -140,6 +141,7 @@ Notes on NAACL 2019
 - (Could not attend) On the Importance of Distinguishing Word Meaning Representations: A Case Study on Reverse Dictionary Mapping. Mohammad Taher Pilehvar
 - (Could not attend) Factorising AMR generation through syntax
 - (Could not attend) Joint Detection and Location of English Puns
-
+- (Could not attend) **Inoculation by Fine-Tuning: A Method for Analyzing Challenge Datasets. Nelson F. Liu, Roy Schwartz and Noah A. Smith**
+-
 
 

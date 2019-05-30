@@ -4,7 +4,7 @@ Notes on NAACL 2019
 - [Topics](#topics)
   - :speech_balloon: [Language Models](#language-models-speech_balloon)
   - :abcd: [Word representations](#word-representations-abcd)
-  - [Discourse](#discourse)
+  - :busts_in_silhouette: [Discourse](#discourse-busts_in_silhouette)
 - [Tasks](#tasks)
   - :memo::mag: [Text Generation and Stylometry](#text-generation-and-stylometry-memomag)
   - :paperclips: [Text Classification](#text-classification-paperclips)
@@ -30,7 +30,7 @@ Notes on NAACL 2019
 
 - (Poster; Could not attend) A Systematic Study of Leveraging Subword Information for Learning Word Representations.
 
-## Discourse
+## Discourse :busts_in_silhouette:
 
 - (Poster) Modeling Document-level Causal Structures for Event Causal Relation Identification. Lei Gao, Prafulla Kumar Choubey and Ruihong Huang
 

@@ -2,7 +2,7 @@
 Notes on NAACL 2019
 
 
-- :memo::mag: Text Generation and Stylometry
+- :memo::mag: [Text Generation and Stylometry](#text-generation-and-stylometry)
 - :paperclips: Text classification
 - :cityscape::boy: Named Entity Recognition
 - :bowling: Limited-data learning, particularly few-shot learning
@@ -13,3 +13,6 @@ Notes on NAACL 2019
 ## Text Generation and Stylometry :memo::mag:
 
 - (Could not attend) AudioCaps: Generating Captions for Audios in The Wild. 
+
+
+## Other

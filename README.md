@@ -7,9 +7,9 @@ Notes on NAACL 2019
 - :cityscape::boy: [Named Entity Recognition](#named-entity-recognition-cityscapeboy)
 - :bowling: [Learning with Limited Data](#learning-with-limited-data-bowling)
 - :key::book: [Keyphrase extraction](#keyphrase-extraction-keybook)
-- :hospital: [Clinical/biomedical applications](#clinical-biomedical-applications-hospital)
+- :hospital: [Clinical and biomedical applications](#clinical-and-biomedical-applications-hospital)
 - :shield::computer: [Cybersecurity applications](#cybersecurity-applications-shieldcomputer)
-- [Other][#other]
+- [Other](#other)
 
 ## Text Generation and Stylometry :memo::mag:
 
@@ -23,7 +23,7 @@ Notes on NAACL 2019
 
 ## Keyphrase Extraction :key::book:
 
-## Clinical/Biomedical Applications :hospital:
+## Clinical and Biomedical Applications :hospital:
 
 ## Cybersecurity applications :shield::computer:
 

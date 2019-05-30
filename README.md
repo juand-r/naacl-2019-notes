@@ -15,5 +15,16 @@ Notes on NAACL 2019
 
 - (Could not attend) AudioCaps: Generating Captions for Audios in The Wild. 
 
+## Text Classification
+
+## Named Entity Recognition
+
+## Learning with Limited Data
+
+## Keyphrase Extraction
+
+## Clinical/Biomedical Applications
+
+## Cybersecurity applications
 
 ## Other

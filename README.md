@@ -2,8 +2,8 @@
 Notes on NAACL 2019
 
 
-- :memo::mag: [Text Generation and Stylometry](#text-generation-and-stylometry)
-- :paperclips: [Text Classification](#text-classification)
+- :memo::mag: [Text Generation and Stylometry](#text-generation-and-stylometry-memomag)
+- :paperclips: [Text Classification](#text-classification-paperclips)
 - :cityscape::boy: [Named Entity Recognition](#named-entity-recognition)
 - :bowling: [Learning with Limited Data](#learning-with-limited-data)
 - :key::book: [Keyphrase extraction](#keyphrase-extraction)
@@ -15,7 +15,7 @@ Notes on NAACL 2019
 
 - (Could not attend) AudioCaps: Generating Captions for Audios in The Wild. 
 
-## Text Classification
+## Text Classification :paperclips:
 
 ## Named Entity Recognition
 

@@ -31,6 +31,7 @@ Notes on NAACL 2019
 ### Word representations :abcd:
 
 - (Poster; Could not attend) A Systematic Study of Leveraging Subword Information for Learning Word Representations.
+- (Poster) SC-LSTM: Learning Task-Specific Representations in Multi-Task Learning for Sequence Labeling. Peng Lu, Ting Bai and Philippe Langlais
 
 ### Discourse :busts_in_silhouette:
 
@@ -88,6 +89,11 @@ Notes on NAACL 2019
 - (Poster) Curriculum Learning for Domain Adaptation in Neural Machine Translation. Xuan Zhang, Pamela Shapiro, Gaurav Kumar, Paul McNamee, Marine Carpuat and Kevin Duh
 - (Poster) Non-Parametric Adaptation for Neural Machine Translation. Ankur Bapna and Orhan Firat
 
+#### Weak supervision, distantly-labeled data
+
+- Learning to Denoise Distantly-Labeled Data for Entity Typing
+
+
 ### Keyphrase Extraction :key::book:
 
 - (Could not attend) Keyphrase Generation: A Text Summarization Struggle. Erion Çano and Ondřej Bojar
@@ -97,6 +103,9 @@ Notes on NAACL 2019
 - Graph Pattern Entity Ranking Model for Knowledge Graph Completion. Takuma Ebisu and Ryutaro Ichise
 
 ### Reading Comprehension and Question Answering :book::question:
+
+- DROP: A Reading Comprehension Benchmark Requiring Discrete Reasoning Over Paragraphs. Dheeru Dua, Yizhong Wang, Pradeep Dasigi, Gabriel Stanovsky, Sameer Singh and Matt Gardner
+
 
 ## Applications
 

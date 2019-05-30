@@ -20,14 +20,24 @@ Notes on NAACL 2019
 ## Language Models :speech_balloon:
 
 - (Could not attend) Serial Recall Effects in Neural Language Modeling. Hassan Hajipoor, Hadi Amiri, Maseud Rahgozar and Farhad Oroumchian
+- (Poster; Could not attend) WiC: the Word-in-Context Dataset for Evaluating Context-Sensitive Meaning Representations. Mohammad Taher Pilehvar and Jose Camacho-Collados
+
 
 ## Word representations :abcd:
 
 - (Poster; Could not attend) A Systematic Study of Leveraging Subword Information for Learning Word Representations.
 
+
 # Tasks
 
 ## Text Generation and Stylometry :memo::mag:
+
+## Stylometry, Authorship, etc
+
+- (Could not attend) **Adversarial Training for Satire Detection: Controlling for Confounding Variables. Robert McHardy, Heike Adel and Roman Klinger**
+- (Poster) Fake News Detection using Deep Markov Random Fields
+
+## Text generation
 
 - (Could not attend) AudioCaps: Generating Captions for Audios in The Wild. 
 - (Could not attend) “President Vows to Cut <Taxes> Hair”: Dataset and Analysis of Creative Text Editing for Humorous Headlines.
@@ -39,6 +49,8 @@ Notes on NAACL 2019
 
   
 ## Text Classification :paperclips:
+
+- **Detecting depression in social media using fine-grained emotions**
 
 ## Named Entity Recognition :cityscape::boy:
 
@@ -60,6 +72,9 @@ Notes on NAACL 2019
 
 ## Cybersecurity applications :shield::computer:
 
+- (Poster) Detecting Cybersecurity Events from Noisy Short Text
+- (Poster) Analyzing the Perceived Severity of Cybersecurity Threats Reported on Social Media
+
 ## Other
 
 - (Poster; Could not attend) Asking the Right Question: Inferring Advice-Seeking Intentions from Personal Narratives
@@ -67,7 +82,7 @@ Notes on NAACL 2019
 - (Poster; Could not attend) Adversarial Decomposition of Text Representation
 - (Could not attend) **Combining Sentiment Lexica with a Multi-View Variational Autoencoder**
 - (Could not attend) Frowning Frodo, Wincing Leia, and a Seriously Great Friendship: Learning to Classify Emotional Relationships of Fictional Characters
-
+- (Poster) PAWS: Paraphrase Adversaries from Word Scrambling
 
 
 

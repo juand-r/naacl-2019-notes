@@ -4,6 +4,7 @@ Notes on NAACL 2019
 - [Topics](#topics)
   - :speech_balloon: [Language Models](#language-models-speech_balloon)
   - :abcd: [Word representations](#word-representations-abcd)
+  - [Discourse](#discourse)
 - [Tasks](#tasks)
   - :memo::mag: [Text Generation and Stylometry](#text-generation-and-stylometry-memomag)
   - :paperclips: [Text Classification](#text-classification-paperclips)
@@ -29,6 +30,10 @@ Notes on NAACL 2019
 
 - (Poster; Could not attend) A Systematic Study of Leveraging Subword Information for Learning Word Representations.
 
+## Discourse
+
+- (Poster) Modeling Document-level Causal Structures for Event Causal Relation Identification. Lei Gao, Prafulla Kumar Choubey and Ruihong Huang
+
 
 # Tasks
 
@@ -43,6 +48,7 @@ Notes on NAACL 2019
 
 - (Demo) compare-mt: A Tool for Holistic Comparison of Language Generation Systems
 - (Demo) fairseq: A Fast, Extensible Toolkit for Sequence Modeling
+- (Poster) Fixed That for You: Generating Contrastive Claims with Semantic Edits. Christopher Hidey and Kathy McKeown
 - (Could not attend) AudioCaps: Generating Captions for Audios in The Wild. 
 - (Could not attend) “President Vows to Cut <Taxes> Hair”: Dataset and Analysis of Creative Text Editing for Humorous Headlines.
 - (Poster; Could not attend) Improved Lexically Constrained Decoding for Translation and Monolingual Rewriting
@@ -97,10 +103,12 @@ Notes on NAACL 2019
 
 - (Poster; Could not attend) Asking the Right Question: Inferring Advice-Seeking Intentions from Personal Narratives
 - (Poster; Could not attend) Seeing Things from a Different Angle: Discovering Diverse Perspectives about Claims
+- (Poster; Could not attend) Text Similarity Estimation Based on Word Embeddings and Matrix Norms for Targeted Marketing.
 - (Poster; Could not attend) Adversarial Decomposition of Text Representation
 - (Could not attend) **Combining Sentiment Lexica with a Multi-View Variational Autoencoder**
 - (Could not attend) Frowning Frodo, Wincing Leia, and a Seriously Great Friendship: Learning to Classify Emotional Relationships of Fictional Characters
 - (Poster) PAWS: Paraphrase Adversaries from Word Scrambling
+
 
 ### Oral
 

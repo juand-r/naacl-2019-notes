@@ -137,5 +137,9 @@ Notes on NAACL 2019
 - (Could not attend) Mutual Information Maximization for Simple and Accurate Part-Of-Speech Induction. Karl Stratos
 - (Could not attend) Unsupervised Latent Tree Induction with Deep Inside-Outside Recursive Auto-Encoders. Andrew Drozdov, Patrick Verga, Mohit Yadav, Mohit Iyyer and Andrew McCallum
 - (Could not attend) Locale-agnostic Universal domain Clasification Model in Spoken Language Understanding
+- (Could not attend) On the Importance of Distinguishing Word Meaning Representations: A Case Study on Reverse Dictionary Mapping. Mohammad Taher Pilehvar
+- (Could not attend) Factorising AMR generation through syntax
+- (Could not attend) Joint Detection and Location of English Puns
+
 
 

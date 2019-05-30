@@ -13,6 +13,7 @@ Notes on NAACL 2019
   - :bowling: [Learning with Limited Data](#learning-with-limited-data-bowling)
   - :key::book: [Keyphrase extraction](#keyphrase-extraction-keybook)
   - :spider_web: [Knowledge Graph Completion](#knowledge-graph-completion-spider_web)
+  - :book: [Reading Comprehension](#reading-comprehension-book)
 - [Applications](#applications)
   - :hospital: [Clinical and biomedical applications](#clinical-and-biomedical-applications-hospital)
   - :shield::computer: [Cybersecurity applications](#cybersecurity-applications-shieldcomputer)
@@ -72,6 +73,8 @@ Notes on NAACL 2019
 - Pooled Contextualized Embeddings for Named Entity Recognition. Alan Akbik, Tanja Bergmann and Roland Vollgraf
 - Knowledge-Augmented Language Model and Its Application to Unsupervised Named-Entity Recognition. Angli Liu, Jingfei Du and Veselin Stoyanov
   - See in Language Models section
+- (Poster) Practical, Efficient, and Customizable Active Learning for Named Entity Recognition in the Digital Humanities. Alexander Erdman et al.
+
 
 ### Learning with Limited Data :bowling:
 
@@ -92,6 +95,8 @@ Notes on NAACL 2019
 ### Knowledge Graph Completion :spider_web:
 
 - Graph Pattern Entity Ranking Model for Knowledge Graph Completion. Takuma Ebisu and Ryutaro Ichise
+
+### Reading Comprehension :book:
 
 ## Applications
 

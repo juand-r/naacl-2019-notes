@@ -2,8 +2,8 @@
 Notes on NAACL 2019
 
 - [Topics](#topics)
-  - [Language Models](#language-models-speech_balloon)
-  - [Word representations](#word-representations-abcd)
+  - :speech_balloon: [Language Models](#language-models-speech_balloon)
+  - :abcd: [Word representations](#word-representations-abcd)
 - [Tasks](#tasks)
   - :memo::mag: [Text Generation and Stylometry](#text-generation-and-stylometry-memomag)
   - :paperclips: [Text Classification](#text-classification-paperclips)

@@ -58,8 +58,14 @@ Notes on NAACL 2019
 ## Named Entity Recognition :cityscape::boy:
 
 - Pooled Contextualized Embeddings for Named Entity Recognition. Alan Akbik, Tanja Bergmann and Roland Vollgraf
+- Knowledge-Augmented Language Model and Its Application to Unsupervised Named-Entity Recognition. Angli Liu, Jingfei Du and Veselin Stoyanov
+  - See in Language Models section
 
 ## Learning with Limited Data :bowling:
+
+### Huge label set
+
+- (Could not attend) A Submodular Feature-Aware Framework for Label Subset Selection in Extreme Classification Problems. Elham J. Barezi, Ian D. Wood, Pascale Fung and Hamid R. Rabiee
 
 ### Domain Adaptation
 
@@ -70,6 +76,8 @@ Notes on NAACL 2019
 - (Could not attend) Keyphrase Generation: A Text Summarization Struggle. Erion Çano and Ondřej Bojar
 
 ## Knowledge Graph Completion :spider_web:
+
+- Graph Pattern Entity Ranking Model for Knowledge Graph Completion. Takuma Ebisu and Ryutaro Ichise
 
 # Applications
 
@@ -96,5 +104,6 @@ Notes on NAACL 2019
 ### Oral
 
 - (Could not attend) Mutual Information Maximization for Simple and Accurate Part-Of-Speech Induction. Karl Stratos
-
+- (Could not attend) Unsupervised Latent Tree Induction with Deep Inside-Outside Recursive Auto-Encoders. Andrew Drozdov, Patrick Verga, Mohit Yadav, Mohit Iyyer and Andrew McCallum
+- 
 

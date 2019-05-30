@@ -16,13 +16,18 @@ Notes on NAACL 2019
 
 - (Could not attend) AudioCaps: Generating Captions for Audios in The Wild. 
 - (Could not attend) “President Vows to Cut <Taxes> Hair”: Dataset and Analysis of Creative Text Editing for Humorous Headlines.
-- (Could not attend) SEQˆ3: Differentiable Sequence-to-Sequence-to-Sequence Autoencoder for Unsupervised Abstractive Sentence Compression. 
-  
 - (Poster; Could not attend) Improved Lexically Constrained Decoding for Translation and Monolingual Rewriting
+  
+### Summarization and Simplification
+
+- (Could not attend) SEQˆ3: Differentiable Sequence-to-Sequence-to-Sequence Autoencoder for Unsupervised Abstractive Sentence Compression.
+
   
 ## Text Classification :paperclips:
 
 ## Named Entity Recognition :cityscape::boy:
+
+- Pooled Contextualized Embeddings for Named Entity Recognition. Alan Akbik, Tanja Bergmann and Roland Vollgraf
 
 ## Learning with Limited Data :bowling:
 
@@ -45,6 +50,7 @@ Notes on NAACL 2019
 - (Poster; Could not attend) Seeing Things from a Different Angle: Discovering Diverse Perspectives about Claims
 - (Poster; Could not attend) Adversarial Decomposition of Text Representation
 - (Could not attend) **Combining Sentiment Lexica with a Multi-View Variational Autoencoder**
+- (Could not attend) Frowning Frodo, Wincing Leia, and a Seriously Great Friendship: Learning to Classify Emotional Relationships of Fictional Characters
 
 ### Learning word representations
 

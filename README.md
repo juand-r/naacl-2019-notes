@@ -10,7 +10,7 @@ Notes on NAACL 2019
   - :cityscape::boy: [Named Entity Recognition](#named-entity-recognition-cityscapeboy)
   - :bowling: [Learning with Limited Data](#learning-with-limited-data-bowling)
   - :key::book: [Keyphrase extraction](#keyphrase-extraction-keybook)
-  - [Knowledge Graph Completion](#knowledge-graph-completion-spiderweb)
+  - [Knowledge Graph Completion](#knowledge-graph-completion-spider_web)
 - [Applications](#applications)
   - :hospital: [Clinical and biomedical applications](#clinical-and-biomedical-applications-hospital)
   - :shield::computer: [Cybersecurity applications](#cybersecurity-applications-shieldcomputer)

@@ -5,7 +5,7 @@ Notes on NAACL 2019
   - :speech_balloon: [Language Models](#language-models-speech_balloon)
   - :abcd: [Word representations](#word-representations-abcd)
   - :busts_in_silhouette: [Discourse](#discourse-busts_in_silhouette)
-  - :eyes: [Attention](#attention)
+  - :eyes: [Attention](#attention-eyes)
 - [Tasks](#tasks)
   - :memo::mag: [Text Generation and Stylometry](#text-generation-and-stylometry-memomag)
   - :paperclips: [Text Classification](#text-classification-paperclips)
@@ -18,37 +18,37 @@ Notes on NAACL 2019
   - :shield::computer: [Cybersecurity applications](#cybersecurity-applications-shieldcomputer)
 - [Other](#other)
 
-# Topics
+## Topics
 
-## Language Models :speech_balloon:
+### Language Models :speech_balloon:
 
 - (Could not attend) **Knowledge-Augmented Language Model and Its Application to Unsupervised Named-Entity Recognition. Angli Liu, Jingfei Du and Veselin Stoyanov**
 - (Could not attend) Serial Recall Effects in Neural Language Modeling. Hassan Hajipoor, Hadi Amiri, Maseud Rahgozar and Farhad Oroumchian
 - (Poster; Could not attend) WiC: the Word-in-Context Dataset for Evaluating Context-Sensitive Meaning Representations. Mohammad Taher Pilehvar and Jose Camacho-Collados
 
 
-## Word representations :abcd:
+### Word representations :abcd:
 
 - (Poster; Could not attend) A Systematic Study of Leveraging Subword Information for Learning Word Representations.
 
-## Discourse :busts_in_silhouette:
+### Discourse :busts_in_silhouette:
 
 - (Poster) Modeling Document-level Causal Structures for Event Causal Relation Identification. Lei Gao, Prafulla Kumar Choubey and Ruihong Huang
 
-## Attention :eyes:
+### Attention :eyes:
 
 - Simple Attention-Based Representation Learning for Ranking Short Social Media Posts. Peng Shi, Jinfeng Rao and Jimmy Lin
 
-# Tasks
+## Tasks
 
-## Text Generation and Stylometry :memo::mag:
+### Text Generation and Stylometry :memo::mag:
 
-## Stylometry, Authorship, etc
+#### Stylometry, Authorship, etc
 
 - (Could not attend) **Adversarial Training for Satire Detection: Controlling for Confounding Variables. Robert McHardy, Heike Adel and Roman Klinger**
 - (Poster) Fake News Detection using Deep Markov Random Fields
 
-## Text generation
+#### Text generation
 
 - (Demo) compare-mt: A Tool for Holistic Comparison of Language Generation Systems
 - (Demo) fairseq: A Fast, Extensible Toolkit for Sequence Modeling
@@ -58,55 +58,55 @@ Notes on NAACL 2019
 - (Could not attend) An Empirical Investigation of Global and Local Normalization for Recurrent Neural Sequence Models Using a Continuous Relaxation to Beam Search.
 - (Poster; Could not attend) Improved Lexically Constrained Decoding for Translation and Monolingual Rewriting
   
-### Summarization and Simplification
+#### Summarization and Simplification
 
 - (Could not attend) SEQˆ3: Differentiable Sequence-to-Sequence-to-Sequence Autoencoder for Unsupervised Abstractive Sentence Compression.
 
   
-## Text Classification :paperclips:
+### Text Classification :paperclips:
 
 - **Detecting depression in social media using fine-grained emotions**
 
-## Named Entity Recognition :cityscape::boy:
+### Named Entity Recognition :cityscape::boy:
 
 - Pooled Contextualized Embeddings for Named Entity Recognition. Alan Akbik, Tanja Bergmann and Roland Vollgraf
 - Knowledge-Augmented Language Model and Its Application to Unsupervised Named-Entity Recognition. Angli Liu, Jingfei Du and Veselin Stoyanov
   - See in Language Models section
 
-## Learning with Limited Data :bowling:
+### Learning with Limited Data :bowling:
 
-### Huge label set
+#### Huge label set
 
 - (Could not attend) A Submodular Feature-Aware Framework for Label Subset Selection in Extreme Classification Problems. Elham J. Barezi, Ian D. Wood, Pascale Fung and Hamid R. Rabiee
 
-### Domain Adaptation
+#### Domain Adaptation
 
 - (Poster) **Simplified Neural Unsupervised Domain Adaptation. Timothy Miller**
 - (Poster) Curriculum Learning for Domain Adaptation in Neural Machine Translation. Xuan Zhang, Pamela Shapiro, Gaurav Kumar, Paul McNamee, Marine Carpuat and Kevin Duh
 - (Poster) Non-Parametric Adaptation for Neural Machine Translation. Ankur Bapna and Orhan Firat
 
-## Keyphrase Extraction :key::book:
+### Keyphrase Extraction :key::book:
 
 - (Could not attend) Keyphrase Generation: A Text Summarization Struggle. Erion Çano and Ondřej Bojar
 
-## Knowledge Graph Completion :spider_web:
+### Knowledge Graph Completion :spider_web:
 
 - Graph Pattern Entity Ranking Model for Knowledge Graph Completion. Takuma Ebisu and Ryutaro Ichise
 
-# Applications
+## Applications
 
-## Clinical and Biomedical Applications :hospital:
+### Clinical and Biomedical Applications :hospital:
 
 - (Poster; could not attend) Biomedical Event Extraction based on Knowledge-driven-LSTM
 
-## Cybersecurity applications :shield::computer:
+### Cybersecurity applications :shield::computer:
 
 - (Poster) Detecting Cybersecurity Events from Noisy Short Text
 - (Poster) Analyzing the Perceived Severity of Cybersecurity Threats Reported on Social Media
 
-## Other
+### Other
 
-### Posters
+#### Posters
 
 - (Poster; Could not attend) Asking the Right Question: Inferring Advice-Seeking Intentions from Personal Narratives
 - (Poster; Could not attend) Seeing Things from a Different Angle: Discovering Diverse Perspectives about Claims
@@ -118,7 +118,7 @@ Notes on NAACL 2019
 - (Poster) **Value-based Search in Execution Space for Mapping Instructions to Programs.**
 - (Poster) **Text Processing Like Humans Do: Visually Attacking and Shielding NLP Systems**
 
-### Oral
+#### Oral
 
 - (Could not attend) Mutual Information Maximization for Simple and Accurate Part-Of-Speech Induction. Karl Stratos
 - (Could not attend) Unsupervised Latent Tree Induction with Deep Inside-Outside Recursive Auto-Encoders. Andrew Drozdov, Patrick Verga, Mohit Yadav, Mohit Iyyer and Andrew McCallum

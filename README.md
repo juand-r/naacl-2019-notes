@@ -91,7 +91,7 @@ Notes on NAACL 2019
 
 #### Weak supervision, distantly-labeled data
 
-- Learning to Denoise Distantly-Labeled Data for Entity Typing
+- :cityscape::boy: Learning to Denoise Distantly-Labeled Data for Entity Typing
 
 
 ### Keyphrase Extraction :key::book:

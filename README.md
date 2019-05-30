@@ -35,6 +35,9 @@ Notes on NAACL 2019
 
 - (Poster) Modeling Document-level Causal Structures for Event Causal Relation Identification. Lei Gao, Prafulla Kumar Choubey and Ruihong Huang
 
+## Attention :eyes:
+
+- Simple Attention-Based Representation Learning for Ranking Short Social Media Posts. Peng Shi, Jinfeng Rao and Jimmy Lin
 
 # Tasks
 

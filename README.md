@@ -1,6 +1,9 @@
 # naacl-2019-notes
 Notes on NAACL 2019
 
+- Topics
+  - [Language Models](#language-models)
+  - [Word representations](#word-representations)
 - Tasks
   - :memo::mag: [Text Generation and Stylometry](#text-generation-and-stylometry-memomag)
   - :paperclips: [Text Classification](#text-classification-paperclips)
@@ -11,6 +14,18 @@ Notes on NAACL 2019
   - :hospital: [Clinical and biomedical applications](#clinical-and-biomedical-applications-hospital)
   - :shield::computer: [Cybersecurity applications](#cybersecurity-applications-shieldcomputer)
 - [Other](#other)
+
+# Topics
+
+## Language Models
+
+- Serial Recall Effects in Neural Language Modeling. Hassan Hajipoor, Hadi Amiri, Maseud Rahgozar and Farhad Oroumchian
+
+## Word representations
+
+- (Poster; Could not attend) A Systematic Study of Leveraging Subword Information for Learning Word Representations.
+
+# Tasks
 
 ## Text Generation and Stylometry :memo::mag:
 
@@ -52,9 +67,6 @@ Notes on NAACL 2019
 - (Could not attend) **Combining Sentiment Lexica with a Multi-View Variational Autoencoder**
 - (Could not attend) Frowning Frodo, Wincing Leia, and a Seriously Great Friendship: Learning to Classify Emotional Relationships of Fictional Characters
 
-### Learning word representations
-
-- (Poster; Could not attend) A Systematic Study of Leveraging Subword Information for Learning Word Representations.
 
 
 

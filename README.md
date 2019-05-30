@@ -4,12 +4,12 @@ Notes on NAACL 2019
 
 - :memo::mag: [Text Generation and Stylometry](#text-generation-and-stylometry-memomag)
 - :paperclips: [Text Classification](#text-classification-paperclips)
-- :cityscape::boy: [Named Entity Recognition](#named-entity-recognition)
-- :bowling: [Learning with Limited Data](#learning-with-limited-data)
-- :key::book: [Keyphrase extraction](#keyphrase-extraction)
-- :hospital: [Clinical/biomedical applications](#clinical-biomedical-applications)
-- :shield::computer: [Cybersecurity applications](#cybersecurity-applications)
-
+- :cityscape::boy: [Named Entity Recognition](#named-entity-recognition-cityscapeboy)
+- :bowling: [Learning with Limited Data](#learning-with-limited-data-bowling)
+- :key::book: [Keyphrase extraction](#keyphrase-extraction-keybook)
+- :hospital: [Clinical/biomedical applications](#clinical-biomedical-applications-hospital)
+- :shield::computer: [Cybersecurity applications](#cybersecurity-applications-shieldcomputer)
+- [Other][#other]
 
 ## Text Generation and Stylometry :memo::mag:
 
@@ -17,14 +17,14 @@ Notes on NAACL 2019
 
 ## Text Classification :paperclips:
 
-## Named Entity Recognition
+## Named Entity Recognition :cityscape::boy:
 
-## Learning with Limited Data
+## Learning with Limited Data :bowling:
 
-## Keyphrase Extraction
+## Keyphrase Extraction :key::book:
 
-## Clinical/Biomedical Applications
+## Clinical/Biomedical Applications :hospital:
 
-## Cybersecurity applications
+## Cybersecurity applications :shield::computer:
 
 ## Other

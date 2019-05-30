@@ -10,6 +10,7 @@ Notes on NAACL 2019
   - :cityscape::boy: [Named Entity Recognition](#named-entity-recognition-cityscapeboy)
   - :bowling: [Learning with Limited Data](#learning-with-limited-data-bowling)
   - :key::book: [Keyphrase extraction](#keyphrase-extraction-keybook)
+  - [Knowledge Graph Completion](#knowledge-graph-completion-spiderweb)
 - [Applications](#applications)
   - :hospital: [Clinical and biomedical applications](#clinical-and-biomedical-applications-hospital)
   - :shield::computer: [Cybersecurity applications](#cybersecurity-applications-shieldcomputer)
@@ -39,6 +40,8 @@ Notes on NAACL 2019
 
 ## Text generation
 
+- (Demo) compare-mt: A Tool for Holistic Comparison of Language Generation Systems
+- (Demo) fairseq: A Fast, Extensible Toolkit for Sequence Modeling
 - (Could not attend) AudioCaps: Generating Captions for Audios in The Wild. 
 - (Could not attend) “President Vows to Cut <Taxes> Hair”: Dataset and Analysis of Creative Text Editing for Humorous Headlines.
 - (Poster; Could not attend) Improved Lexically Constrained Decoding for Translation and Monolingual Rewriting
@@ -66,9 +69,13 @@ Notes on NAACL 2019
 
 - (Could not attend) Keyphrase Generation: A Text Summarization Struggle. Erion Çano and Ondřej Bojar
 
+## Knowledge Graph Completion :spider_web:
+
 # Applications
 
 ## Clinical and Biomedical Applications :hospital:
+
+- (Poster; could not attend) Biomedical Event Extraction based on Knowledge-driven-LSTM
 
 ## Cybersecurity applications :shield::computer:
 
@@ -77,6 +84,8 @@ Notes on NAACL 2019
 
 ## Other
 
+### Posters
+
 - (Poster; Could not attend) Asking the Right Question: Inferring Advice-Seeking Intentions from Personal Narratives
 - (Poster; Could not attend) Seeing Things from a Different Angle: Discovering Diverse Perspectives about Claims
 - (Poster; Could not attend) Adversarial Decomposition of Text Representation
@@ -84,5 +93,8 @@ Notes on NAACL 2019
 - (Could not attend) Frowning Frodo, Wincing Leia, and a Seriously Great Friendship: Learning to Classify Emotional Relationships of Fictional Characters
 - (Poster) PAWS: Paraphrase Adversaries from Word Scrambling
 
+### Oral
+
+- (Could not attend) Mutual Information Maximization for Simple and Accurate Part-Of-Speech Induction. Karl Stratos
 
 

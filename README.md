@@ -49,7 +49,9 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
 
 ### Attention :eyes:
 
-- Simple Attention-Based Representation Learning for Ranking Short Social Media Posts. Peng Shi, Jinfeng Rao and Jimmy Lin
+- (Poster) Simple Attention-Based Representation Learning for Ranking Short Social Media Posts. Peng Shi, Jinfeng Rao and Jimmy Lin
+- (Poster) **Attentive Convolution: Equipping CNNs with RNN-style Attention Mechanisms. Wenpeng Yin and Hinrich Schütze**
+
 
 ## Tasks
 
@@ -78,7 +80,8 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
   
 ### Text Classification :paperclips:
 
-- **Detecting depression in social media using fine-grained emotions**
+- (Poster) **Detecting depression in social media using fine-grained emotions**
+- (Could not attend) Mitigating Uncertainty in Document Classification. Xuchao Zhang, Fanglan Chen, ChangTien Lu and Naren Ramakrishnan
 
 ### Named Entity Recognition :cityscape::boy:
 
@@ -89,6 +92,10 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
 
 
 ### Learning with Limited Data :bowling:
+
+#### Few-shot learning
+
+- :spider_web: **Long-tail Relation Extraction via Knowledge Graph Embeddings and Graph Convolution Networks.**  Ningyu Zhang et al.
 
 #### Huge label set
 
@@ -113,6 +120,8 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
 ### Knowledge Graph Completion :spider_web:
 
 - Graph Pattern Entity Ranking Model for Knowledge Graph Completion. Takuma Ebisu and Ryutaro Ichise
+- **Long-tail Relation Extraction via Knowledge Graph Embeddings and Graph Convolution Networks.**  Ningyu Zhang et al.
+  - See under 'few-shot'
 
 ### Reading Comprehension and Question Answering :book::question:
 
@@ -143,6 +152,7 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
 - (Poster) PAWS: Paraphrase Adversaries from Word Scrambling
 - (Poster) **Value-based Search in Execution Space for Mapping Instructions to Programs.**
 - (Poster) **Text Processing Like Humans Do: Visually Attacking and Shielding NLP Systems**
+- (Poster) Rotational Unit of Memory: A Novel Representation Unit for RNNs with Scalable Applications
 
 #### Oral
 

@@ -94,9 +94,11 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
 ### Relation extraction :repeat:
 
 - GAN Driven Semi-distant Supervision for Relation Extraction. Pengshuai Li, Xinsong Zhang, Weijia Jia and Hai Zhao
-  - See under "relation extraction"
+- Structured Minimally Supervised Learning for Neural Relation Extraction. Fan Bai and Alan Ritter
 
 ### Learning with Limited Data :bowling:
+
+- :repeat: Structured Minimally Supervised Learning for Neural Relation Extraction. Fan Bai and Alan Ritter.
 
 #### Few-shot learning
 
@@ -132,6 +134,9 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
 
 - (Poster) DROP: A Reading Comprehension Benchmark Requiring Discrete Reasoning Over Paragraphs. Dheeru Dua, Yizhong Wang, Pradeep Dasigi, Gabriel Stanovsky, Sameer Singh and Matt Gardner
 - (Could not attend) Improving Machine Reading Comprehension with General Reading Strategies. Kai Sun, Dian Yu, Dong Yu and Claire Cardie
+- (Could not attend) **Repurposing Entailment for Multi-Hop Question Answering Tasks. Harsh Trivedi et al.**
+
+
 
 ## Applications
 

@@ -12,7 +12,7 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
   - :memo::mag: [Text Generation and Stylometry](#text-generation-and-stylometry-memomag)
     - [Stylometry, Authorship Attribution](#stylometry-authorship-attribution)
     - [Text Generation](#text-generation)
-    - [Summarization and Simplification](#summarization-and-simplification)
+  - [Summarization and Simplification](#summarization-and-simplification-gem)
   - :paperclips: [Text Classification](#text-classification-paperclips)
   - :cityscape::boy: [Named Entity Recognition](#named-entity-recognition-cityscapeboy)
   - :repeat: [Relation extraction](#relation-extraction-repeat)
@@ -70,8 +70,6 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
 
 #### Text Generation
 
-##### asdf
-
 - (Demo) **compare-mt: A Tool for Holistic Comparison of Language Generation Systems**
 - (Demo) fairseq: A Fast, Extensible Toolkit for Sequence Modeling
 - (Poster) Fixed That for You: Generating Contrastive Claims with Semantic Edits. Christopher Hidey and Kathy McKeown
@@ -83,7 +81,7 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
 - (Could not attend) Structural Neural Encoders for AMR-to-text Generation. Marco Damonte and Shay B. Cohen
 - (Poster; Could not attend) Improved Lexically Constrained Decoding for Translation and Monolingual Rewriting
   
-#### Summarization and Simplification
+### Summarization and Simplification :gem:
 
 - (Could not attend) SEQˆ3: Differentiable Sequence-to-Sequence-to-Sequence Autoencoder for Unsupervised Abstractive Sentence Compression.
 - (Could not attend) Abstractive Summarization of Reddit Posts with Multi-level Memory Networks. Byeongchang Kim, Hyunwoo Kim and Gunhee Kim

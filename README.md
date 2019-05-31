@@ -3,6 +3,7 @@
 In addition to these papers, there was also a nice survey "Analysis Methods in Natural Language Processing" (published in TACL but presented here).
 
 - [Topics](#topics)
+  - :bowling: [Learning with Limited Data](#learning-with-limited-data-bowling)
   - :speech_balloon: [Language Models](#language-models-speech_balloon)
   - :abcd: [Word representations](#word-representations-abcd)
     - [Combining or aligning embeddings](#combining-or-aligning-embeddings)
@@ -14,7 +15,6 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
   - :paperclips: [Text Classification](#text-classification-paperclips)
   - :cityscape::boy: [Named Entity Recognition](#named-entity-recognition-cityscapeboy)
   - :repeat: [Relation extraction](#relation-extraction-repeat)
-  - :bowling: [Learning with Limited Data](#learning-with-limited-data-bowling)
   - :key::bookmark_tabs: [Keyphrase extraction](#keyphrase-extraction-keybookmark_tabs)
   - :spider_web: [Knowledge Graph Completion](#knowledge-graph-completion-spider_web)
   - :book::question: [Reading Comprehension and Question Answering](#reading-comprehension-and-question-answering-bookquestion)
@@ -24,6 +24,31 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
 - [Other](#other)
 
 ## Topics
+
+### Learning with Limited Data :bowling:
+
+- :repeat: Structured Minimally Supervised Learning for Neural Relation Extraction. Fan Bai and Alan Ritter.
+
+#### Few-shot learning
+
+- :spider_web: **Long-tail Relation Extraction via Knowledge Graph Embeddings and Graph Convolution Networks.**  Ningyu Zhang et al.
+
+#### Huge label set
+
+- (Could not attend) A Submodular Feature-Aware Framework for Label Subset Selection in Extreme Classification Problems. Elham J. Barezi, Ian D. Wood, Pascale Fung and Hamid R. Rabiee
+
+#### Domain Adaptation
+
+- (Poster) **Simplified Neural Unsupervised Domain Adaptation. Timothy Miller**
+- (Poster) Curriculum Learning for Domain Adaptation in Neural Machine Translation. Xuan Zhang, Pamela Shapiro, Gaurav Kumar, Paul McNamee, Marine Carpuat and Kevin Duh
+- (Poster) Non-Parametric Adaptation for Neural Machine Translation. Ankur Bapna and Orhan Firat
+- :paperclips: (Could not attend) Adversarial Category Alignment Network for Cross-domain Sentiment Classification. Xiaoye Qu, Zhikang Zou, Yu Cheng, Yang Yang and Pan Zhou
+- (Could not attend) Joint Learning of Pre-Trained and Random Units for Domain Adaptation in Part-of-Speech Tagging. 
+
+#### Weak supervision, distantly-labeled data
+
+- :cityscape::boy: Learning to Denoise Distantly-Labeled Data for Entity Typing
+- :repeat: GAN Driven Semi-distant Supervision for Relation Extraction. Pengshuai Li, Xinsong Zhang, Weijia Jia and Hai Zhao
 
 ### Language Models :speech_balloon:
 
@@ -40,8 +65,6 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
   - See in "biomedical"
 
 #### Combining or aligning embeddings
-
-
 
 
 ### Discourse :busts_in_silhouette:
@@ -104,31 +127,6 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
 - (Could not attend) GAN Driven Semi-distant Supervision for Relation Extraction. Pengshuai Li, Xinsong Zhang, Weijia Jia and Hai Zhao
 - (Could not attend) Structured Minimally Supervised Learning for Neural Relation Extraction. Fan Bai and Alan Ritter
 - (Could not attend) **Document-Level N-ary Relation Extraction with Multiscale Representation Learning**. Robin Jia, Cliff Wong and Hoifung Poon
-
-### Learning with Limited Data :bowling:
-
-- :repeat: Structured Minimally Supervised Learning for Neural Relation Extraction. Fan Bai and Alan Ritter.
-
-#### Few-shot learning
-
-- :spider_web: **Long-tail Relation Extraction via Knowledge Graph Embeddings and Graph Convolution Networks.**  Ningyu Zhang et al.
-
-#### Huge label set
-
-- (Could not attend) A Submodular Feature-Aware Framework for Label Subset Selection in Extreme Classification Problems. Elham J. Barezi, Ian D. Wood, Pascale Fung and Hamid R. Rabiee
-
-#### Domain Adaptation
-
-- (Poster) **Simplified Neural Unsupervised Domain Adaptation. Timothy Miller**
-- (Poster) Curriculum Learning for Domain Adaptation in Neural Machine Translation. Xuan Zhang, Pamela Shapiro, Gaurav Kumar, Paul McNamee, Marine Carpuat and Kevin Duh
-- (Poster) Non-Parametric Adaptation for Neural Machine Translation. Ankur Bapna and Orhan Firat
-- :paperclips: (Could not attend) Adversarial Category Alignment Network for Cross-domain Sentiment Classification. Xiaoye Qu, Zhikang Zou, Yu Cheng, Yang Yang and Pan Zhou
-- (Could not attend) Joint Learning of Pre-Trained and Random Units for Domain Adaptation in Part-of-Speech Tagging. 
-
-#### Weak supervision, distantly-labeled data
-
-- :cityscape::boy: Learning to Denoise Distantly-Labeled Data for Entity Typing
-- :repeat: GAN Driven Semi-distant Supervision for Relation Extraction. Pengshuai Li, Xinsong Zhang, Weijia Jia and Hai Zhao
 
 ### Keyphrase Extraction :key::bookmark_tabs:
 

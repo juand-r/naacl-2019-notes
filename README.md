@@ -94,6 +94,7 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
 ### Relation extraction :repeat:
 
 - GAN Driven Semi-distant Supervision for Relation Extraction. Pengshuai Li, Xinsong Zhang, Weijia Jia and Hai Zhao
+  - See under "relation extraction"
 
 ### Learning with Limited Data :bowling:
 

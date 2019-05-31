@@ -1,6 +1,8 @@
 # naacl-2019-notes
 Notes on NAACL 2019
 
+In addition to these papers, there was also a nice survey "Analysis Methods in Natural Language Processing" (published in TACL but presented here).
+
 - [Topics](#topics)
   - :speech_balloon: [Language Models](#language-models-speech_balloon)
   - :abcd: [Word representations](#word-representations-abcd)
@@ -39,7 +41,7 @@ Notes on NAACL 2019
 
 #### Combining or aligning embeddings
 
-- Alignment over Heterogeneous Embeddings for Question Answering. Vikas Yadav, Steven Bethard and Mihai Surdeanu
+- (Could not attend) Alignment over Heterogeneous Embeddings for Question Answering. Vikas Yadav, Steven Bethard and Mihai Surdeanu
 
 
 ### Discourse :busts_in_silhouette:

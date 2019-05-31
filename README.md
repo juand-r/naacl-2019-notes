@@ -15,7 +15,7 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
   - :cityscape::boy: [Named Entity Recognition](#named-entity-recognition-cityscapeboy)
   - :repeat: [Relation extraction](#relation-extraction-repeat)
   - :bowling: [Learning with Limited Data](#learning-with-limited-data-bowling)
-  - :key::book: [Keyphrase extraction](#keyphrase-extraction-keybook)
+  - :key::bookmark_tabs: [Keyphrase extraction](#keyphrase-extraction-keybookmark_tabs)
   - :spider_web: [Knowledge Graph Completion](#knowledge-graph-completion-spider_web)
   - :book::question: [Reading Comprehension and Question Answering](#reading-comprehension-and-question-answering-bookquestion)
 - [Applications](#applications)
@@ -130,7 +130,7 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
 - :cityscape::boy: Learning to Denoise Distantly-Labeled Data for Entity Typing
 - :repeat: GAN Driven Semi-distant Supervision for Relation Extraction. Pengshuai Li, Xinsong Zhang, Weijia Jia and Hai Zhao
 
-### Keyphrase Extraction :key::book:
+### Keyphrase Extraction :key::bookmark_tabs:
 
 - (Could not attend) Keyphrase Generation: A Text Summarization Struggle. Erion Çano and Ondřej Bojar
 

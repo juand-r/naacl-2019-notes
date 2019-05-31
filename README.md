@@ -52,6 +52,7 @@ This is a summary of a selection of papers presented at NAACL 2019. In addition 
 #### Domain Adaptation
 
 - (Poster) **Simplified Neural Unsupervised Domain Adaptation. Timothy Miller**
+  - Code: https://github.com/tmills/Neural-SCL-Domain-Adaptation
 - (Poster) Curriculum Learning for Domain Adaptation in Neural Machine Translation. Xuan Zhang, Pamela Shapiro, Gaurav Kumar, Paul McNamee, Marine Carpuat and Kevin Duh
 - (Poster) Non-Parametric Adaptation for Neural Machine Translation. Ankur Bapna and Orhan Firat
 - :paperclips: (Could not attend) Adversarial Category Alignment Network for Cross-domain Sentiment Classification. Xiaoye Qu, Zhikang Zou, Yu Cheng, Yang Yang and Pan Zhou

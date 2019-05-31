@@ -34,6 +34,7 @@ This is a summary of a selection of papers presented at NAACL 2019. In addition 
 - [Applications](#applications)
   - :hospital: [Clinical and biomedical applications](#clinical-and-biomedical-applications-hospital)
   - :shield::computer: [Cybersecurity applications](#cybersecurity-applications-shieldcomputer)
+  - [Other applications](#other-applications)
 - [Other](#other)
 
 ## Topics
@@ -190,13 +191,15 @@ This is a summary of a selection of papers presented at NAACL 2019. In addition 
 - (Poster) Detecting Cybersecurity Events from Noisy Short Text
 - (Poster) Analyzing the Perceived Severity of Cybersecurity Threats Reported on Social Media
 
+### Other applications
+
+- (Poster; Could not attend) Text Similarity Estimation Based on Word Embeddings and Matrix Norms for Targeted Marketing.
+
 ### Other
 
 #### Posters
 
 - (Poster; Could not attend) Asking the Right Question: Inferring Advice-Seeking Intentions from Personal Narratives
-- (Poster; Could not attend) Seeing Things from a Different Angle: Discovering Diverse Perspectives about Claims
-- (Poster; Could not attend) Text Similarity Estimation Based on Word Embeddings and Matrix Norms for Targeted Marketing.
 - (Poster; Could not attend) Adversarial Decomposition of Text Representation
 - (Could not attend) **Combining Sentiment Lexica with a Multi-View Variational Autoencoder**
 - (Could not attend) Frowning Frodo, Wincing Leia, and a Seriously Great Friendship: Learning to Classify Emotional Relationships of Fictional Characters

@@ -10,8 +10,6 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
   - :eyes: [Attention](#attention-eyes)
 - [Tasks](#tasks)
   - :memo::mag: [Text Generation and Stylometry](#text-generation-and-stylometry-memomag)
-    - [Stylometry, Authorship Attribution](#stylometry-authorship-attribution)
-    - [Text Generation](#text-generation)
   - :gem: [Summarization and Simplification](#summarization-and-simplification-gem)
   - :paperclips: [Text Classification](#text-classification-paperclips)
   - :cityscape::boy: [Named Entity Recognition](#named-entity-recognition-cityscapeboy)

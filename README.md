@@ -52,7 +52,7 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
 
 - (Poster) Simple Attention-Based Representation Learning for Ranking Short Social Media Posts. Peng Shi, Jinfeng Rao and Jimmy Lin
 - (Poster) **Attentive Convolution: Equipping CNNs with RNN-style Attention Mechanisms. Wenpeng Yin and Hinrich Schütze**
-
+- (Could not attend) **Attention is not Explanation**
 
 ## Tasks
 
@@ -72,6 +72,7 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
 - (Could not attend) “President Vows to Cut <Taxes> Hair”: Dataset and Analysis of Creative Text Editing for Humorous Headlines.
 - (Could not attend) An Empirical Investigation of Global and Local Normalization for Recurrent Neural Sequence Models Using a Continuous Relaxation to Beam Search.
 - (Could not attend) **Accelerated Reinforcement Learning for Sentence Generation by Vocabulary Prediction**. Kazuma Hashimoto and Yoshimasa Tsuruoka
+- (Could not attend) Structural Neural Encoders for AMR-to-text Generation. Marco Damonte and Shay B. Cohen
 - (Poster; Could not attend) Improved Lexically Constrained Decoding for Translation and Monolingual Rewriting
   
 #### Summarization and Simplification
@@ -84,6 +85,7 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
 
 - (Poster) **Detecting depression in social media using fine-grained emotions**
 - (Could not attend) Mitigating Uncertainty in Document Classification. Xuchao Zhang, Fanglan Chen, ChangTien Lu and Naren Ramakrishnan
+- (Could not attend) How Large a Vocabulary Does Text Classification Need? A Variational Approach to Vocabulary Selection. 
 
 ### Named Entity Recognition :cityscape::boy:
 
@@ -94,8 +96,9 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
 
 ### Relation extraction :repeat:
 
-- GAN Driven Semi-distant Supervision for Relation Extraction. Pengshuai Li, Xinsong Zhang, Weijia Jia and Hai Zhao
-- Structured Minimally Supervised Learning for Neural Relation Extraction. Fan Bai and Alan Ritter
+- (Could not attend) GAN Driven Semi-distant Supervision for Relation Extraction. Pengshuai Li, Xinsong Zhang, Weijia Jia and Hai Zhao
+- (Could not attend) Structured Minimally Supervised Learning for Neural Relation Extraction. Fan Bai and Alan Ritter
+- (Could not attend) **Document-Level N-ary Relation Extraction with Multiscale Representation Learning**. Robin Jia, Cliff Wong and Hoifung Poon
 
 ### Learning with Limited Data :bowling:
 
@@ -144,6 +147,7 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
 ### Clinical and Biomedical Applications :hospital:
 
 - (Poster; could not attend) Biomedical Event Extraction based on Knowledge-driven-LSTM
+- (Could not attend) Multilingual prediction of Alzheimer’s disease through domain adaptation and concept-based language modelling. 
 
 ### Cybersecurity applications :shield::computer:
 
@@ -174,6 +178,6 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
 - (Could not attend) Factorising AMR generation through syntax
 - (Could not attend) Joint Detection and Location of English Puns
 - (Could not attend) **Inoculation by Fine-Tuning: A Method for Analyzing Challenge Datasets. Nelson F. Liu, Roy Schwartz and Noah A. Smith**
+- **Recursive Routing Networks: Learning to Compose Modules for Language Understanding.**
 -
-
 

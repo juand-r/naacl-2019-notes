@@ -38,6 +38,8 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
 
 - (Poster; Could not attend) A Systematic Study of Leveraging Subword Information for Learning Word Representations.
 - (Poster) SC-LSTM: Learning Task-Specific Representations in Multi-Task Learning for Sequence Labeling. Peng Lu, Ting Bai and Philippe Langlais
+- Augmenting word2vec with latent Dirichlet allocation within a clinical application. Akshay Budhkar and Frank Rudzicz
+  - See in "biomedical"
 
 #### Combining or aligning embeddings
 
@@ -54,6 +56,7 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
 - (Poster) **Attentive Convolution: Equipping CNNs with RNN-style Attention Mechanisms. Wenpeng Yin and Hinrich Schütze**
 - (Could not attend) **Attention is not Explanation**
 - (Could not attend) **Convolutional Self-Attention Networks. Baosong Yang et al.**
+- (Could not attend) Saliency Learning: Teaching the Model Where to Pay Attention. Reza Ghaeini, Xiaoli Fern, Hamed Shahbazi and Prasad Tadepalli
 
 
 ## Tasks
@@ -88,6 +91,7 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
 - (Poster) **Detecting depression in social media using fine-grained emotions**
 - (Could not attend) Mitigating Uncertainty in Document Classification. Xuchao Zhang, Fanglan Chen, ChangTien Lu and Naren Ramakrishnan
 - (Could not attend) How Large a Vocabulary Does Text Classification Need? A Variational Approach to Vocabulary Selection. 
+- (Could not attend) Rethinking Complex Neural Network Architectures for Document Classification. Ashutosh Adhikari, Achyudh Ram, Raphael Tang and Jimmy Lin
 
 ### Named Entity Recognition :cityscape::boy:
 
@@ -151,6 +155,7 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
 
 - (Poster; could not attend) Biomedical Event Extraction based on Knowledge-driven-LSTM
 - (Could not attend) Multilingual prediction of Alzheimer’s disease through domain adaptation and concept-based language modelling. 
+- (Could not attend) Augmenting word2vec with latent Dirichlet allocation within a clinical application. Akshay Budhkar and Frank Rudzicz
 
 ### Cybersecurity applications :shield::computer:
 

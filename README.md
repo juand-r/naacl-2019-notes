@@ -64,6 +64,7 @@ This is a summary of a selection of papers presented at NAACL 2019. In addition 
 - :cityscape::boy: Learning to Denoise Distantly-Labeled Data for Entity Typing
 - :repeat: GAN Driven Semi-distant Supervision for Relation Extraction. Pengshuai Li, Xinsong Zhang, Weijia Jia and Hai Zhao
 
+
 ### Language Models :speech_balloon:
 
 - (Could not attend) **Knowledge-Augmented Language Model and Its Application to Unsupervised Named-Entity Recognition. Angli Liu, Jingfei Du and Veselin Stoyanov**
@@ -71,14 +72,21 @@ This is a summary of a selection of papers presented at NAACL 2019. In addition 
 - (Poster; Could not attend) WiC: the Word-in-Context Dataset for Evaluating Context-Sensitive Meaning Representations. Mohammad Taher Pilehvar and Jose Camacho-Collados
 - (Could not attend) **Show Some Love to Your n-grams: A Bit of Progress and Stronger n-gram Language Modeling Baselines. Ehsan Shareghi, Daniela Gerz, Ivan Vulić and Anna Korhonen**
 
+
 ### Word representations :abcd:
 
+- (Poster) **Content Differences in Syntactic and Semantic Representation**
+- (Poster) :eyes: **Attentive Mimicking: Better Word Embeddings by Attending to Informative Contexts**
 - (Poster; Could not attend) A Systematic Study of Leveraging Subword Information for Learning Word Representations.
 - (Poster) SC-LSTM: Learning Task-Specific Representations in Multi-Task Learning for Sequence Labeling. Peng Lu, Ting Bai and Philippe Langlais
 - Augmenting word2vec with latent Dirichlet allocation within a clinical application. Akshay Budhkar and Frank Rudzicz
   - See in "biomedical"
 
+
 #### Combining or aligning embeddings
+
+- (Poster) **Aligning Vector-spaces with Noisy Supervised Lexicon. Noa Yehezkel Lubin, Jacob Goldberger and Yoav Goldberg**
+
 
 
 ### Discourse :busts_in_silhouette:
@@ -92,7 +100,8 @@ This is a summary of a selection of papers presented at NAACL 2019. In addition 
 - (Could not attend) **Attention is not Explanation**
 - (Could not attend) **Convolutional Self-Attention Networks. Baosong Yang et al.**
 - (Could not attend) Saliency Learning: Teaching the Model Where to Pay Attention. Reza Ghaeini, Xiaoli Fern, Hamed Shahbazi and Prasad Tadepalli
-
+- (Poster) **Attentive Mimicking: Better Word Embeddings by Attending to Informative Contexts**
+  - See in "attention"
 
 ## Tasks
 
@@ -125,6 +134,8 @@ This is a summary of a selection of papers presented at NAACL 2019. In addition 
 ### Machine Translation :ok::accept:
 
 - (Poster) Lost in Machine Translation: A Method to Reduce Meaning Loss. Reuben Cohn-Gordon and Noah Goodman
+- (Poster) Understanding and Improving Hidden Representations for Neural Machine Translation.
+ 
 
 ### Text Classification :paperclips:
 

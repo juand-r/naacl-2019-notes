@@ -4,10 +4,14 @@ Notes on NAACL 2019
 - [Topics](#topics)
   - :speech_balloon: [Language Models](#language-models-speech_balloon)
   - :abcd: [Word representations](#word-representations-abcd)
+    - [Combining or aligning embeddings](#combining-or-aligning-embeddings)
   - :busts_in_silhouette: [Discourse](#discourse-busts_in_silhouette)
   - :eyes: [Attention](#attention-eyes)
 - [Tasks](#tasks)
   - :memo::mag: [Text Generation and Stylometry](#text-generation-and-stylometry-memomag)
+    - [Stylometry, Authorship Attribution](#stylometry-authorship-attribution)
+    - [Text Generation](#text-generation)
+    - [Summarization and Simplification](#summarization-and-simplification)
   - :paperclips: [Text Classification](#text-classification-paperclips)
   - :cityscape::boy: [Named Entity Recognition](#named-entity-recognition-cityscapeboy)
   - :bowling: [Learning with Limited Data](#learning-with-limited-data-bowling)
@@ -33,6 +37,11 @@ Notes on NAACL 2019
 - (Poster; Could not attend) A Systematic Study of Leveraging Subword Information for Learning Word Representations.
 - (Poster) SC-LSTM: Learning Task-Specific Representations in Multi-Task Learning for Sequence Labeling. Peng Lu, Ting Bai and Philippe Langlais
 
+#### Combining or aligning embeddings
+
+- Alignment over Heterogeneous Embeddings for Question Answering. Vikas Yadav, Steven Bethard and Mihai Surdeanu
+
+
 ### Discourse :busts_in_silhouette:
 
 - (Poster) Modeling Document-level Causal Structures for Event Causal Relation Identification. Lei Gao, Prafulla Kumar Choubey and Ruihong Huang
@@ -45,12 +54,12 @@ Notes on NAACL 2019
 
 ### Text Generation and Stylometry :memo::mag:
 
-#### Stylometry, Authorship, etc
+#### Stylometry, Authorship Attribution
 
 - (Could not attend) **Adversarial Training for Satire Detection: Controlling for Confounding Variables. Robert McHardy, Heike Adel and Roman Klinger**
 - (Poster) Fake News Detection using Deep Markov Random Fields
 
-#### Text generation
+#### Text Generation
 
 - (Demo) compare-mt: A Tool for Holistic Comparison of Language Generation Systems
 - (Demo) fairseq: A Fast, Extensible Toolkit for Sequence Modeling

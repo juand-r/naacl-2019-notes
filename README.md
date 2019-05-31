@@ -123,6 +123,7 @@ This is a summary of a selection of papers presented at NAACL 2019. In addition 
   
 ### Text Classification :paperclips:
 
+- (Poster) **Vector of Locally-Aggregated Word Embeddings (VLAWE): A Novel Document-level Representation**
 - (Poster) **Detecting depression in social media using fine-grained emotions**
 - (Could not attend) Mitigating Uncertainty in Document Classification. Xuchao Zhang, Fanglan Chen, ChangTien Lu and Naren Ramakrishnan
 - (Could not attend) How Large a Vocabulary Does Text Classification Need? A Variational Approach to Vocabulary Selection. 

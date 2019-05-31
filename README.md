@@ -24,7 +24,7 @@ This is a summary of a selection of papers presented at NAACL 2019. In addition 
 - [Tasks](#tasks)
   - :memo::mag: [Text Generation and Stylometry](#text-generation-and-stylometry-memomag)
   - :gem: [Summarization and Simplification](#summarization-and-simplification-gem)
-  - :accept::arrow_right::ok: [Machine Translation](#machine-translation-accept-arrow_right-ok)
+  - :ok::accept: [Machine Translation](#machine-translation-ok-accept)
   - :paperclips: [Text Classification](#text-classification-paperclips)
   - :cityscape::boy: [Named Entity Recognition](#named-entity-recognition-cityscapeboy)
   - :repeat: [Relation extraction](#relation-extraction-repeat)
@@ -122,7 +122,7 @@ This is a summary of a selection of papers presented at NAACL 2019. In addition 
 - (Could not attend) Abstractive Summarization of Reddit Posts with Multi-level Memory Networks. Byeongchang Kim, Hyunwoo Kim and Gunhee Kim
 - (Could not attend) Complexity-Weighted Loss and Diverse Reranking for Sentence Simplification. Reno Kriz et al.
 
-### Machine Translation :accept::arrow_right::ok:
+### Machine Translation :ok::accept:
 
 - (Poster) Lost in Machine Translation: A Method to Reduce Meaning Loss. Reuben Cohn-Gordon and Noah Goodman
 

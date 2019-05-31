@@ -15,6 +15,7 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
     - [Summarization and Simplification](#summarization-and-simplification)
   - :paperclips: [Text Classification](#text-classification-paperclips)
   - :cityscape::boy: [Named Entity Recognition](#named-entity-recognition-cityscapeboy)
+  - :repeat: [Relation extraction](#relation-extraction-repeat)
   - :bowling: [Learning with Limited Data](#learning-with-limited-data-bowling)
   - :key::book: [Keyphrase extraction](#keyphrase-extraction-keybook)
   - :spider_web: [Knowledge Graph Completion](#knowledge-graph-completion-spider_web)
@@ -76,7 +77,7 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
 
 - (Could not attend) SEQˆ3: Differentiable Sequence-to-Sequence-to-Sequence Autoencoder for Unsupervised Abstractive Sentence Compression.
 - (Could not attend) Abstractive Summarization of Reddit Posts with Multi-level Memory Networks. Byeongchang Kim, Hyunwoo Kim and Gunhee Kim
-
+- (Could not attend) Complexity-Weighted Loss and Diverse Reranking for Sentence Simplification. Reno Kriz et al.
   
 ### Text Classification :paperclips:
 
@@ -90,6 +91,7 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
   - See in Language Models section
 - (Poster) Practical, Efficient, and Customizable Active Learning for Named Entity Recognition in the Digital Humanities. Alexander Erdman et al.
 
+### Relation extraction :repeat:
 
 ### Learning with Limited Data :bowling:
 

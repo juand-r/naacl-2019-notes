@@ -146,6 +146,7 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
 - (Poster) DROP: A Reading Comprehension Benchmark Requiring Discrete Reasoning Over Paragraphs. Dheeru Dua, Yizhong Wang, Pradeep Dasigi, Gabriel Stanovsky, Sameer Singh and Matt Gardner
 - (Could not attend) Improving Machine Reading Comprehension with General Reading Strategies. Kai Sun, Dian Yu, Dong Yu and Claire Cardie
 - (Could not attend) **Repurposing Entailment for Multi-Hop Question Answering Tasks. Harsh Trivedi et al.**
+- (Could not attend) Understanding Dataset Design Choices for Multi-hop Reasoning. Jifan Chen and Greg Durrett
 
 
 
@@ -187,5 +188,5 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
 - (Could not attend) Joint Detection and Location of English Puns
 - (Could not attend) **Inoculation by Fine-Tuning: A Method for Analyzing Challenge Datasets. Nelson F. Liu, Roy Schwartz and Noah A. Smith**
 - **Recursive Routing Networks: Learning to Compose Modules for Language Understanding.**
--
+- **Benchmarking Hierarchical Script Knowledge. Yonatan Bisk, Jan Buys, Karl Pichotta and Yejin Choi** (text generation?)
 

@@ -24,7 +24,7 @@ This is a summary of a selection of papers presented at NAACL 2019. In addition 
 - [Tasks](#tasks)
   - :memo::mag: [Text Generation and Stylometry](#text-generation-and-stylometry-memomag)
   - :gem: [Summarization and Simplification](#summarization-and-simplification-gem)
-  - :ok::accept: [Machine Translation](#machine-translation-ok-accept)
+  - :ok::accept: [Machine Translation](#machine-translation-okaccept)
   - :paperclips: [Text Classification](#text-classification-paperclips)
   - :cityscape::boy: [Named Entity Recognition](#named-entity-recognition-cityscapeboy)
   - :repeat: [Relation extraction](#relation-extraction-repeat)

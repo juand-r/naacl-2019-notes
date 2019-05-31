@@ -93,6 +93,8 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
 
 ### Relation extraction :repeat:
 
+- GAN Driven Semi-distant Supervision for Relation Extraction. Pengshuai Li, Xinsong Zhang, Weijia Jia and Hai Zhao
+
 ### Learning with Limited Data :bowling:
 
 #### Few-shot learning
@@ -113,7 +115,7 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
 #### Weak supervision, distantly-labeled data
 
 - :cityscape::boy: Learning to Denoise Distantly-Labeled Data for Entity Typing
-
+- :repeat: GAN Driven Semi-distant Supervision for Relation Extraction. Pengshuai Li, Xinsong Zhang, Weijia Jia and Hai Zhao
 
 ### Keyphrase Extraction :key::book:
 

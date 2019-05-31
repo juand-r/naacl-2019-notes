@@ -71,6 +71,7 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
 - (Could not attend) AudioCaps: Generating Captions for Audios in The Wild. 
 - (Could not attend) “President Vows to Cut <Taxes> Hair”: Dataset and Analysis of Creative Text Editing for Humorous Headlines.
 - (Could not attend) An Empirical Investigation of Global and Local Normalization for Recurrent Neural Sequence Models Using a Continuous Relaxation to Beam Search.
+- (Could not attend) **Accelerated Reinforcement Learning for Sentence Generation by Vocabulary Prediction**. Kazuma Hashimoto and Yoshimasa Tsuruoka
 - (Poster; Could not attend) Improved Lexically Constrained Decoding for Translation and Monolingual Rewriting
   
 #### Summarization and Simplification

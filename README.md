@@ -1,6 +1,15 @@
 # Notes on NAACL 2019
 
-In addition to these papers, there was also a nice survey "Analysis Methods in Natural Language Processing" (published in TACL but presented here).
+This is a summary of a selection of papers presented at NAACL 2019. In addition to these papers, there was also a nice survey "Analysis Methods in Natural Language Processing" (published in TACL but presented here).
+
+# Keynote Lectures
+
+- Keynote 1: Arvind Narayanan, "Data as a Mirror of Society: Lessons from the Emerging Science of Fairness in Machine Learning"
+  - asdf
+- Keynote 2: Rada Mihalcea, "When the Computers Spot the Lie (and People Don’t)"
+- Keynote 3: Kieran Snyder (Textio) "Leaving the Lab: Building NLP Applications that Real People can Use"
+
+# Main Conference
 
 - [Topics](#topics)
   - :bowling: [Learning with Limited Data](#learning-with-limited-data-bowling)

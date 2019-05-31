@@ -77,6 +77,10 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
 - (Poster) Fixed That for You: Generating Contrastive Claims with Semantic Edits. Christopher Hidey and Kathy McKeown
 - (Could not attend) AudioCaps: Generating Captions for Audios in The Wild. 
   - Examples of generated sound captions: https://audiocaps.github.io/
+    - asdf
+    - aa
+      -adsfasdf
+      
 - (Could not attend) “President Vows to Cut <Taxes> Hair”: Dataset and Analysis of Creative Text Editing for Humorous Headlines.
 - (Could not attend) An Empirical Investigation of Global and Local Normalization for Recurrent Neural Sequence Models Using a Continuous Relaxation to Beam Search.
 - (Could not attend) **Accelerated Reinforcement Learning for Sentence Generation by Vocabulary Prediction**. Kazuma Hashimoto and Yoshimasa Tsuruoka

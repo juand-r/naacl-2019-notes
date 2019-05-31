@@ -4,10 +4,13 @@ This is a summary of a selection of papers presented at NAACL 2019. In addition 
 
 # Keynote Lectures
 
-- Keynote 1: Arvind Narayanan, "Data as a Mirror of Society: Lessons from the Emerging Science of Fairness in Machine Learning"
-  - asdf
-- Keynote 2: Rada Mihalcea, "When the Computers Spot the Lie (and People Don’t)"
-- Keynote 3: Kieran Snyder (Textio) "Leaving the Lab: Building NLP Applications that Real People can Use"
+#### Keynote 1: Arvind Narayanan, "Data as a Mirror of Society: Lessons from the Emerging Science of Fairness in Machine Learning"
+
+  - Language models naturally absorb cultural stereotypes.
+
+#### Keynote 2: Rada Mihalcea, "When the Computers Spot the Lie (and People Don’t)"
+
+#### Keynote 3: Kieran Snyder (Textio) "Leaving the Lab: Building NLP Applications that Real People can Use"
 
 # Main Conference
 

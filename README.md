@@ -43,7 +43,7 @@ In addition to these papers, there was also a nice survey "Analysis Methods in N
 
 #### Combining or aligning embeddings
 
-- (Could not attend) Alignment over Heterogeneous Embeddings for Question Answering. Vikas Yadav, Steven Bethard and Mihai Surdeanu
+
 
 
 ### Discourse :busts_in_silhouette:

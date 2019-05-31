@@ -34,7 +34,7 @@ This is a summary of a selection of papers presented at NAACL 2019. In addition 
 - [Applications](#applications)
   - :hospital: [Clinical and biomedical applications](#clinical-and-biomedical-applications-hospital)
   - :shield::computer: [Cybersecurity applications](#cybersecurity-applications-shieldcomputer)
-  - [Other applications](#other-applications)
+  - :octopus: [Other applications](#other-applications-octopus)
 - [Other](#other)
 
 ## Topics
@@ -191,7 +191,7 @@ This is a summary of a selection of papers presented at NAACL 2019. In addition 
 - (Poster) Detecting Cybersecurity Events from Noisy Short Text
 - (Poster) Analyzing the Perceived Severity of Cybersecurity Threats Reported on Social Media
 
-### Other applications
+### Other applications :octopus:
 
 - (Poster; Could not attend) Text Similarity Estimation Based on Word Embeddings and Matrix Norms for Targeted Marketing.
 

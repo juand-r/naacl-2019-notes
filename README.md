@@ -58,7 +58,9 @@ This is a summary of a selection of papers presented at NAACL 2019. In addition 
 - (Poster) Curriculum Learning for Domain Adaptation in Neural Machine Translation. Xuan Zhang, Pamela Shapiro, Gaurav Kumar, Paul McNamee, Marine Carpuat and Kevin Duh
 - (Poster) Non-Parametric Adaptation for Neural Machine Translation. Ankur Bapna and Orhan Firat
 - :paperclips: (Could not attend) Adversarial Category Alignment Network for Cross-domain Sentiment Classification. Xiaoye Qu, Zhikang Zou, Yu Cheng, Yang Yang and Pan Zhou
-- (Could not attend) Joint Learning of Pre-Trained and Random Units for Domain Adaptation in Part-of-Speech Tagging. 
+- (Could not attend) Joint Learning of Pre-Trained and Random Units for Domain Adaptation in Part-of-Speech Tagging.
+
+##### Using Similarity Measures to Select Pretraining Data for NER
 
 #### Weak supervision, distantly-labeled data
 
@@ -119,14 +121,14 @@ This is a summary of a selection of papers presented at NAACL 2019. In addition 
 - (Demo) **compare-mt: A Tool for Holistic Comparison of Language Generation Systems**
 - (Demo) fairseq: A Fast, Extensible Toolkit for Sequence Modeling
 - (Poster) Fixed That for You: Generating Contrastive Claims with Semantic Edits. Christopher Hidey and Kathy McKeown
-- (Could not attend) AudioCaps: Generating Captions for Audios in The Wild. 
+- (Could not attend) AudioCaps: Generating Captions for Audios in The Wild.
   - Examples of generated sound captions: https://audiocaps.github.io/      
 - (Could not attend) “President Vows to Cut <Taxes> Hair”: Dataset and Analysis of Creative Text Editing for Humorous Headlines.
 - (Could not attend) An Empirical Investigation of Global and Local Normalization for Recurrent Neural Sequence Models Using a Continuous Relaxation to Beam Search.
 - (Could not attend) **Accelerated Reinforcement Learning for Sentence Generation by Vocabulary Prediction**. Kazuma Hashimoto and Yoshimasa Tsuruoka
 - (Could not attend) Structural Neural Encoders for AMR-to-text Generation. Marco Damonte and Shay B. Cohen
 - (Poster; Could not attend) Improved Lexically Constrained Decoding for Translation and Monolingual Rewriting
-  
+
 ### Summarization and Simplification :gem:
 
 - (Could not attend) SEQˆ3: Differentiable Sequence-to-Sequence-to-Sequence Autoencoder for Unsupervised Abstractive Sentence Compression.
@@ -137,14 +139,14 @@ This is a summary of a selection of papers presented at NAACL 2019. In addition 
 
 - (Poster) Lost in Machine Translation: A Method to Reduce Meaning Loss. Reuben Cohn-Gordon and Noah Goodman
 - (Poster) Understanding and Improving Hidden Representations for Neural Machine Translation.
- 
+
 
 ### Text Classification :paperclips:
 
 - (Poster) **Vector of Locally-Aggregated Word Embeddings (VLAWE): A Novel Document-level Representation**
 - (Poster) **Detecting depression in social media using fine-grained emotions**
 - (Could not attend) Mitigating Uncertainty in Document Classification. Xuchao Zhang, Fanglan Chen, ChangTien Lu and Naren Ramakrishnan
-- (Could not attend) How Large a Vocabulary Does Text Classification Need? A Variational Approach to Vocabulary Selection. 
+- (Could not attend) How Large a Vocabulary Does Text Classification Need? A Variational Approach to Vocabulary Selection.
 - (Could not attend) Rethinking Complex Neural Network Architectures for Document Classification. Ashutosh Adhikari, Achyudh Ram, Raphael Tang and Jimmy Lin
 
 ### Named Entity Recognition :cityscape::boy:
@@ -153,6 +155,8 @@ This is a summary of a selection of papers presented at NAACL 2019. In addition 
 - Knowledge-Augmented Language Model and Its Application to Unsupervised Named-Entity Recognition. Angli Liu, Jingfei Du and Veselin Stoyanov
   - See in Language Models section
 - (Poster) Practical, Efficient, and Customizable Active Learning for Named Entity Recognition in the Digital Humanities. Alexander Erdman et al.
+
+##### [Using Similarity Measures to Select Pretraining Data for NER](#using-similarity-measures-to-select-pretraining-data-for-ner)
 
 ### Relation extraction :repeat:
 
@@ -184,7 +188,7 @@ This is a summary of a selection of papers presented at NAACL 2019. In addition 
 ### Clinical and Biomedical Applications :hospital:
 
 - (Poster; could not attend) Biomedical Event Extraction based on Knowledge-driven-LSTM
-- (Could not attend) Multilingual prediction of Alzheimer’s disease through domain adaptation and concept-based language modelling. 
+- (Could not attend) Multilingual prediction of Alzheimer’s disease through domain adaptation and concept-based language modelling.
 - (Could not attend) Augmenting word2vec with latent Dirichlet allocation within a clinical application. Akshay Budhkar and Frank Rudzicz
 
 ### Cybersecurity applications :shield::computer:
@@ -220,4 +224,3 @@ This is a summary of a selection of papers presented at NAACL 2019. In addition 
 - (Could not attend) **Inoculation by Fine-Tuning: A Method for Analyzing Challenge Datasets. Nelson F. Liu, Roy Schwartz and Noah A. Smith**
 - **Recursive Routing Networks: Learning to Compose Modules for Language Understanding.**
 - **Benchmarking Hierarchical Script Knowledge. Yonatan Bisk, Jan Buys, Karl Pichotta and Yejin Choi** (text generation?)
-

@@ -64,7 +64,7 @@ This is a summary of a selection of papers presented at NAACL 2019. In addition 
 
 ##### :cityscape::boy: Learning to Denoise Distantly-Labeled Data for Entity Typing
 
-##### :repeat: GAN Driven Semi-distant Supervision for Relation Extraction
+##### [:repeat: GAN Driven Semi-distant Supervision for Relation Extraction](#gan-driven-semi-distant-supervision-for-relation-extraction)
 
 
 ### Language Models :speech_balloon:

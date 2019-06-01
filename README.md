@@ -62,9 +62,9 @@ This is a summary of a selection of papers presented at NAACL 2019. In addition 
 
 #### Weak supervision, distantly-labeled data
 
-- :cityscape::boy: Learning to Denoise Distantly-Labeled Data for Entity Typing
+##### :cityscape::boy: Learning to Denoise Distantly-Labeled Data for Entity Typing
 
-##### GAN Driven Semi-distant Supervision for Relation Extraction
+##### :repeat: GAN Driven Semi-distant Supervision for Relation Extraction
 
 
 ### Language Models :speech_balloon:
@@ -156,7 +156,7 @@ This is a summary of a selection of papers presented at NAACL 2019. In addition 
 
 ### Relation extraction :repeat:
 
-- (Could not attend) [GAN Driven Semi-distant Supervision for Relation Extraction](#gan-driven-semi-distant-supervision-for-relation-extraction)
+#### [GAN Driven Semi-distant Supervision for Relation Extraction](#repeat-gan-driven-semi-distant-supervision-for-relation-extraction)
 - (Could not attend) Structured Minimally Supervised Learning for Neural Relation Extraction. Fan Bai and Alan Ritter
 - (Could not attend) **Document-Level N-ary Relation Extraction with Multiscale Representation Learning**. Robin Jia, Cliff Wong and Hoifung Poon
 

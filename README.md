@@ -41,24 +41,29 @@ This is a summary of a selection of papers presented at NAACL 2019. In addition 
 
 ### Learning with Limited Data :bowling:
 
-- :repeat: Structured Minimally Supervised Learning for Neural Relation Extraction. Fan Bai and Alan Ritter.
+##### :repeat: Structured Minimally Supervised Learning for Neural Relation Extraction. Fan Bai and Alan Ritter.
 
 #### Few-shot learning
 
-- :spider_web: **Long-tail Relation Extraction via Knowledge Graph Embeddings and Graph Convolution Networks.**  Ningyu Zhang et al.
+#####  :spider_web: **Long-tail Relation Extraction via Knowledge Graph Embeddings and Graph Convolution Networks.**  Ningyu Zhang et al.
 
 #### Huge label set
 
-- (Could not attend) A Submodular Feature-Aware Framework for Label Subset Selection in Extreme Classification Problems. Elham J. Barezi, Ian D. Wood, Pascale Fung and Hamid R. Rabiee
+#####  (Could not attend) A Submodular Feature-Aware Framework for Label Subset Selection in Extreme Classification Problems. Elham J. Barezi, Ian D. Wood, Pascale Fung and Hamid R. Rabiee
+
 
 #### Domain Adaptation
 
-- (Poster) **Simplified Neural Unsupervised Domain Adaptation. Timothy Miller**
+#####  (Poster) **Simplified Neural Unsupervised Domain Adaptation. Timothy Miller**
   - Code: https://github.com/tmills/Neural-SCL-Domain-Adaptation
-- (Poster) Curriculum Learning for Domain Adaptation in Neural Machine Translation. Xuan Zhang, Pamela Shapiro, Gaurav Kumar, Paul McNamee, Marine Carpuat and Kevin Duh
-- (Poster) Non-Parametric Adaptation for Neural Machine Translation. Ankur Bapna and Orhan Firat
-- :paperclips: (Could not attend) Adversarial Category Alignment Network for Cross-domain Sentiment Classification. Xiaoye Qu, Zhikang Zou, Yu Cheng, Yang Yang and Pan Zhou
-- (Could not attend) Joint Learning of Pre-Trained and Random Units for Domain Adaptation in Part-of-Speech Tagging.
+
+#####  (Poster) Curriculum Learning for Domain Adaptation in Neural Machine Translation. Xuan Zhang, Pamela Shapiro, Gaurav Kumar, Paul McNamee, Marine Carpuat and Kevin Duh
+
+#####  (Poster) Non-Parametric Adaptation for Neural Machine Translation. Ankur Bapna and Orhan Firat
+
+#####  :paperclips: (Could not attend) Adversarial Category Alignment Network for Cross-domain Sentiment Classification. Xiaoye Qu, Zhikang Zou, Yu Cheng, Yang Yang and Pan Zhou
+
+#####  (Could not attend) Joint Learning of Pre-Trained and Random Units for Domain Adaptation in Part-of-Speech Tagging.
 
 ##### Using Similarity Measures to Select Pretraining Data for NER
 
@@ -160,7 +165,7 @@ This is a summary of a selection of papers presented at NAACL 2019. In addition 
 
 ### Relation extraction :repeat:
 
-#### [GAN Driven Semi-distant Supervision for Relation Extraction](#repeat-gan-driven-semi-distant-supervision-for-relation-extraction)
+##### [GAN Driven Semi-distant Supervision for Relation Extraction](#repeat-gan-driven-semi-distant-supervision-for-relation-extraction)
 - (Could not attend) Structured Minimally Supervised Learning for Neural Relation Extraction. Fan Bai and Alan Ritter
 - (Could not attend) **Document-Level N-ary Relation Extraction with Multiscale Representation Learning**. Robin Jia, Cliff Wong and Hoifung Poon
 

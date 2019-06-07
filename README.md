@@ -7,7 +7,24 @@ This is a summary of a selection of papers presented at NAACL 2019.
 
 #### Keynote 1: Arvind Narayanan, "Data as a Mirror of Society: Lessons from the Emerging Science of Fairness in Machine Learning"
 
-  - Language models naturally absorb cultural stereotypes.
+**Motivation**: language models naturally absorb cultural stereotypes. Some examples in the news:
+
+- Amazon scraps AI recruiting tool that showed bias against women. The bias came from the data; ML just revealed it.
+- Criminal justice: ML for predictive policing, body cameras, deciding sentencing length. Strong racial bias.
+
+Two good papers on the topic on bias in NLP:
+
+- Caliskan et al Science 2017
+- Bolukbasi et al., NIPS 2016 (on debiasing word embeddings)
+
+The big question: how do we measure bias? Look at work in psychology and cognitive science; they have been doing this for a while.
+
+One technique: Implicit Association Test to reveal people's hidden biases. The Word Embedding Association Test (WEAT) was inspired by this to look at biases of word embeddings.
+
+- Very similar bias in pretrained Glove (web) and word2vec (Google news). Surprising! (You might think there would be less bias in news text).
+- Some examples of associations:
+    - between African American names and "unpleasant" words (eg. filth, murder, etc)
+    - between female words (eg. grandmother) and arts; between male words and STEM fields.
 
 #### Keynote 2: Rada Mihalcea, "When the Computers Spot the Lie (and People Don’t)"
 

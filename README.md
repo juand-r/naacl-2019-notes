@@ -76,40 +76,42 @@ This is a summary of a selection of papers presented at NAACL 2019. In addition 
 
 ### Language Models :speech_balloon:
 
-- (Could not attend) **Knowledge-Augmented Language Model and Its Application to Unsupervised Named-Entity Recognition. Angli Liu, Jingfei Du and Veselin Stoyanov**
-- (Could not attend) Serial Recall Effects in Neural Language Modeling. Hassan Hajipoor, Hadi Amiri, Maseud Rahgozar and Farhad Oroumchian
-- (Poster; Could not attend) WiC: the Word-in-Context Dataset for Evaluating Context-Sensitive Meaning Representations. Mohammad Taher Pilehvar and Jose Camacho-Collados
-- (Could not attend) **Show Some Love to Your n-grams: A Bit of Progress and Stronger n-gram Language Modeling Baselines. Ehsan Shareghi, Daniela Gerz, Ivan Vulić and Anna Korhonen**
+##### (Could not attend) **Knowledge-Augmented Language Model and Its Application to Unsupervised Named-Entity Recognition. Angli Liu, Jingfei Du and Veselin Stoyanov**
+##### (Could not attend) Serial Recall Effects in Neural Language Modeling. Hassan Hajipoor, Hadi Amiri, Maseud Rahgozar and Farhad Oroumchian
+##### (Poster) WiC: the Word-in-Context Dataset for Evaluating Context-Sensitive Meaning Representations. Mohammad Taher Pilehvar and Jose Camacho-Collados
+##### (Could not attend) **Show Some Love to Your n-grams: A Bit of Progress and Stronger n-gram Language Modeling Baselines. Ehsan Shareghi, Daniela Gerz, Ivan Vulić and Anna Korhonen**
 
 
 ### Word representations :abcd:
 
-- (Poster) **Content Differences in Syntactic and Semantic Representation**
-- (Poster) :eyes: **Attentive Mimicking: Better Word Embeddings by Attending to Informative Contexts**
-- (Poster; Could not attend) A Systematic Study of Leveraging Subword Information for Learning Word Representations.
-- (Poster) SC-LSTM: Learning Task-Specific Representations in Multi-Task Learning for Sequence Labeling. Peng Lu, Ting Bai and Philippe Langlais
-- Augmenting word2vec with latent Dirichlet allocation within a clinical application. Akshay Budhkar and Frank Rudzicz
+##### (Poster) :eyes: **Attentive Mimicking: Better Word Embeddings by Attending to Informative Contexts**
+
+##### (Poster) A Systematic Study of Leveraging Subword Information for Learning Word Representations.
+
+##### (Poster) SC-LSTM: Learning Task-Specific Representations in Multi-Task Learning for Sequence Labeling. Peng Lu, Ting Bai and Philippe Langlais
+
+##### Augmenting word2vec with latent Dirichlet allocation within a clinical application. Akshay Budhkar and Frank Rudzicz
   - See in "biomedical"
 
 
 #### Combining or aligning embeddings
 
-- (Poster) **Aligning Vector-spaces with Noisy Supervised Lexicon. Noa Yehezkel Lubin, Jacob Goldberger and Yoav Goldberg**
+##### (Poster) **Aligning Vector-spaces with Noisy Supervised Lexicon. Noa Yehezkel Lubin, Jacob Goldberger and Yoav Goldberg**
 
 
 
 ### Discourse :busts_in_silhouette:
 
-- (Poster) Modeling Document-level Causal Structures for Event Causal Relation Identification. Lei Gao, Prafulla Kumar Choubey and Ruihong Huang
+##### (Poster) Modeling Document-level Causal Structures for Event Causal Relation Identification. Lei Gao, Prafulla Kumar Choubey and Ruihong Huang
 
 ### Attention :eyes:
 
-- (Poster) Simple Attention-Based Representation Learning for Ranking Short Social Media Posts. Peng Shi, Jinfeng Rao and Jimmy Lin
-- (Poster) **Attentive Convolution: Equipping CNNs with RNN-style Attention Mechanisms. Wenpeng Yin and Hinrich Schütze**
-- (Could not attend) **Attention is not Explanation**
-- (Could not attend) **Convolutional Self-Attention Networks. Baosong Yang et al.**
-- (Could not attend) Saliency Learning: Teaching the Model Where to Pay Attention. Reza Ghaeini, Xiaoli Fern, Hamed Shahbazi and Prasad Tadepalli
-- (Poster) **Attentive Mimicking: Better Word Embeddings by Attending to Informative Contexts**
+##### (Poster) Simple Attention-Based Representation Learning for Ranking Short Social Media Posts. Peng Shi, Jinfeng Rao and Jimmy Lin
+##### (Poster) **Attentive Convolution: Equipping CNNs with RNN-style Attention Mechanisms. Wenpeng Yin and Hinrich Schütze**
+##### (Could not attend) **Attention is not Explanation**
+##### (Could not attend) **Convolutional Self-Attention Networks. Baosong Yang et al.**
+##### (Could not attend) Saliency Learning: Teaching the Model Where to Pay Attention. Reza Ghaeini, Xiaoli Fern, Hamed Shahbazi and Prasad Tadepalli
+##### (Poster) **Attentive Mimicking: Better Word Embeddings by Attending to Informative Contexts**
   - See in "attention"
 
 ## Tasks
@@ -118,21 +120,127 @@ This is a summary of a selection of papers presented at NAACL 2019. In addition 
 
 #### Stylometry, Authorship Attribution
 
-- (Could not attend) **Adversarial Training for Satire Detection: Controlling for Confounding Variables. Robert McHardy, Heike Adel and Roman Klinger**
-- (Poster) Fake News Detection using Deep Markov Random Fields
+##### (Could not attend) **Adversarial Training for Satire Detection: Controlling for Confounding Variables. Robert McHardy, Heike Adel and Roman Klinger**
+##### (Poster) Fake News Detection using Deep Markov Random Fields
 
 #### Text Generation
 
-- (Demo) **compare-mt: A Tool for Holistic Comparison of Language Generation Systems**
-- (Demo) fairseq: A Fast, Extensible Toolkit for Sequence Modeling
-- (Poster) Fixed That for You: Generating Contrastive Claims with Semantic Edits. Christopher Hidey and Kathy McKeown
-- (Could not attend) AudioCaps: Generating Captions for Audios in The Wild.
-  - Examples of generated sound captions: https://audiocaps.github.io/      
-- (Could not attend) “President Vows to Cut <Taxes> Hair”: Dataset and Analysis of Creative Text Editing for Humorous Headlines.
-- (Could not attend) An Empirical Investigation of Global and Local Normalization for Recurrent Neural Sequence Models Using a Continuous Relaxation to Beam Search.
-- (Could not attend) **Accelerated Reinforcement Learning for Sentence Generation by Vocabulary Prediction**. Kazuma Hashimoto and Yoshimasa Tsuruoka
-- (Could not attend) Structural Neural Encoders for AMR-to-text Generation. Marco Damonte and Shay B. Cohen
-- (Poster; Could not attend) Improved Lexically Constrained Decoding for Translation and Monolingual Rewriting
+##### (Demo) compare-mt: A Tool for Holistic Comparison of Language Generation Systems
+
+##### (Demo) fairseq: A Fast, Extensible Toolkit for Sequence Modeling
+
+##### (Poster) Fixed That for You: Generating Contrastive Claims with Semantic Edits. Christopher Hidey and Kathy McKeown
+
+##### (Could not attend) AudioCaps: Generating Captions for Audios in The Wild.
+
+Examples of generated sound captions: https://audiocaps.github.io/      
+
+##### (Could not attend) “President Vows to Cut <Taxes> Hair”: Dataset and Analysis of Creative Text Editing for Humorous Headlines.
+
+##### (Could not attend) An Empirical Investigation of Global and Local Normalization for Recurrent Neural Sequence Models Using a Continuous Relaxation to Beam Search.
+
+##### (Could not attend) **Accelerated Reinforcement Learning for Sentence Generation by Vocabulary Prediction**. Kazuma Hashimoto and Yoshimasa Tsuruoka
+
+##### (Could not attend) Structural Neural Encoders for AMR-to-text Generation. Marco Damonte and Shay B. Cohen
+
+##### (Poster; Could not attend) Improved Lexically Constrained Decoding for Translation and Monolingual Rewriting
+
+##### Answer-based Adversarial Training for Generating Clarification Questions. Sudha Rao and Hal Daumé III
+
+Clarification Questions are context aware questions that ask for missing
+Information. For example:
+
+- How to configure path or set environment variables for installation?
+
+**Goal:** generate more useful questions.
+
+Can use context, question and answer triples: try to generate clarification
+question "from scratch" (previous work just ranked a list of clarification
+questions).
+
+** Baseline**: sequence-to-sequence (maximize likelihood of context, question pairs). Given the context, it generates a question.
+
+**Problem:** This tends to generate a lot of generic questions. Eg:
+
+- is this made in China?
+
+Also a common problem in dialogue generation.
+
+**Solution:** Use RL. Input the question to an an answer generator. Then
+use a utility calculator (given question, context and answer) as reward
+to retrain the question generator.
+
+But how to train the utility calculator?
+
+- Option 1: pretrain it. "Max-utility"
+- Option 2: (a bit better) use GAN ("Gan-utility"). Answer generator + utility calculator as discriminator. Question generator is generator.
+
+Evaluations on these datasets:
+
+- StackExchange (Rao and Daume III 2018)
+- Amazon home and kitchen (McAuley and Yang 2018)
+
+Evaluation type:
+
+- Human rating on various scores:
+  - How grammatical is it?
+  - How useful is it?
+  - How relevant is it?
+  - Specific to the context?
+
+Example outputs:
+
+- Original: are these pillows firm and keep their shape
+- Max-Likelihood: what is the size of the pillow?
+- GAN-Utility: does this pillow come with a cover or ...
+
+**Code available:** https://github.com/raosudha89/clarification_question_generation_pytorch
+
+##### Improving Grammatical Error Correction via Pre-Training a Copy-Augmented Architecture with Unlabeled Data
+
+Contributions:
+
+- copy-augmented architecture for GEC task
+- pre-train with augmented data
+
+Different than ML: since most of the words can be copied. Copy unchanged
+and OOV from the source sentence. Incorporate "copy mechanism" into seq2seq
+with attention.
+
+**Problem:** not enough training data. **Solution:** pre-training.
+
+Inspired by BERT, ful pre-training with augmented data (randomly deleting
+adding, replacing, shuffling). Also tried two auxiliary tasks for multitask
+learning.
+
+Experiments:
+
+- Most of improvements come from the copy mechanism.
+
+- Very nice error type classification. Error breakdown by types: determiner, wrong collocation, spelling, punctuation, preposition, noun number, redundancy, verb tense, etc..
+
+Audience Questions:
+
+- Q: Why didn't you use BERT? BERT is everything now!  A: future work.
+
+**Code:**  https://github.com/zhawe01/fairseq-gec
+
+##### Topic-Guided Variational Auto-Encoder for Text Generation
+
+Many applications of text generation:
+
+- MT
+- dialogue Generation
+- text Generation
+
+VAE are widely used for this. But problems:
+
+- isotropic Gaussian prior cannot indicate the semantic structure.
+- "posterior collapse" issue.
+
+Main contribution: new topic-guided VAE (TGVAE) for text generation.
+
+Can generate text conditioned on a given topic, and adapted to summarization.
 
 ### Summarization and Simplification :gem:
 
@@ -166,25 +274,31 @@ This is a summary of a selection of papers presented at NAACL 2019. In addition 
 ### Relation extraction :repeat:
 
 ##### [GAN Driven Semi-distant Supervision for Relation Extraction](#repeat-gan-driven-semi-distant-supervision-for-relation-extraction)
-- (Could not attend) Structured Minimally Supervised Learning for Neural Relation Extraction. Fan Bai and Alan Ritter
-- (Could not attend) **Document-Level N-ary Relation Extraction with Multiscale Representation Learning**. Robin Jia, Cliff Wong and Hoifung Poon
+
+##### (Could not attend) Structured Minimally Supervised Learning for Neural Relation Extraction. Fan Bai and Alan Ritter
+
+##### (Could not attend) **Document-Level N-ary Relation Extraction with Multiscale Representation Learning**. Robin Jia, Cliff Wong and Hoifung Poon
 
 ### Keyphrase Extraction :key::bookmark_tabs:
 
-- (Could not attend) Keyphrase Generation: A Text Summarization Struggle. Erion Çano and Ondřej Bojar
+##### (Could not attend) Keyphrase Generation: A Text Summarization Struggle. Erion Çano and Ondřej Bojar
 
 ### Knowledge Graph Completion :spider_web:
 
-- Graph Pattern Entity Ranking Model for Knowledge Graph Completion. Takuma Ebisu and Ryutaro Ichise
-- **Long-tail Relation Extraction via Knowledge Graph Embeddings and Graph Convolution Networks.**  Ningyu Zhang et al.
+##### Graph Pattern Entity Ranking Model for Knowledge Graph Completion. Takuma Ebisu and Ryutaro Ichise
+
+##### **Long-tail Relation Extraction via Knowledge Graph Embeddings and Graph Convolution Networks.**  Ningyu Zhang et al.
   - See under 'few-shot'
 
 ### Reading Comprehension and Question Answering :book::question:
 
-- (Poster) DROP: A Reading Comprehension Benchmark Requiring Discrete Reasoning Over Paragraphs. Dheeru Dua, Yizhong Wang, Pradeep Dasigi, Gabriel Stanovsky, Sameer Singh and Matt Gardner
-- (Could not attend) Improving Machine Reading Comprehension with General Reading Strategies. Kai Sun, Dian Yu, Dong Yu and Claire Cardie
-- (Could not attend) **Repurposing Entailment for Multi-Hop Question Answering Tasks. Harsh Trivedi et al.**
-- (Could not attend) Understanding Dataset Design Choices for Multi-hop Reasoning. Jifan Chen and Greg Durrett
+##### (Poster) DROP: A Reading Comprehension Benchmark Requiring Discrete Reasoning Over Paragraphs. Dheeru Dua, Yizhong Wang, Pradeep Dasigi, Gabriel Stanovsky, Sameer Singh and Matt Gardner
+
+##### (Could not attend) Improving Machine Reading Comprehension with General Reading Strategies. Kai Sun, Dian Yu, Dong Yu and Claire Cardie
+
+##### (Could not attend) **Repurposing Entailment for Multi-Hop Question Answering Tasks. Harsh Trivedi et al.**
+
+##### (Could not attend) Understanding Dataset Design Choices for Multi-hop Reasoning. Jifan Chen and Greg Durrett
 
 
 
@@ -192,40 +306,56 @@ This is a summary of a selection of papers presented at NAACL 2019. In addition 
 
 ### Clinical and Biomedical Applications :hospital:
 
-- (Poster; could not attend) Biomedical Event Extraction based on Knowledge-driven-LSTM
-- (Could not attend) Multilingual prediction of Alzheimer’s disease through domain adaptation and concept-based language modelling.
-- (Could not attend) Augmenting word2vec with latent Dirichlet allocation within a clinical application. Akshay Budhkar and Frank Rudzicz
+##### (Poster) Biomedical Event Extraction based on Knowledge-driven-LSTM
+
+##### (Could not attend) Multilingual prediction of Alzheimer’s disease through domain adaptation and concept-based language modelling.
+
+##### (Could not attend) Augmenting word2vec with latent Dirichlet allocation within a clinical application. Akshay Budhkar and Frank Rudzicz
 
 ### Cybersecurity applications :shield::computer:
 
-- (Poster) Detecting Cybersecurity Events from Noisy Short Text
-- (Poster) Analyzing the Perceived Severity of Cybersecurity Threats Reported on Social Media
+##### (Poster) Detecting Cybersecurity Events from Noisy Short Text
+
+##### (Poster) Analyzing the Perceived Severity of Cybersecurity Threats Reported on Social Media
 
 ### Other applications :octopus:
 
-- (Poster; Could not attend) Text Similarity Estimation Based on Word Embeddings and Matrix Norms for Targeted Marketing.
+##### (Poster) Text Similarity Estimation Based on Word Embeddings and Matrix Norms for Targeted Marketing.
 
 ### Other
 
 #### Posters
 
-- (Poster; Could not attend) Asking the Right Question: Inferring Advice-Seeking Intentions from Personal Narratives
-- (Poster; Could not attend) Adversarial Decomposition of Text Representation
-- (Could not attend) **Combining Sentiment Lexica with a Multi-View Variational Autoencoder**
-- (Could not attend) Frowning Frodo, Wincing Leia, and a Seriously Great Friendship: Learning to Classify Emotional Relationships of Fictional Characters
-- (Poster) PAWS: Paraphrase Adversaries from Word Scrambling
-- (Poster) **Value-based Search in Execution Space for Mapping Instructions to Programs.**
-- (Poster) **Text Processing Like Humans Do: Visually Attacking and Shielding NLP Systems**
-- (Poster) Rotational Unit of Memory: A Novel Representation Unit for RNNs with Scalable Applications
+##### (Poster) Adversarial Decomposition of Text Representation
+
+##### (Could not attend) **Combining Sentiment Lexica with a Multi-View Variational Autoencoder**
+
+##### (Could not attend) Frowning Frodo, Wincing Leia, and a Seriously Great Friendship: Learning to Classify Emotional Relationships of Fictional Characters
+
+##### (Poster) PAWS: Paraphrase Adversaries from Word Scrambling
+
+##### (Poster) **Value-based Search in Execution Space for Mapping Instructions to Programs.**
+
+##### (Poster) **Text Processing Like Humans Do: Visually Attacking and Shielding NLP Systems**
+
+##### (Poster) Rotational Unit of Memory: A Novel Representation Unit for RNNs with Scalable Applications
 
 #### Oral
 
-- (Could not attend) Mutual Information Maximization for Simple and Accurate Part-Of-Speech Induction. Karl Stratos
-- (Could not attend) Unsupervised Latent Tree Induction with Deep Inside-Outside Recursive Auto-Encoders. Andrew Drozdov, Patrick Verga, Mohit Yadav, Mohit Iyyer and Andrew McCallum
-- (Could not attend) Locale-agnostic Universal domain Clasification Model in Spoken Language Understanding
-- (Could not attend) On the Importance of Distinguishing Word Meaning Representations: A Case Study on Reverse Dictionary Mapping. Mohammad Taher Pilehvar
-- (Could not attend) Factorising AMR generation through syntax
-- (Could not attend) Joint Detection and Location of English Puns
-- (Could not attend) **Inoculation by Fine-Tuning: A Method for Analyzing Challenge Datasets. Nelson F. Liu, Roy Schwartz and Noah A. Smith**
-- **Recursive Routing Networks: Learning to Compose Modules for Language Understanding.**
-- **Benchmarking Hierarchical Script Knowledge. Yonatan Bisk, Jan Buys, Karl Pichotta and Yejin Choi** (text generation?)
+##### (Could not attend) Mutual Information Maximization for Simple and Accurate Part-Of-Speech Induction. Karl Stratos
+
+##### (Could not attend) Unsupervised Latent Tree Induction with Deep Inside-Outside Recursive Auto-Encoders. Andrew Drozdov, Patrick Verga, Mohit Yadav, Mohit Iyyer and Andrew McCallum
+
+##### (Could not attend) Locale-agnostic Universal domain Clasification Model in Spoken Language Understanding
+
+##### (Could not attend) On the Importance of Distinguishing Word Meaning Representations: A Case Study on Reverse Dictionary Mapping. Mohammad Taher Pilehvar
+
+##### (Could not attend) Factorising AMR generation through syntax
+
+##### (Could not attend) Joint Detection and Location of English Puns
+
+##### (Could not attend) **Inoculation by Fine-Tuning: A Method for Analyzing Challenge Datasets. Nelson F. Liu, Roy Schwartz and Noah A. Smith**
+
+##### **Recursive Routing Networks: Learning to Compose Modules for Language Understanding.**
+
+##### **Benchmarking Hierarchical Script Knowledge. Yonatan Bisk, Jan Buys, Karl Pichotta and Yejin Choi** (text generation?)

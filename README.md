@@ -2,34 +2,6 @@
 
 This is a summary of a selection of papers presented at NAACL 2019.
 
-
-# Keynote Lectures
-
-#### Keynote 1: Arvind Narayanan, "Data as a Mirror of Society: Lessons from the Emerging Science of Fairness in Machine Learning"
-
-**Motivation**: language models naturally absorb cultural stereotypes. Some examples in the news:
-
-- Amazon scraps AI recruiting tool that showed bias against women. The bias came from the data; ML just revealed it.
-- Criminal justice: ML for predictive policing, body cameras, deciding sentencing length. Strong racial bias.
-
-Two good papers on the topic on bias in NLP:
-
-- Caliskan et al Science 2017
-- Bolukbasi et al., NIPS 2016 (on debiasing word embeddings)
-
-The big question: how do we measure bias? Look at work in psychology and cognitive science; they have been doing this for a while.
-
-One technique: Implicit Association Test to reveal people's hidden biases. The Word Embedding Association Test (WEAT) was inspired by this to look at biases of word embeddings.
-
-- Very similar bias in pretrained Glove (web) and word2vec (Google news). Surprising! (You might think there would be less bias in news text).
-- Some examples of associations:
-    - between African American names and "unpleasant" words (eg. filth, murder, etc)
-    - between female words (eg. grandmother) and arts; between male words and STEM fields.
-
-#### Keynote 2: Rada Mihalcea, "When the Computers Spot the Lie (and People Don’t)"
-
-#### Keynote 3: Kieran Snyder (Textio) "Leaving the Lab: Building NLP Applications that Real People can Use"
-
 # Main Conference
 
 - [Topics](#topics)
@@ -54,6 +26,8 @@ One technique: Implicit Association Test to reveal people's hidden biases. The W
   - :shield::computer: [Cybersecurity applications](#cybersecurity-applications-shieldcomputer)
   - :octopus: [Other applications](#other-applications-octopus)
 - [Other](#other)
+- [Keynote Lectures](#keynote-lectures)
+
 
 ## Topics
 
@@ -153,7 +127,7 @@ One technique: Implicit Association Test to reveal people's hidden biases. The W
 
 Examples of generated sound captions: https://audiocaps.github.io/      
 
-##### (Could not attend) “President Vows to Cut <Taxes> Hair”: Dataset and Analysis of Creative Text Editing for Humorous Headlines.
+##### (Could not attend) “President Vows to Cut Taxes Hair”: Dataset and Analysis of Creative Text Editing for Humorous Headlines.
 
 ##### (Could not attend) An Empirical Investigation of Global and Local Normalization for Recurrent Neural Sequence Models Using a Continuous Relaxation to Beam Search.
 
@@ -377,3 +351,97 @@ Can generate text conditioned on a given topic, and adapted to summarization.
 ##### **Recursive Routing Networks: Learning to Compose Modules for Language Understanding.**
 
 ##### **Benchmarking Hierarchical Script Knowledge. Yonatan Bisk, Jan Buys, Karl Pichotta and Yejin Choi** (text generation?)
+
+# Keynote Lectures
+
+#### Keynote 1: Arvind Narayanan, "Data as a Mirror of Society: Lessons from the Emerging Science of Fairness in Machine Learning"
+
+**Motivation**: machine learning models naturally absorb cultural stereotypes. Some examples in the news:
+
+- Hiring:
+    - Amazon scraps AI recruiting tool that showed bias against women. The bias came from the data; ML just revealed it.
+    - HireVue: uses facial movements, tone, word choice and body language for hiring. Obvious biases here!
+- Criminal justice and law enforcement:
+    - ML for predictive policing, body cameras, deciding sentencing length. Strong racial bias.
+    - UK firm WeSee: reads facial cues to detect "suspicious behavior" - to be used in subways, sports games and other big events. 
+
+##### Exploring bias in NLP
+
+Two good papers on the topic on bias in NLP:
+
+- Caliskan et al Science 2017
+- Bolukbasi et al., NIPS 2016 (on debiasing word embeddings)
+
+The big question: how do we measure bias? Look at work in psychology and cognitive science; they have been doing this for a while.
+
+One technique: Implicit Association Test to reveal people's hidden biases. The Word Embedding Association Test (WEAT) was inspired by this to look at biases of word embeddings.
+
+- Very similar bias in pretrained Glove (web) and word2vec (Google news). Surprising! (You might think there would be less bias in news text).
+- Some examples of associations:
+    - between African American names and "unpleasant" words (eg. filth, murder, etc)
+    - between female words (eg. grandmother) and arts; between male words and STEM fields.
+
+Some other examples of measuring and fixing biases:
+
+- Gender biases:
+    - Rudinger et al., Gender bias in coreference resolution, NAACL 2018. Example: "The surgeon couldn't operate on {his, her} patient: it was {his, her} son."
+    - Gender bias in images: smile removal style transfer tends to also change faces from female to male (Tom White, Sampling generative networks, 2016). Due to correlations in CelebA dataset. Fix: "gender-balanced smile vector"
+
+- Racial biases:
+    - Racial bias in language identification: African Americans (question: how do you determine this?) are much more likely to be mis-classified as non-English (Blodget et al., EMNLP 2016).
+
+One solution: use different classifiers for different groups. There is increasing evidence that explicitly modeling sub-populations is helpful (sometimes necessary) for fairness.  But keep in mind:
+- Ethical issue: a form of stereotyping?
+- Legal issue: would this violate anti-discrimination laws? (disparate treatment in the law
+
+##### Warnings when debiasing
+
+Some problems:
+- Word embeddings have poor stability anyway. Get very different lists of nearest neighbors on different runs. (Antoniak and Mimno, NAACL 2018)
+- WEAT is highly susceptible to false positives (associations between categories which are not related)
+
+Furthermore, how does debiasing embeddings translate to debiasing in downstream tasks (after all, what we really care about). Perhaps it should be application-specific?
+
+Metaphor: think of AI systems as perception followed by action. Word embeddings are "perception". It might be better to address bias at parts of the system performing the "action".
+
+##### Reverse perspective: ML biases as a lens into human culture
+
+Examples
+
+- Correlation between gender bias in word embeddings over time and women participation in the labor force (Garg et al., "Word embeddings quantify 100 years of gender and ethnic stereotypes" PNAS 2018)
+- Does language merely reflect or also cause stereotypes? (M Lewis, G Lupyan PNAS 2019)
+
+#### Keynote 2: Rada Mihalcea, "When the Computers Spot the Lie (and People Don’t)"
+
+...
+
+#### Keynote 3: Kieran Snyder (Textio) "Leaving the Lab: Building NLP Applications that Real People can Use"
+
+Kieran Snyder is co-founder and CEO of Textio. 
+
+##### From academia to industry
+
+This was partly about her experience transitioning from academia to industry.
+
+When interviewing at Microsoft, she was asked: "When is a product done?".
+
+- Her answer: (Academic answer) it is never done!
+- The interviewer's answer: when people pay for it.
+
+In industry: no theoretical biases, use what works!
+
+##### Ethics of the "learning loop" era
+
+Ethics were clear when Kieran worked as an academic (gathering linguistic data) - the participants should be aware of what data is gathered, how it is used and who it is shared with.
+
+But it is common in industry to have a "learning loop": the product creates/collects data, which improves the product, which creates more data (think Waze, Amazon, Spotify, Textio) If the end users stop using it, there is no product.
+
+Suggested data ethics for the "learning loop" era:
+
+- No surprises. Make it clear that you are collecting data up front.
+- Use data the say you say you do, and don't sell or share it.
+- Use the data for the benefit of those who have provided it.
+
+##### Questions
+
+Philip Resnik's question: isn't there tension between the ethical route (tell users what you collect and why) vs collecting data and figuring it out later (innovate faster)?

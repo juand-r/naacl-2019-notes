@@ -1,6 +1,6 @@
 # Notes on NAACL 2019
 
-This is a summary of a selection of papers presented at NAACL 2019.
+This is a summary of a selection of papers presented at NAACL 2019, including the NeuralGen workshop.
 
 # Main Conference
 
@@ -13,7 +13,7 @@ This is a summary of a selection of papers presented at NAACL 2019.
   - :eyes: [Attention](#attention-eyes)
 - [Tasks](#tasks)
   - :memo: [Text Generation](#text-generation-memo)
-  - :mag: [Authorship Attribution](#authorship-attribution-mag)
+  - :mag: [Authorship Attribution, Stylometry, Fake News](#authorship-attribution-stylometry-fake-news-mag)
   - :gem: [Summarization and Simplification](#summarization-and-simplification-gem)
   - :ok::accept: [Machine Translation](#machine-translation-okaccept)
   - :paperclips: [Text Classification](#text-classification-paperclips)
@@ -229,9 +229,57 @@ Main contribution: new topic-guided VAE (TGVAE) for text generation.
 Can generate text conditioned on a given topic, and adapted to summarization.
 
 
-### Authorship Attribution :mag:
+### Authorship Attribution, Stylometry, Fake News :mag:
+
+##### :boom: Generalizing Unmasking for Short Texts
+
+**TL;DR:** Boosting is applied to the "unmasking" method for authorship verification, making the method feasible for "short" texts. It is particularly useful when the goal is high precision. 
+
+Two related tasks:
+- **Authorship attribution:** determine the authorship of one text from a limited number of authors.
+- **Authorship verification:** given two texts, determine if they are written by the same author.
+
+Authorship verification is often more realistic (when there are millions of possible authors) and in some sense more fundamental than authorship attribution.
+
+This paper generalizes the **unmasking** approach (Koppel and Schler, ICML 2004) to "short" texts (here "short" means about 4 printed pages, rather than book-length text), with a method emphasizing precision.
+
+**Intuition:** texts by the same author differ only in a few superficial features. So the CV accuracy will drop faster when the texts are by the same author than when they are by different authors. 
+
+**Unmasking algorithm:**
+
+- From each text, create non-overlapping chunks of at least 500 words each
+
+- Use BOW features (but with only 250 most frequent words)
+
+- Obtain a curve (features removed against CV accuracy) by iterating the following:
+    - Do 10-fold CV between the two texts with a linear SVM.
+    - Eliminate the most discriminating features for the model
+
+- Train a classifier on the curves to determine authorship.
+
+
+**Problem:** doesn't work for short texts because there is not enough material for chunks, and too much noise (see experiments in Sanderson and Guenter, 2006).
+
+**Proposed solution**: Since unmasking uses BOW features anyway, we can use bagging. Create chunks by sampling without replacement to create each chunk.  Then run the unmasking algorithm and average.
+
+**Benefits**: 
+
+- Can achieve very high precision with low recall; (other methods result in balanced precision and recall).  False positives can lead to a wrong conviction!
+- Easier to tune hyperparameters than other approaches.
+- Must faster than RNN-based approach (Bagnall, 2015).
+
+**Code and data:** https://github.com/webis-de/NAACL-19
 
 ##### :boom: Adversarial Training for Satire Detection: Controlling for Confounding Variables. Robert McHardy, Heike Adel and Roman Klinger
+
+**Motivation:** Models for satire detection might be learning the characteristics of the publication source. This is bad:
+
+- bad for generalization
+- misleading (we don't want Onion detectors, we want satire detectors).
+
+**Goal:** use adversarial training to improve the robustness of the model against confounding variable of publication source.
+
+
 
 ##### (Poster) Fake News Detection using Deep Markov Random Fields
 

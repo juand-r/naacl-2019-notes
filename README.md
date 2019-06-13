@@ -281,7 +281,7 @@ This paper generalizes the **unmasking** approach (Koppel and Schler, ICML 2004)
 
 **Model:**
 
-![alt text](images/adv-satire-model2.png)
+![image](images/adv-satire-model2.png)
 
 
 ##### (Poster) Fake News Detection using Deep Markov Random Fields

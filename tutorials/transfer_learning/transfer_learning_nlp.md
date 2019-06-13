@@ -2,7 +2,7 @@
 
 - Slides: https://tinyurl.com/NAACLTransfer
 - Colab: https://tinyurl.com/NAACLTransferColab
-- Code: https://tinyurl.com/NAACLTransferCode
+- Code: https://github.com/huggingface/naacl_transfer_learning_tutorial
 
 ## Part 1
 

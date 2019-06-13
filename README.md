@@ -12,7 +12,8 @@ This is a summary of a selection of papers presented at NAACL 2019.
   - :busts_in_silhouette: [Discourse](#discourse-busts_in_silhouette)
   - :eyes: [Attention](#attention-eyes)
 - [Tasks](#tasks)
-  - :memo::mag: [Text Generation and Stylometry](#text-generation-and-stylometry-memomag)
+  - :memo: [Text Generation](#text-generation-memo)
+  - :mag: [Authorship Attribution](#authorship-attribution-mag)
   - :gem: [Summarization and Simplification](#summarization-and-simplification-gem)
   - :ok::accept: [Machine Translation](#machine-translation-okaccept)
   - :paperclips: [Text Classification](#text-classification-paperclips)
@@ -108,14 +109,7 @@ This is a summary of a selection of papers presented at NAACL 2019.
 
 ## Tasks
 
-### Text Generation and Stylometry :memo::mag:
-
-#### Stylometry, Authorship Attribution
-
-##### (Could not attend) **Adversarial Training for Satire Detection: Controlling for Confounding Variables. Robert McHardy, Heike Adel and Roman Klinger**
-##### (Poster) Fake News Detection using Deep Markov Random Fields
-
-#### Text Generation
+### Text Generation :memo:
 
 ##### (Demo) compare-mt: A Tool for Holistic Comparison of Language Generation Systems
 
@@ -234,32 +228,45 @@ Main contribution: new topic-guided VAE (TGVAE) for text generation.
 
 Can generate text conditioned on a given topic, and adapted to summarization.
 
+
+### Authorship Attribution :mag:
+
+##### :boom: Adversarial Training for Satire Detection: Controlling for Confounding Variables. Robert McHardy, Heike Adel and Roman Klinger
+
+##### (Poster) Fake News Detection using Deep Markov Random Fields
+
 ### Summarization and Simplification :gem:
 
-- (Could not attend) SEQˆ3: Differentiable Sequence-to-Sequence-to-Sequence Autoencoder for Unsupervised Abstractive Sentence Compression.
-- (Could not attend) Abstractive Summarization of Reddit Posts with Multi-level Memory Networks. Byeongchang Kim, Hyunwoo Kim and Gunhee Kim
-- (Could not attend) Complexity-Weighted Loss and Diverse Reranking for Sentence Simplification. Reno Kriz et al.
+##### (Could not attend) SEQˆ3: Differentiable Sequence-to-Sequence-to-Sequence Autoencoder for Unsupervised Abstractive Sentence Compression.
+##### (Could not attend) Abstractive Summarization of Reddit Posts with Multi-level Memory Networks. Byeongchang Kim, Hyunwoo Kim and Gunhee Kim
+##### (Could not attend) Complexity-Weighted Loss and Diverse Reranking for Sentence Simplification. Reno Kriz et al.
 
 ### Machine Translation :ok::accept:
 
-- (Poster) Lost in Machine Translation: A Method to Reduce Meaning Loss. Reuben Cohn-Gordon and Noah Goodman
-- (Poster) Understanding and Improving Hidden Representations for Neural Machine Translation.
+##### (Poster) Lost in Machine Translation: A Method to Reduce Meaning Loss. Reuben Cohn-Gordon and Noah Goodman
+##### (Poster) Understanding and Improving Hidden Representations for Neural Machine Translation.
 
 
 ### Text Classification :paperclips:
 
-- (Poster) **Vector of Locally-Aggregated Word Embeddings (VLAWE): A Novel Document-level Representation**
-- (Poster) **Detecting depression in social media using fine-grained emotions**
-- (Could not attend) Mitigating Uncertainty in Document Classification. Xuchao Zhang, Fanglan Chen, ChangTien Lu and Naren Ramakrishnan
-- (Could not attend) How Large a Vocabulary Does Text Classification Need? A Variational Approach to Vocabulary Selection.
-- (Could not attend) Rethinking Complex Neural Network Architectures for Document Classification. Ashutosh Adhikari, Achyudh Ram, Raphael Tang and Jimmy Lin
+##### (Poster) **Vector of Locally-Aggregated Word Embeddings (VLAWE): A Novel Document-level Representation**
+
+##### (Poster) **Detecting depression in social media using fine-grained emotions**
+
+##### (Could not attend) Mitigating Uncertainty in Document Classification. Xuchao Zhang, Fanglan Chen, ChangTien Lu and Naren Ramakrishnan
+
+##### (Could not attend) How Large a Vocabulary Does Text Classification Need? A Variational Approach to Vocabulary Selection.
+
+##### (Could not attend) Rethinking Complex Neural Network Architectures for Document Classification. Ashutosh Adhikari, Achyudh Ram, Raphael Tang and Jimmy Lin
 
 ### Named Entity Recognition :cityscape::boy:
 
-- Pooled Contextualized Embeddings for Named Entity Recognition. Alan Akbik, Tanja Bergmann and Roland Vollgraf
-- Knowledge-Augmented Language Model and Its Application to Unsupervised Named-Entity Recognition. Angli Liu, Jingfei Du and Veselin Stoyanov
+##### Pooled Contextualized Embeddings for Named Entity Recognition. Alan Akbik, Tanja Bergmann and Roland Vollgraf
+
+##### Knowledge-Augmented Language Model and Its Application to Unsupervised Named-Entity Recognition. Angli Liu, Jingfei Du and Veselin Stoyanov
   - See in Language Models section
-- (Poster) Practical, Efficient, and Customizable Active Learning for Named Entity Recognition in the Digital Humanities. Alexander Erdman et al.
+
+##### (Poster) Practical, Efficient, and Customizable Active Learning for Named Entity Recognition in the Digital Humanities. Alexander Erdman et al.
 
 ##### [Using Similarity Measures to Select Pretraining Data for NER](#using-similarity-measures-to-select-pretraining-data-for-ner)
 

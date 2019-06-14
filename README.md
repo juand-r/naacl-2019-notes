@@ -28,7 +28,7 @@ This is a summary of a selection of papers presented at NAACL 2019, including th
   - :octopus: [Other applications](#other-applications-octopus)
 - [Other](#other)
 - [Keynote Lectures](#keynote-lectures)
-
+- [NeuralGen Workshop](#neuralgen-workshop)
 
 ## Topics
 
@@ -523,3 +523,5 @@ Suggested data ethics for the "learning loop" era:
 ##### Questions
 
 Philip Resnik's question: isn't there tension between the ethical route (tell users what you collect and why) vs collecting data and figuring it out later (innovate faster)?
+
+# NeuralGen Workshop

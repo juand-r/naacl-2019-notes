@@ -283,6 +283,7 @@ This paper generalizes the **unmasking** approach (Koppel and Schler, ICML 2004)
 
 ![image](images/adv-satire-model2.png)
 
+The "adversary" (publication identifier) is trying to get the model to perform badly at guessing the publication name.
 
 **Code and data:** www.ims.uni-stuttgart.de/data/germansatire ; https://bitbucket.org/rklinger/adversarialsatire/src/master/
 

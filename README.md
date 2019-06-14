@@ -2,6 +2,8 @@
 
 This is a summary of a selection of papers presented at NAACL 2019, including the NeuralGen workshop.
 
+See also Sebastian Ruder's highlights: http://ruder.io/naacl2019/index.html
+
 # Main Conference
 
 - [Topics](#topics)
@@ -525,3 +527,99 @@ Suggested data ethics for the "learning loop" era:
 Philip Resnik's question: isn't there tension between the ethical route (tell users what you collect and why) vs collecting data and figuring it out later (innovate faster)?
 
 # NeuralGen Workshop
+
+## Panel Discussion
+
+Remark: these notes are paraphrases of the panel speakers as I understood them at the time - incomplete and perhaps not entirely correct.
+
+Four themes: evaluation, decoding, pretraining, ethics.
+
+### 1. Evaluation
+
+TL;DR: Evaluation is very hard, there should be more work on it for NLG, and there is likely no silver bullet.
+
+**Moderator:** Many metrics are listed above (BLEU, METEOR, Cider, vector extrema, word mover's deistance, HUSE, RIBES, BERTScore, "sentence mover's similarity"). But shouldn't we measure more semantic notions such as plausibility, acceptability, coherence, entailment..? 
+
+**Yejin Choi:** Maybe the community needs to move to more model-based NLU-based evaluation.
+
+**H. Daume III**: Even human evaluation is tricky! Single black box evaluation is likely a pipe-dream. Evaluation should be task-specific. Focus on what we really want to know. For example: when generating answers on stack exchange: does the generated answer really help?  But this is hard to measure.
+
+**Graham Neubig:** There needs to be more work on evaluation for NLG (as there is in MT) on finding metrics that correlate better with human judgement.  Note BLEU is not as broken for MT as it is for other tasks.
+
+**Audience question:** What about evaluation for high-stakes situtations in industry:
+- medical NLG
+- false claims, legal trouble
+    
+**Alexander Rush:** If the only thing you care about is precision, human evaluation should be fine.
+
+### 2.  Decoding
+
+Some types of decoding: argmax, top-k sampling, beam search, nucleus sampling, templates, planning...(I suppose by "decoding" we how the final text is produced, so non-neural methods like templates and planning are included).
+
+**Yejin Choi:** There is no one sampling method to rule them all.
+
+- For short text, familiar methods like beam search can be OK.
+- But for longer text, newer methods like nucleus sampling work better, given the current state of technology for language models. Caveat: with future innovation incorporating semantics/pragmatics, beam search could work well again.
+
+**Hal Daume III**: 
+
+1. For longer text it *seems* like one must use something hierarchical.
+2. Also don't like adding noise if you don't have to (e.g. in sampling-based decoding). But it can be useful when you want diversity/creativity. If your model is perfect (theoretically) then left-to-right decoding is all you should need.
+
+**Yejin Choi:** at intuitive level, agree with Hal on needing hierarchy. But *practically* (based on experience with huge language models), it seems like you don't need it...
+
+For better (more robust) modeling of long structure in the long run, it is a good idea to incorporate discourse ideas (latent variables, hierarchy). (NOTE: see paper co-authored by Y. Choi's, Learning to Write)
+
+**Alexander Rush:** Dialogue is hard! We may *never* have enough data! So we need more structure in the models.
+
+**Yejin Choi:** We used templates ("secrete sauce") to help win the Alexa prize. Tried RL end-to-end training initially and it wasn't working...
+
+### 3. Pretraining
+
+Is pre-training with giant language models a game-changer?
+
+Several interesting points were raised here.
+
+**Alexander Rush**: This opens up whole new areas, particularly when you don't have enough in-domain data. For example: generating basket ball games from statistics.
+
+**Tatsunori Hashimoto:** There is a problem with using LMS we don't understand:
+
+- robustness
+- hard to trust for high-stakes situations
+- could have bias we don't understand
+
+**Hal Daume III**: If you don't know on what data the LM was trained you will never know that what you generated was not just simply memorized.
+
+**Yejin Choi**: Actually, that is not true if you use sampling-based decoding. This is guaranteed to avoid plagiarism!
+
+**Graham Neubig:** It is *really* hard to ground LMs to the real world (for example, the famous "unicorns" example from GPT-2).
+
+**Yejin Choi**: There should be more work on world-modelling/fact-checking so when GROVER generates nonsense/propaganda/fake claims, it can be detected.
+
+### 4. Ethics
+
+**Yejin Choi**: End-goal of the GROVER work was detection, not generation, but of course had to start with generation to do detection.
+
+**Graham Neubig**: How many people in the audience have taken ethics courses? (About 30%). We should strive for 100%!
+
+**Hal Daume III**: This is actually not a new topic. There is a nice paper from the 80's by Joshi, Webber and Weischedel, "Preventing false inferences" (referenced in Smiley et al. 2017, "Say the right thing"). The paper distinguishes between:
+- never generating false claims
+- never generating something that would lead to a false inference
+
+**Graham Neubig**: Another reference ...
+
+**Alexander Rush**: How odd to have a discussion like this not on twitter! Very strong opinion on OpenAI's decision not to release the large GPT-2 model. It bothered him.
+
+**Yejin Choi**: We thought about the consequences, and wanted to make sure she didn't create a monster with Grover. Though the can of worms is already open!
+
+There are still practical drawbacks:
+
+- fine-grained control is currently difficult
+- very slow
+
+So it is a good time to study it NOW before the generation technology gets better.
+
+
+
+
+

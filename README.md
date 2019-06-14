@@ -279,10 +279,12 @@ This paper generalizes the **unmasking** approach (Koppel and Schler, ICML 2004)
 
 **Goal:** use adversarial training to improve the robustness of the model against confounding variable of publication source.
 
-**Model:**
+**Model:** Figure 1 from the paper:
 
 ![image](images/adv-satire-model2.png)
 
+
+**Code and data:** www.ims.uni-stuttgart.de/data/germansatire ; https://bitbucket.org/rklinger/adversarialsatire/src/master/
 
 ##### (Poster) Fake News Detection using Deep Markov Random Fields
 

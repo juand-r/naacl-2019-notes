@@ -77,6 +77,23 @@ This is a summary of a selection of papers presented at NAACL 2019, including th
 
 ### Word representations :abcd:
 
+##### Word-Node2Vec: Improving Word Embedding with Document-Level Non-Local Word Co-occurrences
+
+Despite progress in better word representations (word embeddings), the most popular methods are split between purely local and global approaches:
+
+- Local approaches: co-ocurrence of words in a window of fixed size (e.g., word2vec, GloVe)
+- Non-local approaches: LSA, LDA
+
+Can we combine the best of both? Words that co-occurr frequently but non-locally within documents may have semantic association that local models are not capturing.
+
+**Idea:** convex combination of local and non-local co-ocurrence weights.
+
+**Evaluation:** concept categorization.
+
+**Code:** https://github.com/procheta/Word-Node2Vec
+
+
+
 ##### (Poster) :eyes: **Attentive Mimicking: Better Word Embeddings by Attending to Informative Contexts**
 
 ##### (Poster) A Systematic Study of Leveraging Subword Information for Learning Word Representations.

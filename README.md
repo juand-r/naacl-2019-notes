@@ -6,6 +6,11 @@ See also Sebastian Ruder's highlights: http://ruder.io/naacl2019/index.html
 
 - [Topics](#topics)
   - :bowling: [Learning with Limited Data](#learning-with-limited-data-bowling)
+      - [Few-shot learning](#few-shot-learning)
+      - [Zero-shot learning](#zero-shot-learning)
+      - [Huge label set](#huge-label-set)
+      - [Domain adaptation](#domain-adaptation)
+      - [Weak supervision, distantly-labeled data](#weak-supervision-distantly-labeled-data)
   - :speech_balloon: [Language Models](#language-models-speech_balloon)
   - :abcd: [Word representations](#word-representations-abcd)
     - [Combining or aligning embeddings](#combining-or-aligning-embeddings)
@@ -45,15 +50,19 @@ See also Sebastian Ruder's highlights: http://ruder.io/naacl2019/index.html
 
 --- 
 
+### Zero-shot learning
+
+---
+
 ### Huge label set
 
 #####  (Could not attend) A Submodular Feature-Aware Framework for Label Subset Selection in Extreme Classification Problems. Elham J. Barezi, Ian D. Wood, Pascale Fung and Hamid R. Rabiee
 
 ---
 
-### Domain Adaptation
+### Domain adaptation
 
-#####  (Poster) **Simplified Neural Unsupervised Domain Adaptation. Timothy Miller**
+#####  :boom: (Poster) **Simplified Neural Unsupervised Domain Adaptation. Timothy Miller**
   - Code: https://github.com/tmills/Neural-SCL-Domain-Adaptation
 
 ---
@@ -124,7 +133,7 @@ Can we combine the best of both? Words that co-occurr frequently but non-locally
 ---
 
 
-##### (Poster) :eyes: **Attentive Mimicking: Better Word Embeddings by Attending to Informative Contexts**
+##### :boom: (Poster) :eyes: **Attentive Mimicking: Better Word Embeddings by Attending to Informative Contexts**
 
 ##### (Poster) A Systematic Study of Leveraging Subword Information for Learning Word Representations.
 
@@ -138,7 +147,7 @@ Can we combine the best of both? Words that co-occurr frequently but non-locally
 
 #### Combining or aligning embeddings
 
-##### (Poster) **Aligning Vector-spaces with Noisy Supervised Lexicon. Noa Yehezkel Lubin, Jacob Goldberger and Yoav Goldberg**
+##### :boom:  (Poster) **Aligning Vector-spaces with Noisy Supervised Lexicon. Noa Yehezkel Lubin, Jacob Goldberger and Yoav Goldberg**
 
 
 ---
@@ -268,13 +277,15 @@ Audience Questions:
 
 **Code:**  https://github.com/zhawe01/fairseq-gec
 
+---
+
 ##### Topic-Guided Variational Auto-Encoder for Text Generation
 
 Many applications of text generation:
 
-- MT
-- dialogue Generation
-- text Generation
+- machine translation (MT)
+- dialogue generation
+- text generation
 
 VAE are widely used for this. But problems:
 
@@ -362,7 +373,7 @@ The "adversary" (publication identifier) is trying to get the model to perform b
 
 ### Machine Translation :ok::accept:
 
-##### (Poster) Lost in Machine Translation: A Method to Reduce Meaning Loss. Reuben Cohn-Gordon and Noah Goodman
+##### :boom:  (Poster) Lost in Machine Translation: A Method to Reduce Meaning Loss. Reuben Cohn-Gordon and Noah Goodman
 ##### (Poster) Understanding and Improving Hidden Representations for Neural Machine Translation.
 
 ---
@@ -370,7 +381,7 @@ The "adversary" (publication identifier) is trying to get the model to perform b
 
 ### Text Classification :paperclips:
 
-##### (Poster) **Vector of Locally-Aggregated Word Embeddings (VLAWE): A Novel Document-level Representation**
+##### :boom: (Poster) **Vector of Locally-Aggregated Word Embeddings (VLAWE): A Novel Document-level Representation**
 
 ##### (Poster) **Detecting depression in social media using fine-grained emotions**
 

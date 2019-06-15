@@ -4,8 +4,6 @@ This is a summary of a selection of papers presented at NAACL 2019, including th
 
 See also Sebastian Ruder's highlights: http://ruder.io/naacl2019/index.html
 
-# Main Conference
-
 - [Topics](#topics)
   - :bowling: [Learning with Limited Data](#learning-with-limited-data-bowling)
   - :speech_balloon: [Language Models](#language-models-speech_balloon)
@@ -33,50 +31,77 @@ See also Sebastian Ruder's highlights: http://ruder.io/naacl2019/index.html
 - [NeuralGen Workshop](#neuralgen-workshop)
 - [Coreference and Coherence Revisited](#coreference-and-coherence-revisited)
 
-## Topics
+# Topics
 
 ### Learning with Limited Data :bowling:
 
 ##### :repeat: Structured Minimally Supervised Learning for Neural Relation Extraction. Fan Bai and Alan Ritter.
 
-#### Few-shot learning
+---
+
+### Few-shot learning
 
 #####  :spider_web: **Long-tail Relation Extraction via Knowledge Graph Embeddings and Graph Convolution Networks.**  Ningyu Zhang et al.
 
-#### Huge label set
+--- 
+
+### Huge label set
 
 #####  (Could not attend) A Submodular Feature-Aware Framework for Label Subset Selection in Extreme Classification Problems. Elham J. Barezi, Ian D. Wood, Pascale Fung and Hamid R. Rabiee
 
+---
 
-#### Domain Adaptation
+### Domain Adaptation
 
 #####  (Poster) **Simplified Neural Unsupervised Domain Adaptation. Timothy Miller**
   - Code: https://github.com/tmills/Neural-SCL-Domain-Adaptation
 
+---
+
 #####  (Poster) Curriculum Learning for Domain Adaptation in Neural Machine Translation. Xuan Zhang, Pamela Shapiro, Gaurav Kumar, Paul McNamee, Marine Carpuat and Kevin Duh
+
+---
 
 #####  (Poster) Non-Parametric Adaptation for Neural Machine Translation. Ankur Bapna and Orhan Firat
 
+---
+
 #####  :paperclips: (Could not attend) Adversarial Category Alignment Network for Cross-domain Sentiment Classification. Xiaoye Qu, Zhikang Zou, Yu Cheng, Yang Yang and Pan Zhou
+
+---
 
 #####  (Could not attend) Joint Learning of Pre-Trained and Random Units for Domain Adaptation in Part-of-Speech Tagging.
 
+---
+
 ##### Using Similarity Measures to Select Pretraining Data for NER
 
-#### Weak supervision, distantly-labeled data
+---
+
+### Weak supervision, distantly-labeled data
 
 ##### :cityscape::boy: Learning to Denoise Distantly-Labeled Data for Entity Typing
 
+---
+
 ##### [:repeat: GAN Driven Semi-distant Supervision for Relation Extraction](#gan-driven-semi-distant-supervision-for-relation-extraction)
+
+---
 
 
 ### Language Models :speech_balloon:
 
 ##### (Could not attend) **Knowledge-Augmented Language Model and Its Application to Unsupervised Named-Entity Recognition. Angli Liu, Jingfei Du and Veselin Stoyanov**
+
+---
+
 ##### (Could not attend) Serial Recall Effects in Neural Language Modeling. Hassan Hajipoor, Hadi Amiri, Maseud Rahgozar and Farhad Oroumchian
+
 ##### (Poster) WiC: the Word-in-Context Dataset for Evaluating Context-Sensitive Meaning Representations. Mohammad Taher Pilehvar and Jose Camacho-Collados
+
 ##### (Could not attend) **Show Some Love to Your n-grams: A Bit of Progress and Stronger n-gram Language Modeling Baselines. Ehsan Shareghi, Daniela Gerz, Ivan Vulić and Anna Korhonen**
 
+---
 
 ### Word representations :abcd:
 
@@ -96,6 +121,8 @@ Can we combine the best of both? Words that co-occurr frequently but non-locally
 **Code:** https://github.com/procheta/Word-Node2Vec
 
 
+---
+
 
 ##### (Poster) :eyes: **Attentive Mimicking: Better Word Embeddings by Attending to Informative Contexts**
 
@@ -107,15 +134,21 @@ Can we combine the best of both? Words that co-occurr frequently but non-locally
   - See in "biomedical"
 
 
+---
+
 #### Combining or aligning embeddings
 
 ##### (Poster) **Aligning Vector-spaces with Noisy Supervised Lexicon. Noa Yehezkel Lubin, Jacob Goldberger and Yoav Goldberg**
 
 
+---
+
 
 ### Discourse :busts_in_silhouette:
 
 ##### (Poster) Modeling Document-level Causal Structures for Event Causal Relation Identification. Lei Gao, Prafulla Kumar Choubey and Ruihong Huang
+
+---
 
 ### Attention :eyes:
 
@@ -126,6 +159,8 @@ Can we combine the best of both? Words that co-occurr frequently but non-locally
 ##### (Could not attend) Saliency Learning: Teaching the Model Where to Pay Attention. Reza Ghaeini, Xiaoli Fern, Hamed Shahbazi and Prasad Tadepalli
 ##### (Poster) **Attentive Mimicking: Better Word Embeddings by Attending to Informative Contexts**
   - See in "attention"
+
+---
 
 ## Tasks
 
@@ -141,8 +176,6 @@ Can we combine the best of both? Words that co-occurr frequently but non-locally
 
 Examples of generated sound captions: https://audiocaps.github.io/      
 
-##### (Could not attend) “President Vows to Cut Taxes Hair”: Dataset and Analysis of Creative Text Editing for Humorous Headlines.
-
 ##### (Could not attend) An Empirical Investigation of Global and Local Normalization for Recurrent Neural Sequence Models Using a Continuous Relaxation to Beam Search.
 
 ##### (Could not attend) **Accelerated Reinforcement Learning for Sentence Generation by Vocabulary Prediction**. Kazuma Hashimoto and Yoshimasa Tsuruoka
@@ -151,7 +184,9 @@ Examples of generated sound captions: https://audiocaps.github.io/
 
 ##### (Poster; Could not attend) Improved Lexically Constrained Decoding for Translation and Monolingual Rewriting
 
-##### Answer-based Adversarial Training for Generating Clarification Questions. Sudha Rao and Hal Daumé III
+---
+
+##### :boom: Answer-based Adversarial Training for Generating Clarification Questions. Sudha Rao and Hal Daumé III
 
 Clarification Questions are context aware questions that ask for missing
 Information. For example:
@@ -202,6 +237,8 @@ Example outputs:
 
 **Code available:** https://github.com/raosudha89/clarification_question_generation_pytorch
 
+---
+
 ##### Improving Grammatical Error Correction via Pre-Training a Copy-Augmented Architecture with Unlabeled Data
 
 Contributions:
@@ -248,6 +285,8 @@ Main contribution: new topic-guided VAE (TGVAE) for text generation.
 
 Can generate text conditioned on a given topic, and adapted to summarization.
 
+---
+
 
 ### Authorship Attribution, Stylometry, Fake News :mag:
 
@@ -290,6 +329,8 @@ This paper generalizes the **unmasking** approach (Koppel and Schler, ICML 2004)
 
 **Code and data:** https://github.com/webis-de/NAACL-19
 
+---
+
 ##### :boom: Adversarial Training for Satire Detection: Controlling for Confounding Variables. Robert McHardy, Heike Adel and Roman Klinger
 
 **Motivation:** Models for satire detection might be learning the characteristics of the publication source. This is bad:
@@ -307,6 +348,8 @@ The "adversary" (publication identifier) is trying to get the model to perform b
 
 **Code and data:** www.ims.uni-stuttgart.de/data/germansatire ; https://bitbucket.org/rklinger/adversarialsatire/src/master/
 
+---
+
 ##### (Poster) Fake News Detection using Deep Markov Random Fields
 
 ### Summarization and Simplification :gem:
@@ -315,10 +358,14 @@ The "adversary" (publication identifier) is trying to get the model to perform b
 ##### (Could not attend) Abstractive Summarization of Reddit Posts with Multi-level Memory Networks. Byeongchang Kim, Hyunwoo Kim and Gunhee Kim
 ##### (Could not attend) Complexity-Weighted Loss and Diverse Reranking for Sentence Simplification. Reno Kriz et al.
 
+---
+
 ### Machine Translation :ok::accept:
 
 ##### (Poster) Lost in Machine Translation: A Method to Reduce Meaning Loss. Reuben Cohn-Gordon and Noah Goodman
 ##### (Poster) Understanding and Improving Hidden Representations for Neural Machine Translation.
+
+---
 
 
 ### Text Classification :paperclips:
@@ -333,6 +380,8 @@ The "adversary" (publication identifier) is trying to get the model to perform b
 
 ##### (Could not attend) Rethinking Complex Neural Network Architectures for Document Classification. Ashutosh Adhikari, Achyudh Ram, Raphael Tang and Jimmy Lin
 
+---
+
 ### Named Entity Recognition :cityscape::boy:
 
 ##### Pooled Contextualized Embeddings for Named Entity Recognition. Alan Akbik, Tanja Bergmann and Roland Vollgraf
@@ -344,6 +393,8 @@ The "adversary" (publication identifier) is trying to get the model to perform b
 
 ##### [Using Similarity Measures to Select Pretraining Data for NER](#using-similarity-measures-to-select-pretraining-data-for-ner)
 
+---
+
 ### Relation extraction :repeat:
 
 ##### [GAN Driven Semi-distant Supervision for Relation Extraction](#repeat-gan-driven-semi-distant-supervision-for-relation-extraction)
@@ -352,9 +403,13 @@ The "adversary" (publication identifier) is trying to get the model to perform b
 
 ##### (Could not attend) **Document-Level N-ary Relation Extraction with Multiscale Representation Learning**. Robin Jia, Cliff Wong and Hoifung Poon
 
+---
+
 ### Keyphrase Extraction :key::bookmark_tabs:
 
 ##### (Could not attend) Keyphrase Generation: A Text Summarization Struggle. Erion Çano and Ondřej Bojar
+
+---
 
 ### Knowledge Graph Completion :spider_web:
 
@@ -362,6 +417,8 @@ The "adversary" (publication identifier) is trying to get the model to perform b
 
 ##### **Long-tail Relation Extraction via Knowledge Graph Embeddings and Graph Convolution Networks.**  Ningyu Zhang et al.
   - See under 'few-shot'
+
+---
 
 ### Reading Comprehension and Question Answering :book::question:
 
@@ -374,6 +431,8 @@ The "adversary" (publication identifier) is trying to get the model to perform b
 ##### (Could not attend) Understanding Dataset Design Choices for Multi-hop Reasoning. Jifan Chen and Greg Durrett
 
 
+---
+
 
 ## Applications
 
@@ -385,15 +444,21 @@ The "adversary" (publication identifier) is trying to get the model to perform b
 
 ##### (Could not attend) Augmenting word2vec with latent Dirichlet allocation within a clinical application. Akshay Budhkar and Frank Rudzicz
 
+---
+
 ### Cybersecurity applications :shield::computer:
 
 ##### (Poster) Detecting Cybersecurity Events from Noisy Short Text
 
 ##### (Poster) Analyzing the Perceived Severity of Cybersecurity Threats Reported on Social Media
 
+---
+
 ### Other applications :octopus:
 
 ##### (Poster) Text Similarity Estimation Based on Word Embeddings and Matrix Norms for Targeted Marketing.
+
+---
 
 ### Other
 
@@ -432,6 +497,8 @@ The "adversary" (publication identifier) is trying to get the model to perform b
 ##### **Recursive Routing Networks: Learning to Compose Modules for Language Understanding.**
 
 ##### **Benchmarking Hierarchical Script Knowledge. Yonatan Bisk, Jan Buys, Karl Pichotta and Yejin Choi** (text generation?)
+
+---
 
 # Keynote Lectures
 
@@ -492,9 +559,13 @@ Examples
 - Correlation between gender bias in word embeddings over time and women participation in the labor force (Garg et al., "Word embeddings quantify 100 years of gender and ethnic stereotypes" PNAS 2018)
 - Does language merely reflect or also cause stereotypes? (M Lewis, G Lupyan PNAS 2019)
 
+---
+
 #### Keynote 2: Rada Mihalcea, "When the Computers Spot the Lie (and People Don’t)"
 
 ...
+
+---
 
 #### Keynote 3: Kieran Snyder (Textio) "Leaving the Lab: Building NLP Applications that Real People can Use"
 
@@ -526,6 +597,8 @@ Suggested data ethics for the "learning loop" era:
 ##### Questions
 
 Philip Resnik's question: isn't there tension between the ethical route (tell users what you collect and why) vs collecting data and figuring it out later (innovate faster)?
+
+---
 
 # NeuralGen Workshop
 
@@ -621,6 +694,8 @@ There are still practical drawbacks:
 So it is a good time to study it NOW before the generation technology gets better.
 
 **Hal Daume III**: There is another possible danger that comes to mind: "reverse censorship". Flood tactic to drown out dissenting voices! See for example David Graham's article in the Atlantic, "The Age of Reverse Censorship" (June 26, 2018).
+
+---
 
 # Coreference and Coherence Revisited
 

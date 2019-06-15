@@ -31,6 +31,7 @@ See also Sebastian Ruder's highlights: http://ruder.io/naacl2019/index.html
 - [Other](#other)
 - [Keynote Lectures](#keynote-lectures)
 - [NeuralGen Workshop](#neuralgen-workshop)
+- [Coreference and Coherence Revisited](#coreference-and-coherence-revisited)
 
 ## Topics
 
@@ -530,7 +531,7 @@ Philip Resnik's question: isn't there tension between the ethical route (tell us
 
 ## Panel Discussion
 
-Remark: these notes are paraphrases of the panel speakers as I understood them at the time - incomplete and perhaps not entirely correct.
+Remark: these notes are paraphrases of the panel speakers' discussion as I understood them at the time - incomplete and perhaps not entirely correct.
 
 Four themes: evaluation, decoding, pretraining, ethics.
 
@@ -564,7 +565,7 @@ Some types of decoding: argmax, top-k sampling, beam search, nucleus sampling, t
 **Hal Daume III**: 
 
 1. For longer text it *seems* like one must use something hierarchical.
-2. Also don't like adding noise if you don't have to (e.g. in sampling-based decoding). But it can be useful when you want diversity/creativity. If your model is perfect (theoretically) then left-to-right decoding is all you should need.
+2. Also I don't like adding noise if you don't have to (e.g. in sampling-based decoding). But it can be useful when you want diversity/creativity. If your model is perfect (theoretically) then left-to-right decoding is all you should need.
 
 **Yejin Choi:** at intuitive level, agree with Hal on needing hierarchy. But *practically* (based on experience with huge language models), it seems like you don't need it...
 
@@ -572,7 +573,7 @@ For better (more robust) modeling of long structure in the long run, it is a goo
 
 **Alexander Rush:** Dialogue is hard! We may *never* have enough data! So we need more structure in the models.
 
-**Yejin Choi:** We used templates ("secrete sauce") to help win the Alexa prize. Tried RL end-to-end training initially and it wasn't working...
+**Yejin Choi:** Indeed. We used templates ("secrete sauce") to help win the Alexa prize. Tried RL end-to-end training initially and it wasn't working...
 
 ### 3. Pretraining
 
@@ -608,9 +609,9 @@ Several interesting points were raised here.
 
 **Graham Neubig**: Another reference ...
 
-**Alexander Rush**: How odd to have a discussion like this not on twitter! Very strong opinion on OpenAI's decision not to release the large GPT-2 model. It bothered him.
+**Alexander Rush**: How odd to have a discussion like this not on Twitter! Have a very strong opinion on OpenAI's decision not to release the large GPT-2 model. It bothered me.
 
-**Yejin Choi**: We thought about the consequences, and wanted to make sure she didn't create a monster with Grover. Though the can of worms is already open!
+**Yejin Choi**: We thought hard about the consequences, and wanted to make sure she didn't create a monster with Grover. Though the can of worms is already open!
 
 There are still practical drawbacks:
 
@@ -619,7 +620,48 @@ There are still practical drawbacks:
 
 So it is a good time to study it NOW before the generation technology gets better.
 
+**Hal Daume III**: There is another possible danger that comes to mind: "reverse censorship". Flood tactic to drown out dissenting voices! See for example David Graham's article in the Atlantic, "The Age of Reverse Censorship" (June 26, 2018).
+
+# Coreference and Coherence Revisited
+
+Lecture from Amir Zeldes (Georgetown University).
+
+**Motivation**
+There have been incredible gains in F-scores on coreference in the OntoNotes corpus. But there is some dissatisfaction:
+
+- Scores in the 70's are still not trustworthy enough to be useful.
+- System errors are sometimes bizarre (in ways that traditional methods were not).
+- Generalizability: out-of-domain performance is often *worse* than older systems.
+
+So it is clear that current methods are missing something. What? Let's look at cohesion and coherence. J. Renkema's definition of cohesion and coherence (from "Introduction to Discourse Studies"):
+
+- cohesion: "connections which have their manifestation in the discourse itself", such as coreference, bridging, connectives...
+- coherence: "connections which can be made by the reader" using world knowledge.
 
 
+**Current (neural) systems**
+
+The good:
+
+- embeddings allow relating OOV items to training data.
+- No need to curate KBs. Just plug in a training corpus.
+
+The bad:
+
+- no explicity semantic modeling means the following mistakes will be made:
+    - errors that could be fixed given some knowledge of synonymy/antonymy/cardinality
+    - overfitting lexical features in the data.
+- rely heavily on pre-trained language models:
+    - train/test discrepancy: do not account for distributions in current text (of course an issue for ML generally)
+    - sensitive to changes in genre/domain
 
 
+**The train/test paradigm is dead.** Huge neural networks overfit on patterns on both train and test sets, and it is unclear what is really being learned. 
+
+
+**Some examples of mistakes:**
+
+These from huggingface neural coref and Allen NLP:
+
+- I ate [the good gum]. Mary ate [the bad gum].
+- I saw [two myna birds] and a sparrow... When I approach, [the three birds] flew away.

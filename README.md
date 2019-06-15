@@ -52,6 +52,15 @@ See also Sebastian Ruder's highlights: http://ruder.io/naacl2019/index.html
 
 ### Zero-shot learning
 
+##### The Strength of the Weakest Supervision: Topic Classification Using Class Labels
+
+**Motivation**: labeling initial examples for every new task is expensive. Using the class labels themselves could help give a "warm start".
+
+Related ideas:
+- in IR: treat short label as query and evaluate similarity between document and label ("Naive Text Classification" in Baeza-Yates et al. IR book).
+- extreme form of semi-supervised learning (see refs).
+
+
 ---
 
 ### Huge label set

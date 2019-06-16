@@ -52,6 +52,19 @@ See also Sebastian Ruder's highlights: http://ruder.io/naacl2019/index.html
 
 ### Zero-shot learning
 
+##### Integrating Semantic Knowledge to Tackle Zero-shot Text Classification
+
+---
+
+To better classify text with labels unseen at training time, the proposed framework incorporates "semantic knowledge" of four different kinds:
+
+- word embeddings
+- class descriptions
+- class hierarchy
+- a knowledge graph
+
+
+
 ##### The Strength of the Weakest Supervision: Topic Classification Using Class Labels
 
 **Motivation**: labeling initial examples for every new task is expensive. Using the class labels themselves could help give a "warm start".
@@ -60,6 +73,11 @@ Related ideas:
 - in IR: treat short label as query and evaluate similarity between document and label ("Naive Text Classification" in Baeza-Yates et al. IR book).
 - extreme form of semi-supervised learning (see refs).
 
+**Method**:
+1. a simple generative model "word embedding naive Bayes" (WENB) is used to obtain soft pseudo-labels for the documents using only pre-trained word embeddings and the words from the class labels.
+2. The pseudo-labels are combined with true labels for continued training using logistic regression.
+
+The proposed method is more effective than competing (semi-supervised and retrieval-based) approaches in short-document settings (Wiki Titles, News Titles, Yahoo questions), and performs worse on 20 Newsgroups, Reuters-21578 and a medical WSD dataset.
 
 ---
 

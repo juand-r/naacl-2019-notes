@@ -46,6 +46,8 @@ See also Sebastian Ruder's highlights: http://ruder.io/naacl2019/index.html
 
 ### Few-shot learning
 
+##### Text Classification with Few Examples using Controlled Generalization
+
 #####  :spider_web: **Long-tail Relation Extraction via Knowledge Graph Embeddings and Graph Convolution Networks.**  Ningyu Zhang et al.
 
 --- 
@@ -54,8 +56,6 @@ See also Sebastian Ruder's highlights: http://ruder.io/naacl2019/index.html
 
 ##### Integrating Semantic Knowledge to Tackle Zero-shot Text Classification
 
----
-
 To better classify text with labels unseen at training time, the proposed framework incorporates "semantic knowledge" of four different kinds:
 
 - word embeddings
@@ -63,7 +63,7 @@ To better classify text with labels unseen at training time, the proposed framew
 - class hierarchy
 - a knowledge graph
 
-
+---
 
 ##### The Strength of the Weakest Supervision: Topic Classification Using Class Labels
 
@@ -127,6 +127,20 @@ The proposed method is more effective than competing (semi-supervised and retrie
 
 ### Language Models :speech_balloon:
 
+##### Linguistic Knowledge and Transferability of Contextual Representations
+
+ELMo and BERT word very well across many tasks. But WHY? What linguistic knowledge do they capture?
+
+Use a linear probing model to investigate BERT, ELMo (+variants), OpenAI Transformer on 17 different tasks.
+
+Which layer is most transferable?
+- LSTMs: first layer!
+- Transformers: all layers are similar
+
+BiLM pretraining yields representations that are more transferable in general (even on PTB-sized data), but not as good at tasks requiring specific linguistic knowledge
+
+---
+
 ##### (Could not attend) **Knowledge-Augmented Language Model and Its Application to Unsupervised Named-Entity Recognition. Angli Liu, Jingfei Du and Veselin Stoyanov**
 
 ---
@@ -141,7 +155,7 @@ The proposed method is more effective than competing (semi-supervised and retrie
 
 ### Word representations :abcd:
 
-##### Word-Node2Vec: Improving Word Embedding with Document-Level Non-Local Word Co-occurrences
+##### :boom: Word-Node2Vec: Improving Word Embedding with Document-Level Non-Local Word Co-occurrences
 
 Despite progress in better word representations (word embeddings), the most popular methods are split between purely local and global approaches:
 
@@ -156,6 +170,17 @@ Can we combine the best of both? Words that co-occurr frequently but non-locally
 
 **Code:** https://github.com/procheta/Word-Node2Vec
 
+---
+
+
+##### What just happened? Evaluating retrofitted distributional word vectors
+
+This was a nice error analysis paper (refreshing to see!) It investigates discrepancies in the retrofitting method of Faruqui et al (2015) over different lexical resources (WordNet, FrameNet, PPDB). They find:
+
+- RMSE is better at capturing gains in performance than correlation measures
+- Improvements are highly dependent on the lexical resource's coverage of the evaluation benchmark.
+
+So caution: word vector performance must be inspected very carefully!
 
 ---
 
@@ -169,12 +194,69 @@ Can we combine the best of both? Words that co-occurr frequently but non-locally
 ##### Augmenting word2vec with latent Dirichlet allocation within a clinical application. Akshay Budhkar and Frank Rudzicz
   - See in "biomedical"
 
-
 ---
 
 #### Combining or aligning embeddings
 
+##### :boom: Density Matching for Bilingual Word Embedding
+
+Presented by Graham Neubig.
+
+**Scenario**:
+- reconcile existing independently-trained embeddings in different languages
+- unsupervised learning
+
+Instead of learning a transformation between sets of embedding vectors,
+define a probability distribution over embeddings (Gaussian mixture model)
+and match the two densities using *normalizing flow** (see Rezendre and Mohamed, 2015).
+
+A normalizing flow is a sequence of invertible transformations between distributions.
+
+**Code**: (PyTorch implementation) https://github.com/violet-zct/DeMa-BWE
+
+---
+
+##### :boom: Cross-Lingual Alignment of Contextual Word Embeddings, with Applications to Zero-shot Dependency Parsing
+
+This paper deserves a closer read.
+
+**Question**: how to align independently-trained contextual embeddings? (this paper used ELMo) Particularly interested in the low-resource target language setting.
+
+Challenges:
+
+- multipe senses per token
+- many vector representations per sense
+
+This cross-lingual transfer is used for zero-shot and few-shot dependency parsing, with state-of-the-art results on several languages.
+
+**Code**: https://github.com/TalSchuster/CrossLingualELMo ; will be part of AllenNLP soon.
+
+
+---
+
+##### :boom: Cross-Topic Distributional Semantic Representations Via Unsupervised Mappings
+
+**Problem:** traditional Distributional Semantic Models (DSMs) cannot capture polysemous words (each word is mapped to a vector).
+
+**Proposed solution**: assume words appear with a single sense within a topic. Train topic-based DSMs, then project all to a single space:
+- Use LDA to obtain topic distributions for each sentence in a corpus. Create topic-specific corpora by mapping sentences to a corresponding topic if the topic probability > threshold. Then train word2vec for each sub-corpus.
+- Use monosemous "anchors" to help find the alignment. The list of anchors are found using an unsupervised method.
+
+The method performs well on a contextual semantic similarity evaluation, and on downstream tasks (paraphrase identification, text classification).
+
+Related work on finding transformations between independently-trained embeddings:
+
+- Machine translation: Mikolov, Yih and Zweig, NAACL 2013; Xing et al., NAACL 2015; Artetxe et al., EMNLP 2016
+- Historical word embeddings: Hamilton, Leskovec and Jurafsky, ACL 2016.
+- Lexical resources enrichment: Prokhorov et al., 2017. Learning rare word representations using semantic bridging. 
+
+**Code:** https://github.com/Elbria/utdsm_naacl2018
+
+---
+
 ##### :boom:  (Poster) **Aligning Vector-spaces with Noisy Supervised Lexicon. Noa Yehezkel Lubin, Jacob Goldberger and Yoav Goldberg**
+
+
 
 
 ---
@@ -198,13 +280,13 @@ Can we combine the best of both? Words that co-occurr frequently but non-locally
 
 ---
 
-## Tasks
+# Tasks
 
 ### Text Generation :memo:
 
-##### (Demo) compare-mt: A Tool for Holistic Comparison of Language Generation Systems
+##### :boom: (Demo) compare-mt: A Tool for Holistic Comparison of Language Generation Systems
 
-##### (Demo) fairseq: A Fast, Extensible Toolkit for Sequence Modeling
+##### :boom: (Demo) fairseq: A Fast, Extensible Toolkit for Sequence Modeling
 
 ##### (Poster) Fixed That for You: Generating Contrastive Claims with Semantic Edits. Christopher Hidey and Kathy McKeown
 
@@ -300,7 +382,8 @@ Experiments:
 
 Audience Questions:
 
-- Q: Why didn't you use BERT? BERT is everything now!  A: future work.
+- Q: Why didn't you use BERT? BERT is everything now!
+- A: future work.
 
 **Code:**  https://github.com/zhawe01/fairseq-gec
 
@@ -325,6 +408,34 @@ Can generate text conditioned on a given topic, and adapted to summarization.
 
 ---
 
+##### :boom: Text Generation with Exemplar-based Adaptive Decoding
+
+**Problem**: encoder-decoder (seq2seq) architecture has been very successful (particularly with attention and copy mechanisms), but generated text is uncontrolled, unreliable, and often generic. On the other hand, hand-crafted templates are less scalable.
+
+**Solution**: A new conditioned text generation model, inspired by old-school template-based text generation, where there is a division of labor:
+
+- source provides content: "what to say"
+- template provides content: "how to say it"
+
+Instead of using templates, use "exemplar" text from the training data as a "soft template" for the decoder. This method performs well on summarization and data-to-text tasks.
+
+**Example:**
+
+- **Source**:  Norway said Friday it would give Zimbabwe 40 million kroner (7.02 million dollars, 4.86 million euros) in aid to help the country deal with a lack of food and clean drinking water and a cholera outbreak.
+- **Template**: ___ grants aid of __ to __
+- **Exemplar:** Norway boosts earquake aid to Pakistan.
+- **Target**: Norway grants aid of 4.86 million euros to Zimbabwe.
+
+
+**Slides:** https://homes.cs.washington.edu/~hapeng/slides/peng2019text.pdf
+
+**Code**: https://github.com/google-research/language/tree/master/language/labs/exemplar_decoding
+
+---
+
+##### :boom::boom: Reinforcement Learning Based Text Style Transfer without Parallel Training Corpus
+
+---
 
 ### Authorship Attribution, Stylometry, Fake News :mag:
 
@@ -388,12 +499,75 @@ The "adversary" (publication identifier) is trying to get the model to perform b
 
 ---
 
+##### :boom: Learning Hierarchical Discourse-level Structure for Fake News Detection
+
+**Problem:** Many detectors of fake news ignore hierarchical discourse-level structure. Some challenges:
+- Many discourse methods rely on corpora such as Penn Discourse Treebank. There is no available annotated discourse corpus for news.
+- How to use hierarchical discourse-level structure to detect fake news is an open challenge.
+
+**Method**: This approach, Hierarchical Discourse-level Structure for Fake news detection (HDSF):
+- First learns dependency trees of sentences from the data: two sentences are linked when one "semantically depends" on the other.
+    - Use BiLSTM to encode each sentence of the document to obtain a sequence of sentence representations.
+    - These are used to learn an inter-sentential attention matrix; this contains the probabilities that sentence m is the parent of sentence s.
+    - Probability of each sentence being the root node is also calculated from the data.
+    - Construct a dependency tree from these probabilities with a greedy algorithm:
+        - The highest probability sentence is the root node.
+        - Greedily add child nodes (each node should have only one parent)
+- Use the dependency tree to obtain a document-level representation.
+    - For each discourse unit (sentence) obtain a structurally-aware representation (various weighted averages of the sentence vectors).
+    - Average all the resulting vectors to obtain a document-level representation.
+- Use fully connected layer to classify the fake news. Train end-to-end.
+
+**Note:** it appears that the computed discourse trees are actually not used for classification; but rather they are used to obtain properties (including parent-child distances, number of root leaves) for explainability. There is a substatial difference in the document-level structure of fake and real news (real news is more coherent).
+
+**Note**: For an example of vectorizing RST trees, see Rubin and Lukoianova, Truth and Deception at the Rhetorical Structure Level, 2015.
+
+**Evaluation**: on five fake news datasets combined, with 3360 fake and 3360 real documents.  HDSF is compared to:
+- n-grams+SVM
+- LIWC (Linguistic Inquiry and Word Count)+SVM
+- RST+SVM (Ji and Eisenstein RST parser, but vectorized how?)
+- BiGRNN-CNN; two different LSTMs
+
+HDSF outperforms all others (82% accuracy) followed by the LSTM[w+s] (80%); RST is the worst (67%); LIWC and n-grams are pretty bad too (70%, 72%), since they don't account for document structure.
+
+Q: But why is RST so bad? A: Using an RST that does do well with out-of-domain (news) text.
+
+**Code:** https://github.com/hamidkarimi/HDSF
+
+---
+
 ##### (Poster) Fake News Detection using Deep Markov Random Fields
+
+---
 
 ### Summarization and Simplification :gem:
 
+##### Data-efficient Neural Text Compression with Interactive Learning
+
+Text compression: condensing one or more sentences into a shorter text of a given length containing the most important information.  Used for summarization.
+
+This paper presents a seq2seq method (with attention) with active learning to learn an in-domain model quickly, and then adapt it to a new domain/genre.
+
+**Code:** https://github.com/UKPLab/NAACL2019-interactiveCompression
+
+---
+
+##### Guiding Extractive Summarization with Question-Answering Rewards
+
+**TL;DR:** RL with a novel reward function (judging summary's adequacy, fluency, length, and ability to answer questions); using question answering as part of the reward signal helps with summarization.
+
+**Problem**: despite recent progress in neural abstractive summarization, they sometimes alter information, falsify or add details. Extractive summarization ("highlighting") does not have such drawbacks, but it is expensive to get enough labeled data.
+
+**Idea**: good extractive summaries should have enough information in them to answer questions. Use this signal in 
+
+**Code**: https://github.com/ucfnlp/summ_qa_rewards
+
+---
+
 ##### (Could not attend) SEQˆ3: Differentiable Sequence-to-Sequence-to-Sequence Autoencoder for Unsupervised Abstractive Sentence Compression.
+
 ##### (Could not attend) Abstractive Summarization of Reddit Posts with Multi-level Memory Networks. Byeongchang Kim, Hyunwoo Kim and Gunhee Kim
+
 ##### (Could not attend) Complexity-Weighted Loss and Diverse Reranking for Sentence Simplification. Reno Kriz et al.
 
 ---
@@ -408,7 +582,15 @@ The "adversary" (publication identifier) is trying to get the model to perform b
 
 ### Text Classification :paperclips:
 
+##### :boom::boom: [Text Classification with Few Examples using Controlled Generalization](#text-classification-with-few-examples-using-controlled-generalization)
+
+
+
+---
+
 ##### :boom: (Poster) **Vector of Locally-Aggregated Word Embeddings (VLAWE): A Novel Document-level Representation**
+
+---
 
 ##### (Poster) **Detecting depression in social media using fine-grained emotions**
 
@@ -522,13 +704,9 @@ The "adversary" (publication identifier) is trying to get the model to perform b
 
 ##### (Could not attend) Unsupervised Latent Tree Induction with Deep Inside-Outside Recursive Auto-Encoders. Andrew Drozdov, Patrick Verga, Mohit Yadav, Mohit Iyyer and Andrew McCallum
 
-##### (Could not attend) Locale-agnostic Universal domain Clasification Model in Spoken Language Understanding
-
 ##### (Could not attend) On the Importance of Distinguishing Word Meaning Representations: A Case Study on Reverse Dictionary Mapping. Mohammad Taher Pilehvar
 
 ##### (Could not attend) Factorising AMR generation through syntax
-
-##### (Could not attend) Joint Detection and Location of English Puns
 
 ##### (Could not attend) **Inoculation by Fine-Tuning: A Method for Analyzing Challenge Datasets. Nelson F. Liu, Roy Schwartz and Noah A. Smith**
 

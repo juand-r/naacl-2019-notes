@@ -5,12 +5,11 @@ This is a summary from a selection of papers presented at NAACL 2019, including 
 ---
 
 **Some comments:**
-- There is nothing here on speech, phonology, morphology.
-- There was a lot of interesting work I was not able to see:
+
+- There was a lot of interesting work I was not able to see, particularly:
     - question answering, reading comprehension and commonsense reasoning (this is booming; here is a recent survey: Storks et al., Commonsense Reasoning for Natural Language Understanding: A Survey, 2019).
-    - machine translation
     - knowledge graphs, knowledge-base completion
-    - application-oriented work, particularly for clinical/bio-medical applications. There was interesting work presented at the **clinical NLP workshop**, as well as a **clinical NLP tutorial.**
+    - clinical/bio-medical applications. There was interesting work presented at the **clinical NLP workshop**, as well as a **clinical NLP tutorial.**
 - I saw a lot of great work on:
     - low-resource settings (cross-lingual; few-shot learning; zero-shot learning)
     - information extraction
@@ -30,6 +29,7 @@ This is a summary from a selection of papers presented at NAACL 2019, including 
 See also Sebastian Ruder's highlights: http://ruder.io/naacl2019/index.html
 
 - [Topics](#topics)
+  - :school_satchel: [Using external knowledge](#using-external-knowledge-school_satchel) 
   - :bowling: [Learning with Limited Data](#learning-with-limited-data-bowling)
       - [Few-shot learning](#few-shot-learning)
       - [Zero-shot learning](#zero-shot-learning)
@@ -44,7 +44,7 @@ See also Sebastian Ruder's highlights: http://ruder.io/naacl2019/index.html
 - [Tasks](#tasks)
   - :memo: [Text Generation](#text-generation-memo)
   - :mag: [Authorship Attribution, Stylometry, Fake News](#authorship-attribution-stylometry-fake-news-mag)
-  - :gem: [Summarization and Simplification](#summarization-and-simplification-gem)
+  - :gem: [Summarization](#summarization-and-simplification-gem)
   - :ok::accept: [Machine Translation](#machine-translation-okaccept)
   - :paperclips: [Text Classification](#text-classification-paperclips)
   - :cityscape::boy: [Named Entity Recognition](#named-entity-recognition-cityscapeboy)
@@ -55,13 +55,42 @@ See also Sebastian Ruder's highlights: http://ruder.io/naacl2019/index.html
 - [Applications](#applications)
   - :hospital: [Clinical and biomedical applications](#clinical-and-biomedical-applications-hospital)
   - :shield::computer: [Cybersecurity applications](#cybersecurity-applications-shieldcomputer)
-  - :octopus: [Other applications](#other-applications-octopus)
+- :octopus: [Other applications and tasks](#other-applications-and-tasks-octopus)
 - [Other](#other)
 - [Keynote Lectures](#keynote-lectures)
 - [NeuralGen Workshop](#neuralgen-workshop)
 - [Coreference and Coherence Revisited](#coreference-and-coherence-revisited)
 
 # Topics
+
+## Using external knowledge :school_satchel:
+
+##### (Poster) Incorporating Context and External Knowledge for Pronoun Coreference Resolution
+
+Pronoun coreference cases such as: "The dog is chasing the cat, but it climbs the tree." What kind of knowledge is used?
+
+- linguistic features (animacy, plurality, gender) obtained from Stanford CoreNLP.
+- selectional preferences (frequency of predicate-argument tuples). For example: a cat is more likely to climb than a dog.
+
+A neural network with attention mechanisms for both context and knowledge is used to get SOTA results for this task.
+
+---
+
+##### (Poster) OpenKI: Integrating Open Information Extraction and Knowledge Bases with Relation Inference
+
+---
+
+##### (Poster) Connecting Language and Knowledge with Heterogeneous Representations for Neural Relation Extraction
+
+---
+
+##### :boom: [Integrating Semantic Knowledge to Tackle Zero-shot Text Classification](#boom-integrating-semantic-knowledge-to-tackle-zero-shot-text-classification)
+
+---
+
+##### [Knowledge-Augmented Language Model and Its Application to Unsupervised Named-Entity Recognition](#knowledge-augmented-language-model-and-its-application-to-unsupervised-named-entity-recognition)
+
+---
 
 ## Learning with Limited Data :bowling:
 
@@ -71,9 +100,11 @@ See also Sebastian Ruder's highlights: http://ruder.io/naacl2019/index.html
 
 ### Few-shot learning
 
-##### Text Classification with Few Examples using Controlled Generalization
+##### :boom::boom: Text Classification with Few Examples using Controlled Generalization
 
 #####  :spider_web: Long-tail Relation Extraction via Knowledge Graph Embeddings and Graph Convolution Networks
+
+##### :boom:(Poster) Learning Relational Representations by Analogy using Hierarchical Siamese Networks
 
 --- 
 
@@ -83,7 +114,7 @@ See also Sebastian Ruder's highlights: http://ruder.io/naacl2019/index.html
 
 ---
 
-##### Integrating Semantic Knowledge to Tackle Zero-shot Text Classification
+##### :boom: Integrating Semantic Knowledge to Tackle Zero-shot Text Classification
 
 To better classify text with labels unseen at training time, the proposed framework incorporates "semantic knowledge" of four different kinds:
 
@@ -107,6 +138,10 @@ Related ideas:
 2. The pseudo-labels are combined with true labels for continued training using logistic regression.
 
 The proposed method is more effective than competing (semi-supervised and retrieval-based) approaches in short-document settings (Wiki Titles, News Titles, Yahoo questions), and performs worse on 20 Newsgroups, Reuters-21578 and a medical WSD dataset.
+
+---
+
+##### (Could not attend) Zero-Shot Cross-Lingual Opinion Target Extraction
 
 ---
 
@@ -148,6 +183,14 @@ The proposed method is more effective than competing (semi-supervised and retrie
 ### Weak supervision, distantly-labeled data
 
 ##### :boom: Learning to Denoise Distantly-Labeled Data for Entity Typing
+
+---
+
+##### Exploiting Noisy Data in Distant Supervision Relation Classification
+
+-----
+
+##### Improving Distantly-supervised Entity Typing with Compact Latent Space Clustering
 
 ---
 
@@ -359,6 +402,10 @@ Related work on finding transformations between independently-trained embeddings
 
 ---
 
+##### :boom: (Poster) Evaluating Coherence in Dialogue Systems using Entailment
+
+---
+
 ##### (Poster) Modeling Document-level Causal Structures for Event Causal Relation Identification. Lei Gao, Prafulla Kumar Choubey and Ruihong Huang
 
 ---
@@ -366,12 +413,16 @@ Related work on finding transformations between independently-trained embeddings
 ## Attention :eyes:
 
 ##### (Poster) Simple Attention-Based Representation Learning for Ranking Short Social Media Posts. Peng Shi, Jinfeng Rao and Jimmy Lin
+
 ##### (Poster) **Attentive Convolution: Equipping CNNs with RNN-style Attention Mechanisms. Wenpeng Yin and Hinrich Schütze**
+
 ##### (Could not attend) **Attention is not Explanation**
+
 ##### (Could not attend) **Convolutional Self-Attention Networks. Baosong Yang et al.**
+
 ##### (Could not attend) Saliency Learning: Teaching the Model Where to Pay Attention. Reza Ghaeini, Xiaoli Fern, Hamed Shahbazi and Prasad Tadepalli
-##### (Poster) **Attentive Mimicking: Better Word Embeddings by Attending to Informative Contexts**
-  - See in "attention"
+
+##### (Poster) Attentive Mimicking: Better Word Embeddings by Attending to Informative Contexts
 
 ---
 
@@ -401,7 +452,7 @@ Examples of generated sound captions: https://audiocaps.github.io/
 
 ##### :boom: (Could not attend) Structural Neural Encoders for AMR-to-text Generation. Marco Damonte and Shay B. Cohen
 
-##### (Poster; Could not attend) Improved Lexically Constrained Decoding for Translation and Monolingual Rewriting
+##### Improved Lexically Constrained Decoding for Translation and Monolingual Rewriting
 
 ---
 
@@ -572,11 +623,27 @@ Why does generation need pragmatics? Generation as a pragmatic game. Some princi
 
 ---
 
+##### Improving Human Text Comprehension through Semi-Markov CRF-based Neural Section Title Generation
+
 ##### Towards Content Transfer through Grounded Text Generation
 
 ---
 
 ##### Pun Generation with Surprise
+
+---
+
+##### :boom: (Poster) Evaluating Text GANs as Language Models
+
+TL;DR: language models currently perform a lot better than text GANS.
+
+---
+
+##### :boom: (Poster) Step-by-Step: Separating Planning from Realization in Neural Data-to-Text Generation
+
+---
+
+##### :boom: (Poster) Text Generation from Knowledge Graphs with Graph Transformers
 
 ---
 
@@ -686,9 +753,13 @@ Q: But why is RST so bad? A: Using an RST that does do well with out-of-domain (
 
 ##### (Poster) Fake News Detection using Deep Markov Random Fields
 
+##### Graph convolutional networks for exploring authorship hypotheses
+
+(Cultural Heritage, Social Science, Humanities and Literature Workshop)
+
 ---
 
-## Summarization and Simplification :gem:
+## Summarization :gem:
 
 ##### Data-efficient Neural Text Compression with Interactive Learning
 
@@ -718,6 +789,7 @@ This paper presents a seq2seq method (with attention) with active learning to le
 
 ##### (Could not attend) Complexity-Weighted Loss and Diverse Reranking for Sentence Simplification. Reno Kriz et al.
 
+##### (Could not attend) :boom: Fast Concept Mention Grouping for Concept Map-based Multi-Document Summarization
 ---
 
 ## Machine Translation :ok::accept:
@@ -730,15 +802,21 @@ This paper presents a seq2seq method (with attention) with active learning to le
 
 ## Text Classification :paperclips:
 
-##### :boom::boom: [Text Classification with Few Examples using Controlled Generalization](#text-classification-with-few-examples-using-controlled-generalization)
+##### :boom::boom: [Text Classification with Few Examples using Controlled Generalization](#boomboom-text-classification-with-few-examples-using-controlled-generalization)
 
+---
 
+##### Adaptive Convolution for Text Classification
+
+Instead of using a fixed set of filters, use adaptive convolution (convolutional filters that are conditioned on the inputs).
 
 ---
 
 ##### :boom: (Poster) **Vector of Locally-Aggregated Word Embeddings (VLAWE): A Novel Document-level Representation**
 
 ---
+
+##### (Poster) An Effective Label Noise Model for DNN Text Classification
 
 ##### (Poster) **Detecting depression in social media using fine-grained emotions**
 
@@ -780,6 +858,12 @@ This is supposed to work well in the scarce label setting
 
 ##### (Could not attend) **Document-Level N-ary Relation Extraction with Multiscale Representation Learning**. Robin Jia, Cliff Wong and Hoifung Poon
 
+##### (Poster) Relation Classification Using Segment-Level Attention-based CNN and Dependency-based RNN
+
+##### (Poster) Distant Supervision Relation Extraction with Intra-Bag and Inter-Bag Attentions
+
+##### (Poster) A Richer-but-Smarter Shortest Dependency Path with Attentive Augmentation for Relation Extraction
+
 ---
 
 ## Keyphrase Extraction :key::bookmark_tabs:
@@ -790,6 +874,8 @@ This is supposed to work well in the scarce label setting
 
 ##### (Poster) An Integrated Approach for Keyphrase Generation via Exploring the Power of Retrieval and Extraction.
 
+##### (RepEval workshop) Multi-Context Term Embeddings: the Use Case of Corpus-based Term Set Expansion
+
 ---
 
 ## Knowledge Graph Completion :spider_web:
@@ -797,7 +883,13 @@ This is supposed to work well in the scarce label setting
 ##### Graph Pattern Entity Ranking Model for Knowledge Graph Completion. Takuma Ebisu and Ryutaro Ichise
 
 ##### [Long-tail Relation Extraction via Knowledge Graph Embeddings and Graph Convolution Networks](#spider_web-long-tail-relation-extraction-via-knowledge-graph-embeddings-and-graph-convolution-networks)
- 
+
+##### (Poster) Generating Knowledge Graph Paths from Textual Definitions using Sequence-to-Sequence Models
+
+##### :boom: (Poster) Fact Discovery from Knowledge Base via Facet Decomposition
+
+##### :boom: (Poster) Relation Discovery with Out-of-Relation Knowledge Base as Supervision
+
 ---
 
 ## Reading Comprehension and Question Answering :book::question:
@@ -821,11 +913,34 @@ Here is an example of the task from the QAngaroo paper:
 
 ##### (Poster) DROP: A Reading Comprehension Benchmark Requiring Discrete Reasoning Over Paragraphs. Dheeru Dua, Yizhong Wang, Pradeep Dasigi, Gabriel Stanovsky, Sameer Singh and Matt Gardner
 
+---
+
+##### (A best paper) CommonsenseQA: A Question Answering Challenge Targeting Commonsense Knowledge. 
+
+Challenging new dataset for question answering: CommonsenseQA. Crowd-workers are encouraged to create questions that require prior knowledge:
+
+- based on knowledge encoded in ConceptNet (Speer et al., 2017)
+- crowd workers generate questinos that describe the relation between concepts from ConceptNet, eg:
+    - given river and waterfall, "Where on a river can you hold a cup upright to catch water on a sunny day?"
+    - possible answers: {waterfall, bridge, valley, pebble, mountain}
+
+Fine-tuning BERT-large on the commonsenseQA obtains highest performance (55% accuracy), but still much lower than human performance (88.9%).
+
+This is really impressive but somewhat mysterious - **language models can store large amounts of information related to commonsense knowledge**. How is it doing this? I think there will soon be more work on probing BERT for commonsense knowledge.
+
+**Data**: www.tau-nlp.org/commonsenseqa
+**Code:** github.com/jonathanherzig/commonsenseqa
+
+
+---
+
 ##### (Could not attend) Improving Machine Reading Comprehension with General Reading Strategies. Kai Sun, Dian Yu, Dong Yu and Claire Cardie
 
 ##### (Could not attend) **Repurposing Entailment for Multi-Hop Question Answering Tasks. Harsh Trivedi et al.**
 
 ##### (Could not attend) Understanding Dataset Design Choices for Multi-hop Reasoning. Jifan Chen and Greg Durrett
+
+##### :boom: Alignment over Heterogeneous Embeddings for Question Answering
 
 
 ---
@@ -861,19 +976,139 @@ A corpus of 200 breast cancer follow-up treatment notes with distinct relation t
 
 ---
 
-## Other applications :octopus:
+# Other applications and tasks:octopus:
+
+##### (Poster) AttentiveChecker: A Bi-Directional Attention Flow Mechanism for Fact Verification
+
+State-of-the-art results on the FEVER fact-checking dataset. For each factual claim, the system must extract textual evidence from Wikipedia to support or refute the claim. A neural network model does this by:
+- retrieving relevant documents (reducing the search space)
+- sentence selection: choose top-k sentences from each document
+- claim verification: given the claim and extracted supporting sentences, output label {supported, refuted, notEnoughInfo}.
+
+
+---
 
 ##### (Poster) Text Similarity Estimation Based on Word Embeddings and Matrix Norms for Targeted Marketing.
 
+Application: commercial youth platform where registered members get special offers. Given a user's contest answer (prompt: a perfect holiday) they will be classified into one of the following categories:
+
+- "progressive postmodern youth" (culture and arts)
+- "young performers" (luxury goods, high salary)
+- "freestyle action sportsmen"
+- "hedonists" (poorly educated people who like partying)
+- "conservative youth" (traditional people, concern for security)
+- "special groups"
+
+Cosine similarity between centroids (similarity between associated keyword lists and user text) did not perform well here, so the authors propose a different way of combining word vectors.
+
+---
+
+##### Playing by the Book: An Interactive Game Approach for Action Graph Extraction from Text
+
+(Workshop on Extracting Structured Knowledge from Scientific Publication)
+
+**Goal:** extract action-graphs (sequences of valid actions) from materials science papers. Entities are nodes; actions are edges. This is an example of "procedural text understanding"
+
+![image](images/text-to-action-graph.png)
+
+**Idea:** "understanding by simulation": mental simulation (building and manipulating an internal model of the world). Rather than generate the action graph directly, do it implicitly by playing a text-based game (modeled as a POMDP) . The solution of the game is the required action graph.
+
+**Related areas**: text-RL (for language grounding), grounded semantic parsing, state-tracking.
+
+The paper reports on the environment built for the task ("TEXTLABS") and some preliminary work. Issue: lack of graph annotations. Proposed solution: use controllable NLG to obtain synthetic data.
+
+
+**Code and experiments**: https://github.com/ronentk/TextLabs
+
+---
+
+##### Dialogue Act Classification with Context-Aware Self-Attention
+
+Goal: predict dialogue acts (Austin, "How to do things with words") such as: other, question, statement, backchannel.
+
+---
+
+##### A k-Nearest Neighbor Approach towards Multi-level Sequence Labeling
+
+A spoken language understanding task for food ordering. Example: given "hi can i get a sausage cheese croissant and a medium hash brown", want multi-level (nested) sequence classification:
+
+- [sausage], [cheese] -> toppings
+- [croissant] -> breakfast_item_head
+- [a sausage cheese croissant] -> breakfast_item
+- [medium] -> size
+- [hash brown] -> side_item_head
+- [a medium hash brown] -> side_item
+
+Challenge: do not have much data to train on.
+
+---
+
 ##### Harry Potter and the Action Prediction Challenge from Natural Language
- 
+
+Action prediction challenge: given text describing a scene, predict what action is likely to happen next. But don't have a dataset and expensive to get one.
+
+Solution: created a dataset from Harry Potter books and Harry Potter fan fiction for textual action prediction. Idea: each spell is a keyword for an abstract action (e.g. "Alohomora" for opening a door).
+
+Future work: can knowledge from this dataset be transferred to the real world?
+
+---
+
+##### Casting Light on Invisible Cities: Computationally Engaging with Literary Criticism
+
+NLP (and large LMs) to aid literary criticism of a novel. Invisible Cities consists of short descriptions of imaginary cities; the author provided a classification into 11 thematic groups, but how literary critics disagree.
+
+---
+
+##### Argument Mining for Understanding Peer Reviews
+
+**Goal:** understanding content and quality of peer reviews. Author feedback is subjective, affected by acceptance decision. Peer reviews resemble arguments, and argument mining can extract the content and structure of the reviews. Tasks: (1) proposition segmentation. (2) proposition classification.
+
+A dataset, AMPERE, is created by annotating 400 reviews, labelling propositions as:
+
+- evaluation (subjective statement): "this paper shows nice results"
+- request: "this authors should compare with X"
+- fact (objective information or commonsense knowledge): "existing works on multi-task learning typically use .."
+- reference (citations, urls)
+- quote (quotations from the paper)
+- non-arg (non-argumentative statment): e.g., "now I understand".
+
+**Data** (from opernreview.net; Neurips; ACL 2017): http://xinyuhua.github.io/Resources/naacl19/
+
+
+---
+
+##### Does My Rebuttal Matter? Insights from a Major NLP Conference
+
+Understanding peer-review. Do author responses have an effect on final reviewer scores? Various linguistic features were also used (response length, similarity, specificity, politeness, and "convincingness").
+
+Unfortunately a revier's final score is largely determined by the initial score and distance to other revier's initial scores (conformity bias)
+
+**Corpus and code**: https://github.com/UKPLab/naacl2019-does-my-rebuttal-matter
+
+---
+
+##### Learning to Decipher Hate Symbols
+
+Most work treats hate speech detection as a classification problem. This focuses on extracting features (hate symbols) that are not obvious, but may be discerned from the context. 
+
+Example: 14="the 14 words" (refers to slogan of a neo-Nazi movement). 88="Heil Hitler", 23="White Power". Variational autoencoders and seq2seq models are used for this task.
+
+---
+
+##### Target-oriented Opinion Words Extraction with Target-fused Neural Sequence Labeling
+
+e.g. From "My friends and I were on vacation in NY and was referred to Chance by a friend. I found the **food** to be outstanding, particularly the **salmon dish** I had. I also ordered the **Change Mojito**, which was **out of this world**..."
+
+Want to extract:
+- food: outstanding
+- salmon dish: outstanding
+- Change Mojito: out of this world
+
 ---
 
 ## Other
 
 ### Posters
-
-##### Adversarial Decomposition of Text Representation
 
 ##### PAWS: Paraphrase Adversaries from Word Scrambling
 
@@ -887,6 +1122,11 @@ A corpus of 200 breast cancer follow-up treatment notes with distinct relation t
 
 ##### :boom: Adversarial Decomposition of Text Representation
 
+##### Planning, Inference and Pragmatics in Sequential Language Games
+
+##### :boom: Practical Semantic Parsing for Spoken Language Understanding
+
+##### Generating Token-Level Explanations for Natural Language Inference
 
 ### Oral
 

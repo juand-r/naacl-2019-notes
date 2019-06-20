@@ -6,15 +6,17 @@ This is a summary from a selection of papers presented at NAACL 2019, including 
 
 **Some comments:**
 - There was a lot of interesting work I was not able to see:
-    - question answering and commonsense reasoning (this area is booming; here is a recent survey: Storks et al., Commonsense Reasoning for Natural Language Understanding: A Survey, 2019).
+    - question answering, reading comprehension and commonsense reasoning (this is booming; here is a recent survey: Storks et al., Commonsense Reasoning for Natural Language Understanding: A Survey, 2019).
+    - machine translation
     - knowledge graphs, knowledge-base completion
     - application-oriented work, particularly for clinical/bio-medical applications. There was interesting work presented at the **clinical NLP workshop**, as well as a **clinical NLP tutorial.**
 - I saw a lot of great work on:
     - low-resource settings (cross-lingual; few-shot learning; zero-shot learning)
+    - information extraction
     - text generation
 - It was good to see papers that were not concerned with chasing SOTA:
     - some nice error analysis papers (e.g., Hayes, "What just happened?")
-    - papers introducing new datasets (Kim et al., "AudioCaps"; Geva et al., "DiscoFuse"; McHardy et al., "Adversarial Training for Satire Detection") and benchmarks (e.g., WiC: the Word-in-Context Dataset)
+    - papers introducing new datasets (Kim et al., "AudioCaps"; Geva et al., "DiscoFuse"; McHardy et al., "Adversarial Training for Satire Detection", Bamman et al.,"An annotated dataset of literary entities") and benchmarks (e.g., WiC: the Word-in-Context Dataset)
     - evaluation (which is particuarly difficult for language generation tasks)
 - It seemed like BERT was everywhere (ELMo too, but mostly BERT), and large language models are here to stay.
     - The good:
@@ -210,9 +212,9 @@ BiLM pretraining yields representations that are more transferable in general (e
 
 ##### Knowledge-Augmented Language Model and Its Application to Unsupervised Named-Entity Recognition
 
-
-
 ---
+
+##### (Could not attend) An Embarrassingly Simple Approach for Transfer Learning from Pretrained Language Models
 
 ##### (Could not attend) Serial Recall Effects in Neural Language Modeling. Hassan Hajipoor, Hadi Amiri, Maseud Rahgozar and Farhad Oroumchian
 
@@ -392,7 +394,7 @@ Examples of generated sound captions: https://audiocaps.github.io/
 
 ##### (Could not attend) **Accelerated Reinforcement Learning for Sentence Generation by Vocabulary Prediction**. Kazuma Hashimoto and Yoshimasa Tsuruoka
 
-##### (Could not attend) Structural Neural Encoders for AMR-to-text Generation. Marco Damonte and Shay B. Cohen
+##### :boom: (Could not attend) Structural Neural Encoders for AMR-to-text Generation. Marco Damonte and Shay B. Cohen
 
 ##### (Poster; Could not attend) Improved Lexically Constrained Decoding for Translation and Monolingual Rewriting
 
@@ -558,6 +560,10 @@ Why does generation need pragmatics? Generation as a pragmatic game. Some princi
 ---
 
 ##### (Could not attend) Pre-trained language model representations for language generation
+
+---
+
+##### :boom: Text Generation from Knowledge Graphs with Graph Transformers
 
 ---
 
@@ -840,6 +846,8 @@ A corpus of 200 breast cancer follow-up treatment notes with distinct relation t
 
 ##### (Poster) Text Similarity Estimation Based on Word Embeddings and Matrix Norms for Targeted Marketing.
 
+##### Harry Potter and the Action Prediction Challenge from Natural Language
+ 
 ---
 
 ## Other
@@ -881,7 +889,7 @@ While dependency parsing has been done as sequence labeling before, results were
 
 ##### Unsupervised Latent Tree Induction with Deep Inside-Outside Recursive Auto-Encoders. Andrew Drozdov, Patrick Verga, Mohit Yadav, Mohit Iyyer and Andrew McCallum
 
-##### On the Importance of Distinguishing Word Meaning Representations: A Case Study on Reverse Dictionary Mapping. Mohammad Taher Pilehvar
+##### On the Importance of Distinguishing Word Meaning Representations: A Case Study on Reverse Dictionary Mapping
 
 ##### Factorising AMR generation through syntax
 

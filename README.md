@@ -88,9 +88,7 @@ A neural network with attention mechanisms for both context and knowledge is use
 
 ---
 
-##### [Knowledge-Augmented Language Model and Its Application to Unsupervised Named-Entity Recognition](#knowledge-augmented-language-model-and-its-application-to-unsupervised-named-entity-recognition)
 
----
 
 ## Learning with Limited Data :bowling:
 

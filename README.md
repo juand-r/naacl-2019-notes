@@ -586,6 +586,8 @@ The "adversary" (publication identifier) is trying to get the model to perform b
 - Many discourse methods rely on corpora such as Penn Discourse Treebank. There is no available annotated discourse corpus for news.
 - How to use hierarchical discourse-level structure to detect fake news is an open challenge.
 
+![image](discourse-level-HDSF.png)
+
 **Method**: This approach, Hierarchical Discourse-level Structure for Fake news detection (HDSF):
 - First learns dependency trees of sentences from the data: two sentences are linked when one "semantically depends" on the other.
     - Use BiLSTM to encode each sentence of the document to obtain a sequence of sentence representations.

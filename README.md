@@ -588,7 +588,7 @@ The "adversary" (publication identifier) is trying to get the model to perform b
 
 ![image](images/discourse-level-HDSF.png)
 
-**Method**: This approach, Hierarchical Discourse-level Structure for Fake news detection (HDSF):
+**Method**: This approach, Hierarchical Discourse-level Structure for Fake news detection (HDSF) is shown above (Figure 2 from the paper). Briefly:
 - First learns dependency trees of sentences from the data: two sentences are linked when one "semantically depends" on the other.
     - Use BiLSTM to encode each sentence of the document to obtain a sequence of sentence representations.
     - These are used to learn an inter-sentential attention matrix; this contains the probabilities that sentence m is the parent of sentence s.

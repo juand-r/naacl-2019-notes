@@ -38,7 +38,7 @@ See also Sebastian Ruder's highlights: http://ruder.io/naacl2019/index.html
 
 # Topics
 
-### Learning with Limited Data :bowling:
+## Learning with Limited Data :bowling:
 
 ##### :repeat: Structured Minimally Supervised Learning for Neural Relation Extraction. Fan Bai and Alan Ritter.
 
@@ -48,7 +48,7 @@ See also Sebastian Ruder's highlights: http://ruder.io/naacl2019/index.html
 
 ##### Text Classification with Few Examples using Controlled Generalization
 
-#####  :spider_web: **Long-tail Relation Extraction via Knowledge Graph Embeddings and Graph Convolution Networks.**  Ningyu Zhang et al.
+#####  :spider_web: Long-tail Relation Extraction via Knowledge Graph Embeddings and Graph Convolution Networks
 
 --- 
 
@@ -124,8 +124,39 @@ The proposed method is more effective than competing (semi-supervised and retrie
 
 ---
 
+## Language Models :speech_balloon:
 
-### Language Models :speech_balloon:
+##### :boom: A Structural Probe for Finding Syntax in Word Representations
+
+**Questions**: What linguistic information is contained in BERT and ELMo vectors? Can we extract dependency parse trees from them?  Answer: yes! Note the subtle difference between learning something and being extractable by a probe (or "diagnostic classifier"; see the Saphra and Lopez paper for more on this).
+
+**Background**: Why is this even possible? Language modeling is a hard task: so to do language modeling well, one implicitly (hopefully) learns higher-level linguistic information.
+
+**How to extract trees from sequences of vectors**:
+
+Find a linear transformation such that vector distances encode trees. Will the minimum spanning tree recover an actual dependency tree? This worked surprisingly well!
+
+**Other recent "probing" papers to look at (#Bertology)**:
+
+- Saphra and Lopez, Understanding Learning Dynamics Of Language Models with SVCCA, NAACL 2019
+- Tenney, Das and Pavlick, Bert rediscovers the classical NLP pipeline
+- What Does BERT Look At? An Analysis of BERT's Attention
+- Open Sesame: Getting Inside BERT's Linguistic Knowledge
+- Visualizing and Measuring the Geometry of BERT
+
+**Some older interesting probing papers**:
+- Colorless Green Recurrent Networks Dream Hierarchically, 2018
+- LSTMs Can Learn Syntax-Sensitive Dependencies Well, But Modeling Structure Makes Them Better, 2018
+- Dissecting Contextual Word Embeddings: Architecture and Representation, 2018
+- Assessing the Ability of LSTMs to Learn Syntax-Sensitive Dependencies, 2017
+
+**Blog**: https://nlp.stanford.edu/~johnhew/structural-probe.html
+
+**NLP Highlights Podcast**: https://soundcloud.com/nlp-highlights/88-a-structural-probe-for-finding-syntax-in-word-representations-with-john-hewitt
+
+**Code**: https://github.com/john-hewitt/structural-probes
+
+---
 
 ##### Linguistic Knowledge and Transferability of Contextual Representations
 
@@ -141,6 +172,10 @@ BiLM pretraining yields representations that are more transferable in general (e
 
 ---
 
+##### :boom: (Could not attend) Show Some Love to Your n-grams: A Bit of Progress and Stronger n-gram Language Modeling Baselines
+
+---
+
 ##### (Could not attend) **Knowledge-Augmented Language Model and Its Application to Unsupervised Named-Entity Recognition. Angli Liu, Jingfei Du and Veselin Stoyanov**
 
 ---
@@ -153,7 +188,7 @@ BiLM pretraining yields representations that are more transferable in general (e
 
 ---
 
-### Word representations :abcd:
+## Word representations :abcd:
 
 ##### :boom: Word-Node2Vec: Improving Word Embedding with Document-Level Non-Local Word Co-occurrences
 
@@ -164,9 +199,14 @@ Despite progress in better word representations (word embeddings), the most popu
 
 Can we combine the best of both? Words that co-occurr frequently but non-locally within documents may have semantic association that local models are not capturing.
 
-**Idea:** convex combination of local and non-local co-ocurrence weights.
+**Idea:** use convex combination of local and non-local co-ocurrence weights in a graph-based framework (each word is a node, and co-ocurrence information is expressed in edge weights).
 
-**Evaluation:** concept categorization.
+- word2vec (skip-gram): context of a word is words in a fixed window. Try to predict the context words for each target word.
+- node2vec (Grover and Leskovec, 2016): context to be predicted is a sequence of nodes visited by a random walk starting from a target node.
+- word2vec, graph formulation (unweighted version): rather than do a random walk, let context be the subgraph that is within distance 2 of a given node (two hops).
+- word2vec, graph formulation (weighted version): can adapt this to use weighted edges. The weights are computed using both global information (co-ocurrence probabilities of words in a document) and local information (co-ocurrence probabilities of word pairs within a window, similar to GloVe). Then sample neighbours proportional to the weights of the edges. (The sampling strategy is different than node2vec.)
+
+**Evaluation:** concept categorization (AP, BLESS, ESSLI), word similarity prediction and word analogy. Word-node2vec outperforms Glove, FastText, and word2vec (but looking at their table, it is often not a very large improvement).
 
 **Code:** https://github.com/procheta/Word-Node2Vec
 
@@ -257,18 +297,28 @@ Related work on finding transformations between independently-trained embeddings
 ##### :boom:  (Poster) **Aligning Vector-spaces with Noisy Supervised Lexicon. Noa Yehezkel Lubin, Jacob Goldberger and Yoav Goldberg**
 
 
+---
 
+## Discourse :busts_in_silhouette:
+
+##### DiscoFuse: A Large-Scale Dataset for Discourse-Based Sentence Fusion
 
 ---
 
 
-### Discourse :busts_in_silhouette:
+##### :boom: Linguistically-Informed Specificity and Semantic Plausibility for Dialogue Generation
+
+---
+
+##### Mining Discourse Markers for Unsupervised Sentence Representation Learning
+
+---
 
 ##### (Poster) Modeling Document-level Causal Structures for Event Causal Relation Identification. Lei Gao, Prafulla Kumar Choubey and Ruihong Huang
 
 ---
 
-### Attention :eyes:
+## Attention :eyes:
 
 ##### (Poster) Simple Attention-Based Representation Learning for Ranking Short Social Media Posts. Peng Shi, Jinfeng Rao and Jimmy Lin
 ##### (Poster) **Attentive Convolution: Equipping CNNs with RNN-style Attention Mechanisms. Wenpeng Yin and Hinrich Schütze**
@@ -282,7 +332,7 @@ Related work on finding transformations between independently-trained embeddings
 
 # Tasks
 
-### Text Generation :memo:
+## Text Generation :memo:
 
 ##### :boom: (Demo) compare-mt: A Tool for Holistic Comparison of Language Generation Systems
 
@@ -290,9 +340,13 @@ Related work on finding transformations between independently-trained embeddings
 
 ##### (Poster) Fixed That for You: Generating Contrastive Claims with Semantic Edits. Christopher Hidey and Kathy McKeown
 
+---
+
 ##### (Could not attend) AudioCaps: Generating Captions for Audios in The Wild.
 
-Examples of generated sound captions: https://audiocaps.github.io/      
+Examples of generated sound captions: https://audiocaps.github.io/
+
+---
 
 ##### (Could not attend) An Empirical Investigation of Global and Local Normalization for Recurrent Neural Sequence Models Using a Continuous Relaxation to Beam Search.
 
@@ -437,7 +491,31 @@ Instead of using templates, use "exemplar" text from the training data as a "sof
 
 ---
 
-### Authorship Attribution, Stylometry, Fake News :mag:
+##### :boom: Learning to Describe Unknown Phrases with Local and Global Contexts
+
+---
+
+##### Pragmatically Informative Text Generation
+
+Why does generation need pragmatics? Generation as a pragmatic game. Some principles (Grice):
+- convey all the relevant information
+- be informative in context
+
+**Code**: https://github.com/sIncerass/prag_generation
+
+---
+
+##### Stochastic Wasserstein Autoencoder for Probabilistic Sentence Generation
+
+---
+
+##### (Could not attend) Pre-trained language model representations for language generation
+
+---
+
+
+
+## Authorship Attribution, Stylometry, Fake News :mag:
 
 ##### :boom: Generalizing Unmasking for Short Texts
 
@@ -482,10 +560,7 @@ This paper generalizes the **unmasking** approach (Koppel and Schler, ICML 2004)
 
 ##### :boom: Adversarial Training for Satire Detection: Controlling for Confounding Variables. Robert McHardy, Heike Adel and Roman Klinger
 
-**Motivation:** Models for satire detection might be learning the characteristics of the publication source. This is bad:
-
-- bad for generalization
-- misleading (we don't want Onion detectors, we want satire detectors).
+**Motivation:** Models for satire detection might be learning the characteristics of the publication source. This is (a) for generalization, (b) misleading (we don't want Onion detectors, we want satire detectors).
 
 **Goal:** use adversarial training to improve the robustness of the model against confounding variable of publication source.
 
@@ -493,7 +568,13 @@ This paper generalizes the **unmasking** approach (Koppel and Schler, ICML 2004)
 
 ![image](images/adv-satire-model2.png)
 
-The "adversary" (publication identifier) is trying to get the model to perform badly at guessing the publication name.
+The "adversary" (publication identifier) is trying to get the model to perform badly at detecting the publication name. This idea was used in Ganin et al. JMLR (2016) for domain adaptation (a classifier for class labels and a domain discriminator adversary) using "gradient reversal": the sign of the gradient of the satire discriminator is flipped when backpropagating.
+
+**Results:**
+- This was tested on real and satirical German news. Publication identification performance was reduced with little effect on satire detection performance.
+- Inspection of attention weights:
+    - Example 1: the baseline model (no adversary) focuses on "dpo" (a parody of German newsire "dpa"; this is unique to this publication source).  The model with adversarial training ignores this word. In another example
+    - Example 2: the baseline model spreads attention evenly across all words. The adversarial model finds more specific cues for satire.
 
 **Code and data:** www.ims.uni-stuttgart.de/data/germansatire ; https://bitbucket.org/rklinger/adversarialsatire/src/master/
 
@@ -540,7 +621,7 @@ Q: But why is RST so bad? A: Using an RST that does do well with out-of-domain (
 
 ---
 
-### Summarization and Simplification :gem:
+## Summarization and Simplification :gem:
 
 ##### Data-efficient Neural Text Compression with Interactive Learning
 
@@ -572,7 +653,7 @@ This paper presents a seq2seq method (with attention) with active learning to le
 
 ---
 
-### Machine Translation :ok::accept:
+## Machine Translation :ok::accept:
 
 ##### :boom:  (Poster) Lost in Machine Translation: A Method to Reduce Meaning Loss. Reuben Cohn-Gordon and Noah Goodman
 ##### (Poster) Understanding and Improving Hidden Representations for Neural Machine Translation.
@@ -580,7 +661,7 @@ This paper presents a seq2seq method (with attention) with active learning to le
 ---
 
 
-### Text Classification :paperclips:
+## Text Classification :paperclips:
 
 ##### :boom::boom: [Text Classification with Few Examples using Controlled Generalization](#text-classification-with-few-examples-using-controlled-generalization)
 
@@ -602,7 +683,7 @@ This paper presents a seq2seq method (with attention) with active learning to le
 
 ---
 
-### Named Entity Recognition :cityscape::boy:
+## Named Entity Recognition :cityscape::boy:
 
 ##### Pooled Contextualized Embeddings for Named Entity Recognition. Alan Akbik, Tanja Bergmann and Roland Vollgraf
 
@@ -615,7 +696,7 @@ This paper presents a seq2seq method (with attention) with active learning to le
 
 ---
 
-### Relation extraction :repeat:
+## Relation extraction :repeat:
 
 ##### [GAN Driven Semi-distant Supervision for Relation Extraction](#repeat-gan-driven-semi-distant-supervision-for-relation-extraction)
 
@@ -625,22 +706,21 @@ This paper presents a seq2seq method (with attention) with active learning to le
 
 ---
 
-### Keyphrase Extraction :key::bookmark_tabs:
+## Keyphrase Extraction :key::bookmark_tabs:
 
 ##### (Could not attend) Keyphrase Generation: A Text Summarization Struggle. Erion Çano and Ondřej Bojar
 
 ---
 
-### Knowledge Graph Completion :spider_web:
+## Knowledge Graph Completion :spider_web:
 
 ##### Graph Pattern Entity Ranking Model for Knowledge Graph Completion. Takuma Ebisu and Ryutaro Ichise
 
-##### **Long-tail Relation Extraction via Knowledge Graph Embeddings and Graph Convolution Networks.**  Ningyu Zhang et al.
-  - See under 'few-shot'
-
+##### [Long-tail Relation Extraction via Knowledge Graph Embeddings and Graph Convolution Networks](#spider_web-long-tail-relation-extraction-via-knowledge-graph-embeddings-and-graph-convolution-networks)
+ 
 ---
 
-### Reading Comprehension and Question Answering :book::question:
+## Reading Comprehension and Question Answering :book::question:
 
 ##### (Poster) DROP: A Reading Comprehension Benchmark Requiring Discrete Reasoning Over Paragraphs. Dheeru Dua, Yizhong Wang, Pradeep Dasigi, Gabriel Stanovsky, Sameer Singh and Matt Gardner
 
@@ -654,9 +734,9 @@ This paper presents a seq2seq method (with attention) with active learning to le
 ---
 
 
-## Applications
+# Applications
 
-### Clinical and Biomedical Applications :hospital:
+## Clinical and Biomedical Applications :hospital:
 
 ##### (Poster) Biomedical Event Extraction based on Knowledge-driven-LSTM
 
@@ -666,7 +746,7 @@ This paper presents a seq2seq method (with attention) with active learning to le
 
 ---
 
-### Cybersecurity applications :shield::computer:
+## Cybersecurity applications :shield::computer:
 
 ##### (Poster) Detecting Cybersecurity Events from Noisy Short Text
 
@@ -674,13 +754,13 @@ This paper presents a seq2seq method (with attention) with active learning to le
 
 ---
 
-### Other applications :octopus:
+## Other applications :octopus:
 
 ##### (Poster) Text Similarity Estimation Based on Word Embeddings and Matrix Norms for Targeted Marketing.
 
 ---
 
-### Other
+## Other
 
 #### Posters
 
@@ -718,7 +798,7 @@ This paper presents a seq2seq method (with attention) with active learning to le
 
 # Keynote Lectures
 
-#### Keynote 1: Arvind Narayanan, "Data as a Mirror of Society: Lessons from the Emerging Science of Fairness in Machine Learning"
+### Keynote 1: Arvind Narayanan, "Data as a Mirror of Society: Lessons from the Emerging Science of Fairness in Machine Learning"
 
 **Motivation**: machine learning models naturally absorb cultural stereotypes. Some examples in the news:
 
@@ -777,13 +857,13 @@ Examples
 
 ---
 
-#### Keynote 2: Rada Mihalcea, "When the Computers Spot the Lie (and People Don’t)"
+### Keynote 2: Rada Mihalcea, "When the Computers Spot the Lie (and People Don’t)"
 
 ...
 
 ---
 
-#### Keynote 3: Kieran Snyder (Textio) "Leaving the Lab: Building NLP Applications that Real People can Use"
+### Keynote 3: Kieran Snyder (Textio) "Leaving the Lab: Building NLP Applications that Real People can Use"
 
 Kieran Snyder is co-founder and CEO of Textio. 
 

@@ -5,6 +5,7 @@ This is a summary from a selection of papers presented at NAACL 2019, including 
 ---
 
 **Some comments:**
+- There is nothing here on speech, phonology, morphology.
 - There was a lot of interesting work I was not able to see:
     - question answering, reading comprehension and commonsense reasoning (this is booming; here is a recent survey: Storks et al., Commonsense Reasoning for Natural Language Understanding: A Survey, 2019).
     - machine translation
@@ -168,7 +169,9 @@ The proposed method is more effective than competing (semi-supervised and retrie
 
 **How to extract trees from sequences of vectors**:
 
-Find a linear transformation such that vector distances encode trees. Will the minimum spanning tree recover an actual dependency tree? This worked surprisingly well!
+Find a linear transformation such that vector distances encode trees. Will the minimum spanning tree recover an actual dependency tree? This worked surprisingly well! The following illustration is from https://nlp.stanford.edu/~johnhew/structural-probe.html:
+
+![image](images//structural_probe.png)
 
 **Other recent "probing" papers to look at (#Bertology)**:
 
@@ -185,6 +188,8 @@ Find a linear transformation such that vector distances encode trees. Will the m
 - Assessing the Ability of LSTMs to Learn Syntax-Sensitive Dependencies, 2017
 
 **Blog**: https://nlp.stanford.edu/~johnhew/structural-probe.html
+
+**NAACL Slides**: https://nlp.stanford.edu/~johnhew/public/hewitt2019structural_slides.pdf
 
 **NLP Highlights Podcast**: https://soundcloud.com/nlp-highlights/88-a-structural-probe-for-finding-syntax-in-word-representations-with-john-hewitt
 
@@ -567,6 +572,10 @@ Why does generation need pragmatics? Generation as a pragmatic game. Some princi
 
 ---
 
+##### Towards Content Transfer through Grounded Text Generation
+
+---
+
 ##### Pun Generation with Surprise
 
 ---
@@ -741,6 +750,12 @@ This paper presents a seq2seq method (with attention) with active learning to le
 
 ---
 
+##### (Could not attend) Self-Discriminative Learning for Unsupervised Document Embedding
+
+This is supposed to work well in the scarce label setting
+
+---
+
 ## Named Entity Recognition :cityscape::boy:
 
 ##### Pooled Contextualized Embeddings for Named Entity Recognition. Alan Akbik, Tanja Bergmann and Roland Vollgraf
@@ -830,6 +845,10 @@ A corpus of 200 breast cancer follow-up treatment notes with distinct relation t
 
 ##### (Could not attend) :boom: Augmenting word2vec with latent Dirichlet allocation within a clinical application. Akshay Budhkar and Frank Rudzicz
 
+##### (Could not attend) Inferring Which Medical Treatments Work from Reports of Clinical Trials
+
+##### Multilingual prediction of Alzheimer’s disease through domain adaptation and concept-based language modelling
+
 ---
 
 ## Cybersecurity applications :shield::computer:
@@ -864,6 +883,8 @@ A corpus of 200 breast cancer follow-up treatment notes with distinct relation t
 
 ##### :boom: GraphIE: A Graph-Based Framework for Information Extraction
 
+##### :boom: A general framework for information extraction using dynamic span graphs
+
 ##### :boom: Adversarial Decomposition of Text Representation
 
 
@@ -876,6 +897,8 @@ While dependency parsing has been done as sequence labeling before, results were
 **Code:** https://github.com/mstrise/dep2label
 
 ---
+
+##### :boom: Attention is not Explanation
 
 ##### Text Processing Like Humans Do: Visually Attacking and Shielding NLP Systems
 

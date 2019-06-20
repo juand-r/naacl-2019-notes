@@ -1,6 +1,26 @@
 # Notes on NAACL 2019
 
-This is a summary of a selection of papers presented at NAACL 2019, including the NeuralGen workshop.
+This is a summary from a selection of papers presented at NAACL 2019, including the NeuralGen workshop.
+
+---
+
+Some comments:
+- There was a lot of interesting work I was not able to see:
+    - question answering (this area is booming; here is a recent survey: Storks et al., Commonsense Reasoning for Natural Language Understanding: A Survey, 2019).
+    - application-oriented work, particular for clinical/bio-medical applications. There's interesting work at the **clinical NLP workshop**, as well as a **clinical NLP tutorial.**
+- I saw a lot of great work on:
+    - low-resource settings (cross-lingual; few-shot learning; zero-shot learning)
+    - text generation
+- It was good to see papers that were not concerned with chasing SOTA:
+    - some nice error analysis papers (e.g., Hayes, "What just happened?")
+    - papers introducing new resources (Kim et al., "AudioCaps"; Geva et al., "DiscoFuse"; McHardy et al., "Adversarial Training for Satire Detection")
+- It seemed like BERT was everywhere (ELMo too, but mostly BERT), and large language models are not going away.
+    - The good:
+        - Interesting work on probing these models (eg. Hewitt and Manning, "A Structural Probe for Finding Syntax in Word Representations")
+        - Some good work exploring how best to use them on downstream tasks.
+    - The bad:
+        - The sentiment "BERT is will solve all your problems" is dangerous. There were many great papers that did not use (and perhaps did not need) BERT!
+
 
 See also Sebastian Ruder's highlights: http://ruder.io/naacl2019/index.html
 
@@ -110,7 +130,7 @@ The proposed method is more effective than competing (semi-supervised and retrie
 
 ---
 
-##### Using Similarity Measures to Select Pretraining Data for NER
+##### :boom: Using Similarity Measures to Select Pretraining Data for NER
 
 ---
 
@@ -176,7 +196,9 @@ BiLM pretraining yields representations that are more transferable in general (e
 
 ---
 
-##### (Could not attend) **Knowledge-Augmented Language Model and Its Application to Unsupervised Named-Entity Recognition. Angli Liu, Jingfei Du and Veselin Stoyanov**
+##### Knowledge-Augmented Language Model and Its Application to Unsupervised Named-Entity Recognition
+
+
 
 ---
 
@@ -445,6 +467,8 @@ Audience Questions:
 
 ##### Topic-Guided Variational Auto-Encoder for Text Generation
 
+TL;DR: Can generate text conditioned on a given topic, and adapted to summarization.
+
 Many applications of text generation:
 
 - machine translation (MT)
@@ -457,8 +481,6 @@ VAE are widely used for this. But problems:
 - "posterior collapse" issue.
 
 Main contribution: new topic-guided VAE (TGVAE) for text generation.
-
-Can generate text conditioned on a given topic, and adapted to summarization.
 
 ---
 
@@ -627,7 +649,7 @@ Q: But why is RST so bad? A: Using an RST that does do well with out-of-domain (
 
 ##### Data-efficient Neural Text Compression with Interactive Learning
 
-Text compression: condensing one or more sentences into a shorter text of a given length containing the most important information.  Used for summarization.
+**Text compression:** condensing one or more sentences into a shorter text of a given length containing the most important information.  Used for summarization.
 
 This paper presents a seq2seq method (with attention) with active learning to learn an in-domain model quickly, and then adapt it to a new domain/genre.
 
@@ -635,7 +657,7 @@ This paper presents a seq2seq method (with attention) with active learning to le
 
 ---
 
-##### Guiding Extractive Summarization with Question-Answering Rewards
+##### :boom: Guiding Extractive Summarization with Question-Answering Rewards
 
 **TL;DR:** RL with a novel reward function (judging summary's adequacy, fluency, length, and ability to answer questions); using question answering as part of the reward signal helps with summarization.
 
@@ -689,12 +711,13 @@ This paper presents a seq2seq method (with attention) with active learning to le
 
 ##### Pooled Contextualized Embeddings for Named Entity Recognition. Alan Akbik, Tanja Bergmann and Roland Vollgraf
 
-##### Knowledge-Augmented Language Model and Its Application to Unsupervised Named-Entity Recognition. Angli Liu, Jingfei Du and Veselin Stoyanov
-  - See in Language Models section
+---
 
 ##### (Poster) Practical, Efficient, and Customizable Active Learning for Named Entity Recognition in the Digital Humanities. Alexander Erdman et al.
 
-##### [Using Similarity Measures to Select Pretraining Data for NER](#using-similarity-measures-to-select-pretraining-data-for-ner)
+##### [Using Similarity Measures to Select Pretraining Data for NER](#boom-using-similarity-measures-to-select-pretraining-data-for-ner)
+
+##### [Knowledge-Augmented Language Model and Its Application to Unsupervised Named-Entity Recognition](#knowledge-augmented-language-model-and-its-application-to-unsupervised-named-entity-recognition)
 
 ---
 
@@ -723,6 +746,23 @@ This paper presents a seq2seq method (with attention) with active learning to le
 ---
 
 ## Reading Comprehension and Question Answering :book::question:
+
+##### :boom: BAG: Bi-directional Attention Entity Graph Convolutional Network for Multi-hop Reasoning Question Answering
+
+Achieves SOTA performance using Graph ConvNets on the QAngaroo WIKIHOP dataset (Welbl et al. 2018): http://qangaroo.cs.ucl.ac.uk/
+
+Here is an example of the task from the QAngaroo paper:
+
+**Question:** (Hanging gardens of Mumbai, country, ?)
+**Options:** {Iran, India, Pakistan, Somalia...}
+
+**Document 1:** The Hanging Gardens, in **[Mumbai]**, also known as Pherozeshah Mehta Gardens, are terraced gardens..They provide sunset views over the **[Arabian Sea]** ...
+
+**Document 2:** **[Mumbai]** (also known as Bombay, the official name until 1995) is the capital city of the Indian state of Maharashtra. It is the most populous city in **[India]**...
+
+**Code:** https://github.com/caoyu1991/BAG
+
+---
 
 ##### (Poster) DROP: A Reading Comprehension Benchmark Requiring Discrete Reasoning Over Paragraphs. Dheeru Dua, Yizhong Wang, Pradeep Dasigi, Gabriel Stanovsky, Sameer Singh and Matt Gardner
 
@@ -764,37 +804,47 @@ This paper presents a seq2seq method (with attention) with active learning to le
 
 ## Other
 
-#### Posters
+### Posters
 
-##### (Poster) Adversarial Decomposition of Text Representation
+##### Adversarial Decomposition of Text Representation
 
-##### (Could not attend) **Combining Sentiment Lexica with a Multi-View Variational Autoencoder**
+##### PAWS: Paraphrase Adversaries from Word Scrambling
 
-##### (Could not attend) Frowning Frodo, Wincing Leia, and a Seriously Great Friendship: Learning to Classify Emotional Relationships of Fictional Characters
+##### Value-based Search in Execution Space for Mapping Instructions to Programs.
 
-##### (Poster) PAWS: Paraphrase Adversaries from Word Scrambling
+##### Rotational Unit of Memory: A Novel Representation Unit for RNNs with Scalable Applications
 
-##### (Poster) **Value-based Search in Execution Space for Mapping Instructions to Programs.**
+### Oral
 
-##### (Poster) **Text Processing Like Humans Do: Visually Attacking and Shielding NLP Systems**
+##### :boom: Viable Dependency Parsing as Sequence Labeling
 
-##### (Poster) Rotational Unit of Memory: A Novel Representation Unit for RNNs with Scalable Applications
+While dependency parsing has been done as sequence labeling before, results were not promising. Here a simple BiLSTM was used; it was fast and performed similarly to more complicated methods.
 
-#### Oral
+**Code:** https://github.com/mstrise/dep2label
 
-##### (Could not attend) Mutual Information Maximization for Simple and Accurate Part-Of-Speech Induction. Karl Stratos
+---
 
-##### (Could not attend) Unsupervised Latent Tree Induction with Deep Inside-Outside Recursive Auto-Encoders. Andrew Drozdov, Patrick Verga, Mohit Yadav, Mohit Iyyer and Andrew McCallum
+##### Text Processing Like Humans Do: Visually Attacking and Shielding NLP Systems
 
-##### (Could not attend) On the Importance of Distinguishing Word Meaning Representations: A Case Study on Reverse Dictionary Mapping. Mohammad Taher Pilehvar
+##### Frowning Frodo, Wincing Leia, and a Seriously Great Friendship: Learning to Classify Emotional Relationships of Fictional Characters
 
-##### (Could not attend) Factorising AMR generation through syntax
+##### :boom: Combining Sentiment Lexica with a Multi-View Variational Autoencoder
 
-##### (Could not attend) **Inoculation by Fine-Tuning: A Method for Analyzing Challenge Datasets. Nelson F. Liu, Roy Schwartz and Noah A. Smith**
+##### :boom: Riemannian Normalizing Flow on Variational Wasserstein Autoencoder for Text Modeling
 
-##### **Recursive Routing Networks: Learning to Compose Modules for Language Understanding.**
+##### Mutual Information Maximization for Simple and Accurate Part-Of-Speech Induction. Karl Stratos
 
-##### **Benchmarking Hierarchical Script Knowledge. Yonatan Bisk, Jan Buys, Karl Pichotta and Yejin Choi** (text generation?)
+##### Unsupervised Latent Tree Induction with Deep Inside-Outside Recursive Auto-Encoders. Andrew Drozdov, Patrick Verga, Mohit Yadav, Mohit Iyyer and Andrew McCallum
+
+##### On the Importance of Distinguishing Word Meaning Representations: A Case Study on Reverse Dictionary Mapping. Mohammad Taher Pilehvar
+
+##### Factorising AMR generation through syntax
+
+##### :boom: Inoculation by Fine-Tuning: A Method for Analyzing Challenge Datasets. Nelson F. Liu, Roy Schwartz and Noah A. Smith
+
+##### :boom: Recursive Routing Networks: Learning to Compose Modules for Language Understanding.
+
+##### :boom: Benchmarking Hierarchical Script Knowledge. Yonatan Bisk, Jan Buys, Karl Pichotta and Yejin Choi (text generation?)
 
 ---
 

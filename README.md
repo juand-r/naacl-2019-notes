@@ -4,22 +4,24 @@ This is a summary from a selection of papers presented at NAACL 2019, including 
 
 ---
 
-Some comments:
+**Some comments:**
 - There was a lot of interesting work I was not able to see:
-    - question answering (this area is booming; here is a recent survey: Storks et al., Commonsense Reasoning for Natural Language Understanding: A Survey, 2019).
-    - application-oriented work, particular for clinical/bio-medical applications. There's interesting work at the **clinical NLP workshop**, as well as a **clinical NLP tutorial.**
+    - question answering and commonsense reasoning (this area is booming; here is a recent survey: Storks et al., Commonsense Reasoning for Natural Language Understanding: A Survey, 2019).
+    - knowledge graphs, knowledge-base completion
+    - application-oriented work, particularly for clinical/bio-medical applications. There was interesting work presented at the **clinical NLP workshop**, as well as a **clinical NLP tutorial.**
 - I saw a lot of great work on:
     - low-resource settings (cross-lingual; few-shot learning; zero-shot learning)
     - text generation
 - It was good to see papers that were not concerned with chasing SOTA:
     - some nice error analysis papers (e.g., Hayes, "What just happened?")
-    - papers introducing new resources (Kim et al., "AudioCaps"; Geva et al., "DiscoFuse"; McHardy et al., "Adversarial Training for Satire Detection")
-- It seemed like BERT was everywhere (ELMo too, but mostly BERT), and large language models are not going away.
+    - papers introducing new datasets (Kim et al., "AudioCaps"; Geva et al., "DiscoFuse"; McHardy et al., "Adversarial Training for Satire Detection") and benchmarks (e.g., WiC: the Word-in-Context Dataset)
+    - evaluation (which is particuarly difficult for language generation tasks)
+- It seemed like BERT was everywhere (ELMo too, but mostly BERT), and large language models are here to stay.
     - The good:
         - Interesting work on probing these models (eg. Hewitt and Manning, "A Structural Probe for Finding Syntax in Word Representations")
         - Some good work exploring how best to use them on downstream tasks.
     - The bad:
-        - The sentiment "BERT is will solve all your problems" is dangerous. There were many great papers that did not use (and perhaps did not need) BERT!
+        - The sentiment "BERT is will solve all your problems" is more common than it should be, and not helpful. There were many great papers that did not use (and perhaps did not need) BERT!
 
 
 See also Sebastian Ruder's highlights: http://ruder.io/naacl2019/index.html
@@ -74,6 +76,10 @@ See also Sebastian Ruder's highlights: http://ruder.io/naacl2019/index.html
 
 ### Zero-shot learning
 
+##### :boom: (Poster) Description-Based Zero-shot Fine-Grained Entity Typing
+
+---
+
 ##### Integrating Semantic Knowledge to Tackle Zero-shot Text Classification
 
 To better classify text with labels unseen at training time, the proposed framework incorporates "semantic knowledge" of four different kinds:
@@ -104,6 +110,8 @@ The proposed method is more effective than competing (semi-supervised and retrie
 ### Huge label set
 
 #####  (Could not attend) A Submodular Feature-Aware Framework for Label Subset Selection in Extreme Classification Problems. Elham J. Barezi, Ian D. Wood, Pascale Fung and Hamid R. Rabiee
+
+##### (Poster) :boom::boom: Imposing Label-Relational Inductive Bias for Extremely Fine-Grained Entity Typing
 
 ---
 
@@ -136,11 +144,15 @@ The proposed method is more effective than competing (semi-supervised and retrie
 
 ### Weak supervision, distantly-labeled data
 
-##### :cityscape::boy: Learning to Denoise Distantly-Labeled Data for Entity Typing
+##### :boom: Learning to Denoise Distantly-Labeled Data for Entity Typing
 
 ---
 
-##### [:repeat: GAN Driven Semi-distant Supervision for Relation Extraction](#gan-driven-semi-distant-supervision-for-relation-extraction)
+##### :repeat: GAN Driven Semi-distant Supervision for Relation Extraction
+
+---
+
+##### (Could not attend) Handling Noisy Labels for Robustly Learning from Self-Training Data for Low-Resource Sequence Labeling
 
 ---
 
@@ -256,6 +268,10 @@ So caution: word vector performance must be inspected very carefully!
 ##### Augmenting word2vec with latent Dirichlet allocation within a clinical application. Akshay Budhkar and Frank Rudzicz
   - See in "biomedical"
 
+##### (Poster) Better Word Embeddings by Disentangling Contextual n-Gram Information
+
+Training word embeddings jointly with bigram and trigram embeddings supposedly help remove contextual information from the unigrams => better word embeddings.
+
 ---
 
 #### Combining or aligning embeddings
@@ -361,6 +377,8 @@ Related work on finding transformations between independently-trained embeddings
 ##### :boom: (Demo) fairseq: A Fast, Extensible Toolkit for Sequence Modeling
 
 ##### (Poster) Fixed That for You: Generating Contrastive Claims with Semantic Edits. Christopher Hidey and Kathy McKeown
+
+##### (Poster) Generating Text through Adversarial Training Using Skip-Thought Vectors
 
 ---
 
@@ -517,6 +535,10 @@ Instead of using templates, use "exemplar" text from the training data as a "sof
 
 ---
 
+##### (Could not attend) Jointly Optimizing Diversity and Relevance in Neural Response Generation
+
+-----
+
 ##### Pragmatically Informative Text Generation
 
 Why does generation need pragmatics? Generation as a pragmatic game. Some principles (Grice):
@@ -524,6 +546,10 @@ Why does generation need pragmatics? Generation as a pragmatic game. Some princi
 - be informative in context
 
 **Code**: https://github.com/sIncerass/prag_generation
+
+---
+
+##### :boom: Unifying Human and Statistical Evaluation for Natural Language Generation
 
 ---
 
@@ -535,7 +561,9 @@ Why does generation need pragmatics? Generation as a pragmatic game. Some princi
 
 ---
 
+##### Pun Generation with Surprise
 
+---
 
 ## Authorship Attribution, Stylometry, Fake News :mag:
 
@@ -715,6 +743,8 @@ This paper presents a seq2seq method (with attention) with active learning to le
 
 ##### (Poster) Practical, Efficient, and Customizable Active Learning for Named Entity Recognition in the Digital Humanities. Alexander Erdman et al.
 
+##### Better Modeling of Incomplete Annotations for Named Entity Recognition
+
 ##### [Using Similarity Measures to Select Pretraining Data for NER](#boom-using-similarity-measures-to-select-pretraining-data-for-ner)
 
 ##### [Knowledge-Augmented Language Model and Its Application to Unsupervised Named-Entity Recognition](#knowledge-augmented-language-model-and-its-application-to-unsupervised-named-entity-recognition)
@@ -733,7 +763,11 @@ This paper presents a seq2seq method (with attention) with active learning to le
 
 ## Keyphrase Extraction :key::bookmark_tabs:
 
+##### :boom: (Poster) Glocal: Incorporating Global Information in Local Convolution for Keyphrase Extraction
+
 ##### (Could not attend) Keyphrase Generation: A Text Summarization Struggle. Erion Çano and Ondřej Bojar
+
+##### (Poster) An Integrated Approach for Keyphrase Generation via Exploring the Power of Retrieval and Extraction.
 
 ---
 
@@ -780,11 +814,15 @@ Here is an example of the task from the QAngaroo paper:
 
 ## Clinical and Biomedical Applications :hospital:
 
+##### (Poster) A Bag-of-concepts Model Improves Relation Extraction in a Narrow Knowledge Domain with Limited Data
+
+A corpus of 200 breast cancer follow-up treatment notes with distinct relation types to extract.
+
 ##### (Poster) Biomedical Event Extraction based on Knowledge-driven-LSTM
 
 ##### (Could not attend) Multilingual prediction of Alzheimer’s disease through domain adaptation and concept-based language modelling.
 
-##### (Could not attend) Augmenting word2vec with latent Dirichlet allocation within a clinical application. Akshay Budhkar and Frank Rudzicz
+##### (Could not attend) :boom: Augmenting word2vec with latent Dirichlet allocation within a clinical application. Akshay Budhkar and Frank Rudzicz
 
 ---
 
@@ -793,6 +831,8 @@ Here is an example of the task from the QAngaroo paper:
 ##### (Poster) Detecting Cybersecurity Events from Noisy Short Text
 
 ##### (Poster) Analyzing the Perceived Severity of Cybersecurity Threats Reported on Social Media
+
+##### (Poster) Predicting Malware Attributes from Cybersecurity Texts
 
 ---
 
@@ -813,6 +853,11 @@ Here is an example of the task from the QAngaroo paper:
 ##### Value-based Search in Execution Space for Mapping Instructions to Programs.
 
 ##### Rotational Unit of Memory: A Novel Representation Unit for RNNs with Scalable Applications
+
+##### :boom: GraphIE: A Graph-Based Framework for Information Extraction
+
+##### :boom: Adversarial Decomposition of Text Representation
+
 
 ### Oral
 

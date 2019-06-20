@@ -212,7 +212,7 @@ The proposed method is more effective than competing (semi-supervised and retrie
 
 Find a linear transformation such that vector distances encode trees. Will the minimum spanning tree recover an actual dependency tree? This worked surprisingly well! The following illustration is from https://nlp.stanford.edu/~johnhew/structural-probe.html:
 
-![image](images//structural_probe.png)
+![image](images/structural_probe.png)
 
 **Other recent "probing" papers to look at (#Bertology)**:
 
@@ -1005,7 +1005,7 @@ Cosine similarity between centroids (similarity between associated keyword lists
 
 (Workshop on Extracting Structured Knowledge from Scientific Publication)
 
-**Goal:** extract action-graphs (sequences of valid actions) from materials science papers. Entities are nodes; actions are edges. This is an example of "procedural text understanding"
+**Goal:** extract action-graphs (sequences of valid actions) from materials science papers (Figure 1 from the paper is shown below). Entities are nodes; actions are edges. This is an example of "procedural text understanding"
 
 ![image](images/text-to-action-graph.png)
 

@@ -2,9 +2,11 @@
 
 This is a summary from a selection of papers presented at NAACL 2019, including the NeuralGen workshop.
 
+Full list of papers (main conference and workshops): https://aclweb.org/anthology/events/naacl-2019/
+
 ---
 
-**Some comments:**
+**Some general comments:**
 
 - There was a lot of interesting work I was not able to see, particularly:
     - question answering, reading comprehension and commonsense reasoning (this is booming; here is a recent survey: Storks et al., Commonsense Reasoning for Natural Language Understanding: A Survey, 2019).
@@ -27,6 +29,9 @@ This is a summary from a selection of papers presented at NAACL 2019, including 
 
 
 See also Sebastian Ruder's highlights: http://ruder.io/naacl2019/index.html
+
+---
+
 
 - [Topics](#topics)
   - :school_satchel: [Using external knowledge](#using-external-knowledge-school_satchel) 
@@ -1125,6 +1130,8 @@ Want to extract:
 ##### :boom: Practical Semantic Parsing for Spoken Language Understanding
 
 ##### Generating Token-Level Explanations for Natural Language Inference
+
+##### A Multi-Task Approach for Disentangling Syntax and Semantics in Sentence Representations
 
 ### Oral
 

@@ -1279,6 +1279,67 @@ https://neuralgen.io/
 
 ## Invited speakers
 
+### Graham Neubig: What can Statistical Machine Translation teach Neural Text Generation about Optimization?
+
+It is a good time to reread Neubig and Watanabe, Optimization for Statistical Machine Translation, a Survey (CL 2016).
+
+This came out right at the beginning of the "deep learning wave", but still has useful insights.
+
+Life back in 2015: separate models (translation, language model, reordering model), learnt separately and combined.
+
+Today: neural network, all parameters trained end-to-end. Use "teacher forcing" to predict the next word.
+
+But there are problems:
+- exposure bias. Teacher forcing is overly reliant on previous inputs being correct. One mistake and it is all downhill!
+- disregard to evaluation metrics.  Good translation can be measured with BLEU or METEOR. But is optimized with max likelihood:
+    - Outputs of NN are often too short 
+    - Dropped or repeated content
+- the Neubig and Watanabe paper of 2016 shows that training to improve BLEU fixes a lot of these problems.
+- In phrase-based (statistical) MT, minimum error rate training is used. There is a clever trick for gradient-free optimization of linear models, but this is hard to adapt to NN.
+- How to get minimum risk training/RL to work ..
+
+Claim: most people now don't use minimum risk training for NMT but it is SOTA.
+
+**See also: "BERT-score" metric**.
+
+---
+
+### He He: Towards Controllable Text Generation
+
+Semantics is hard! Goal: model p(text|x) where x is data or text. This is a high-dimensional problem, and we often do not enough data.  Doing OK with language modeling, machine translation. But there is not enough data for:
+- summarization
+- dialogue
+- creative text generation
+
+Difficulties:
+- conflating grammaticality and task objectives
+- trade-offs: fluency vs faithfulness.
+
+Discussed three papers:
+
+#### :boom: Delete, Retrieve, Generate: a Simple Approach to Sentiment and Style Transfer (NAACL 2018)
+
+Goal: try to separate content from another attribute (eg. sentiment)
+
+#### Pun Generation with Surprise (homophonic pun generation)
+
+Try to generate puns such as: "Yesterday I accidentally swallowed some food coloring. The doctor says I'm OK, but I feel like I've **dyed** a little inside."
+
+Big picture:
+
+- domain knowledge helps generation when there is less supervision
+- language model as smoother
+
+#### Decouple Strategy and Generation in Negotiation Dialogues
+
+Utterances are made to achieve something, eg. in negotiation: greet, inquire, inform, propose, provide details, embellish, make side offer, counter, agree, offer, accept, persuade ...
+
+Inspiration from classic NLG: separate content from realization (what you say vs how you say it).
+
+Easier to learn actions than language - so use RL in the act space, and do content planning and sentence realization separately. A modular framework was more effective.
+
+---
+
 ### Yejin Choi: The Enigma of Neural Text Degeneration as the First Defense Against Neural Fake News
 
 Two related papers:
@@ -1310,7 +1371,7 @@ Issues with evaluation:
 
 Need more rigorous holistic/systematic evaluation. Can we quantify both high-qualilty generation (quality) and diversity?
 
-Use the KL divergence! The rest of the talk is about HUSE, presented in [Unifying Human and Statistical Evaluation for Natural Language Generation](#unifying-human-and-statistical-evaluation-for-natural-language-generation)
+Use the KL divergence! The rest of the talk is about HUSE, presented in [Unifying Human and Statistical Evaluation for Natural Language Generation](#boom-unifying-human-and-statistical-evaluation-for-natural-language-generation)
 
 **HUSE code**: https://github.com/hughbzhang/HUSE
 

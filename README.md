@@ -397,10 +397,58 @@ Related work on finding transformations between independently-trained embeddings
 
 ##### DiscoFuse: A Large-Scale Dataset for Discourse-Based Sentence Fusion
 
+**Sentence fusion task:** combine independent sentences into a single coherent text. This is important for QA, summarization, dialogue.
+
+Hard problem. Need to do many things, including introducing pronouns, adding connectives.
+
+**Problem**: lack of parallel data.
+
+**Contributions**:
+
+- New dataset, DiscoFuse (60 million fusion examples) from Wikipedia and web crawl.
+- A method for generating examples. Rule-based (rule-set covers 9 fusion phenomena)
+- Evaluated with a supervised model (Transformer seq2seq)
+- Transfer learning approach. Pretraining on DiscoFuse improves WebSplit performance by 9%.
+
+**Data**: https://github.com/google-research-datasets/discofuse
+
+**Audience question**: how good is the coverage of DiscoFuse?
+
+**Answer**: Many discourse phenomena (combining more than 2 sentences; ellipsis; combinations of phenomena) are not covered unfortunately. Future work.
+
 ---
 
 
 ##### :boom: Linguistically-Informed Specificity and Semantic Plausibility for Dialogue Generation
+
+**Problem**: seq2seq models for open domain dialogue generation tends to favor generic uninformative responses containing many high-frequency words:
+- "I don't know"
+- "I'm not sure"
+- "What do you do for a living?""
+
+Two issues are addressed here:
+
+- **specificity**
+- **plausibility**: can be improved by training rerankers using synthetic implausible data.
+
+Specificity prediction task: news to dialogue. Model:
+
+sentence -> encoder -> decoder
+
+The decoder has three modules: linguistic, frequency, perplexity. 
+
+When training, condition the decoder on the specificity levels of the response.
+
+**Dataset**: subtitles, human chat.
+**Evaluation** (human): grammaticality, informativeness, plausibility.
+
+Different kinds of implausibility, caused by:
+- incompatible words
+- wrong pronouns or propositions
+- incompatible phrases
+- wrong discourse connective.
+
+**Code**: https://github.com/wjko2/Linguistically-Informed-Specificity-and-Semantic-Plausibility-for-Dialogue-Generation
 
 ---
 
@@ -422,13 +470,13 @@ Related work on finding transformations between independently-trained embeddings
 
 ##### (Poster) **Attentive Convolution: Equipping CNNs with RNN-style Attention Mechanisms. Wenpeng Yin and Hinrich Schütze**
 
-##### (Could not attend) **Attention is not Explanation**
+##### :boom: (Could not attend) Attention is not Explanation
 
 ##### (Could not attend) **Convolutional Self-Attention Networks. Baosong Yang et al.**
 
 ##### (Could not attend) Saliency Learning: Teaching the Model Where to Pay Attention. Reza Ghaeini, Xiaoli Fern, Hamed Shahbazi and Prasad Tadepalli
 
-##### (Poster) Attentive Mimicking: Better Word Embeddings by Attending to Informative Contexts
+##### :boom: (Poster) Attentive Mimicking: Better Word Embeddings by Attending to Informative Contexts
 
 ---
 
@@ -597,9 +645,40 @@ Instead of using templates, use "exemplar" text from the training data as a "sof
 
 ##### :boom::boom: Reinforcement Learning Based Text Style Transfer without Parallel Training Corpus
 
+RL-based architecture for transfer learning (eg. formality, sentiment).
+
+With enough parallel data, can do style transfer as machine translation (seq2seq). For example, modern to Shakespearean English.
+
+Generator: RNN encoder-decoder with Luong-style attention.
+
+The evaluator (adversary) scores the generated sentence for:
+- style discriminator is built on a biRNN with attention 
+- meaning preservation (based on word mover's distance)
+- fluency (language model)
+
+These rewards are sent back to improve the generator.
+
+**Examples**:
+
+- Negative to positive sentiment:
+    - Source: "Crap fries , hard hamburger buns , burger tasted like crap !"
+    - Output: "Love you fries, burgers , always fun burger , authentic ! "
+
+- Informal to formal:
+    - Source: "It defenitely looks like he has feelings for u do u show how u feel u should !!"
+    - Target: "It is like he is interested in you you should show how you feel."
+
 ---
 
 ##### :boom: Learning to Describe Unknown Phrases with Local and Global Contexts
+
+Task: context-aware description generation. For example say you read "sonic boom". If you don't know what this is you will try to use context to figure it out.
+- Kiss album?
+- natural phenomena?
+
+phrase + context -> description
+
+Network architecture: attention for both local and global contexts
 
 ---
 

@@ -16,6 +16,9 @@ Full list of papers (main conference and workshops): https://aclweb.org/antholog
     - low-resource settings (cross-lingual; few-shot learning; zero-shot learning)
     - information extraction
     - text generation
+- Some interesting demos, including:
+    - Multilingual Entity, Relation, Event and Human Value Extraction: https://www.youtube.com/watch?v=cQPHaxGLn8k&feature=youtu.be ; Demo: http://nlp.cs.rpi.edu/software/
+    - compare-mt
 - It was good to see papers that were not concerned with chasing SOTA:
     - some nice error analysis papers (e.g., Hayes, "What just happened?")
     - papers introducing new datasets (Kim et al., "AudioCaps"; Geva et al., "DiscoFuse"; McHardy et al., "Adversarial Training for Satire Detection", Bamman et al.,"An annotated dataset of literary entities") and benchmarks (e.g., WiC: the Word-in-Context Dataset)
@@ -752,7 +755,12 @@ The "adversary" (publication identifier) is trying to get the model to perform b
 
 HDSF outperforms all others (82% accuracy) followed by the LSTM[w+s] (80%); RST is the worst (67%); LIWC and n-grams are pretty bad too (70%, 72%), since they don't account for document structure.
 
-Q: But why is RST so bad? A: Using an RST that does do well with out-of-domain (news) text.
+But why is RST so bad? Using an RST that does do well with out-of-domain (news) text.
+
+Future work: unsupervised learning; coherence within sentence.
+
+**Audience question:** Maybe this structure is different due to low-quality writing (rather than it being fake). Have you evaluated on essay scoring? Answer no.
+
 
 **Code:** https://github.com/hamidkarimi/HDSF
 

@@ -1293,7 +1293,28 @@ Two related papers:
     - Problem with top-k: can be too bland, can also be too random. A fixed k is unnatural. Rather try to have the probability mass in the right place.
     - Nucleus sampling: "It was on the ground floor of the Imperial Hotel. He could hear the TV from the lobby of the palace. There were headlines that would make a cop blush"
 
+---
 
+### Tatsunori Hashimoto: Defining and evaluating diversity in generation
+
+Evaluation of text generation tasks (dialogue, open-domain QA, story generation, captioning) is hard to do. Some things we'd like to evaluate:
+
+- correctness (quality)
+- specificity (diversity); i.e. generic answers like "I don't know"
+- plagiarism (diversity)
+
+Issues with evaluation:
+
+- In question answering: we should really care about the ability to generate various correct answers (some more relevant than others depending on context) rather than ability to generate the *one right answer*.
+- Looking at examples is not enough! Humans do not know what the model was trained on and if it has memorized from training data.
+
+Need more rigorous holistic/systematic evaluation. Can we quantify both high-qualilty generation (quality) and diversity?
+
+Use the KL divergence! The rest of the talk is about HUSE, presented in [Unifying Human and Statistical Evaluation for Natural Language Generation](#unifying-human-and-statistical-evaluation-for-natural-language-generation)
+
+**HUSE code**: https://github.com/hughbzhang/HUSE
+
+---
 
 ### Alexander Rush: Pretraining for Generation
 

@@ -472,13 +472,17 @@ Can use context, question and answer triples: try to generate clarification
 question "from scratch" (previous work just ranked a list of clarification
 questions).
 
-** Baseline**: sequence-to-sequence (maximize likelihood of context, question pairs). Given the context, it generates a question.
+**Baseline**: sequence-to-sequence (maximize likelihood of context, question pairs). Given the context, it generates a question.
 
 **Problem:** This tends to generate a lot of generic questions. Eg:
 
 - is this made in China?
+- what are the dimensions?
+- where was this manufactured?
 
-Also a common problem in dialogue generation.
+There is a tradeoff between being vauge & correct, and being precise and wrong.
+
+This is also a common problem in dialogue generation.
 
 **Solution:** Use RL. Input the question to an an answer generator. Then
 use a utility calculator (given question, context and answer) as reward
@@ -489,14 +493,14 @@ But how to train the utility calculator?
 - Option 1: pretrain it. "Max-utility"
 - Option 2: (a bit better) use GAN ("Gan-utility"). Answer generator + utility calculator as discriminator. Question generator is generator.
 
-Evaluations on these datasets:
+**Evaluations:**
 
 - StackExchange (Rao and Daume III 2018)
 - Amazon home and kitchen (McAuley and Yang 2018)
 
-Evaluation type:
+**Evaluation type:**
 
-- Human rating on various scores:
+Human rating on various scores:
   - How grammatical is it?
   - How useful is it?
   - How relevant is it?
@@ -1271,7 +1275,66 @@ Philip Resnik's question: isn't there tension between the ethical route (tell us
 
 # NeuralGen Workshop
 
+https://neuralgen.io/
+
 ## Invited speakers
+
+### Yejin Choi: The Enigma of Neural Text Degeneration as the First Defense Against Neural Fake News
+
+Two related papers:
+
+- "Defending Against Neural Fake News" (Grover paper). Can use the generator to detect itself. Experiments suggest arms race between generator and discriminator.
+- "The Curious Case of Neural Text Degeneration" (on nucleus sampling):
+    - Why does continuation often repeat (eg. "New York City, New York, New York, New York, New York")?
+    - This is due to greedy decoding? What about beams search? Still happens! Why? Some ideas: humans don't maximize probability, they try to achieve goals (Goodman, 2016); attention makes the repetition bias worse. Maybe a larger LM won't solve these problems.
+    - What about pure sampling? Example: "He had opened the crossword puzzle and was pointing the newspaper from it. And the title: 12:50pm how happy has white rabbit been? why is They declining white rabbit?"
+    - Why did it degenerate? Answer: the quality of the LM is worse at the tail ("the dregs"); and once the machine makes a mistake it is downhill from there!
+    - Fix: top-k sampling (Fan et al. 2018, Holtzman et al. 2018, Radford et al. 2019). Example: "He had seen the news, but had not read the New York times or the times. The local post would have been much quicker, perhaps even better"
+    - Problem with top-k: can be too bland, can also be too random. A fixed k is unnatural. Rather try to have the probability mass in the right place.
+    - Nucleus sampling: "It was on the ground floor of the Imperial Hotel. He could hear the TV from the lobby of the palace. There were headlines that would make a cop blush"
+
+
+
+### Alexander Rush: Pretraining for Generation
+
+**Motivation**: long-form summarization, across sentence barriers. This is hard. One common mistake: pronouns referring to nothing (but it doesn't affect the BLEU scores).
+
+**Challenge**: How to learn the structure of long-form language from a NLG dataset (summary, data-to-text, image captioning, dialogue)? Use pre-training!
+
+#### The lambada dataset
+
+Task: predict the last word in the sentence. The word is given a few sentences before:
+
+"They tuned, discussed for a moment, then struck up a lively jig. Everyone joined in, turning the courtyard into an even more chaotic scene, people now dancing in circles, swinging and pinning incircles, everyone making up their own dance steps. I felt my feet tapping, my body wanting to move. Aside from writing, I ’ve always loved ___".
+
+- LSTM: 21.8%.
+- Hoang 2018 (a very complex model with entity tracking and multi-task learning): 59.2%
+
+GPT-2 changed everything:
+
+- GPT-2 117M: 45.9
+- GPT-2 345M: 55.5
+- GPT-2 1542M: 63.2
+
+#### Conditional generation with pretraining
+
+Very few current generation approaches in practice use pre-training! The challenge: how to combine p(y_t | y<t), and p(y|x)?
+
+Possible approaches (in order of reasonableness):
+
+0. Backtranslation (works in NMT). Problems: need a reverse model p(x|y); need access to the pretraining data; computationally expensive.
+1. Bayes rule (noisy channel model) for p(y|x). Still need reverse model. See Yu et al. 2017
+2. Simple fusion: smooth between conditional and pretrained model (Gulcehre et al. 2015, Stahlberg et al. 2018). Still wasteful (the conditional model is re-learning stuff already in the pre-trained model).
+3. Use variable-length representation from model (the way people use BERT, ELMo):  p(y_t | y<t, x) = softmax(embeddings up to t-1). See Ramachandran et al 2017, Edunov et al. 2019. Approach 3 has not been so successful. 
+4. Zero-shot generation via fake conditioning: prepend source with a special control word.  Surprisingly effective trick! See Radford et al., 2019.
+
+#### Other work
+
+- Similar concurrent work: Golovanov et al 2019, Large-Scale Transfer Learning for Natural Language Generation
+
+- Work in progress: GLTR. It is hard to hop off the manifold/distribution and still maintain coherence.
+
+---
 
 ### Hal Daumé III: Out of Order! Flexible neural language generation
 
@@ -1287,8 +1350,7 @@ Advantages of the model:
 - easy to train
 - nice separation between training and inference
 
-Given this model is so flexible and works so well, let's do fun stuf with it!  Example: generating clarifying questions. See my summary of this [above](boom-answer-based-adversarial-training-for-generating-clarification-questions).
-
+Given this model is so flexible and works so well, let's do fun stuf with it!  Example: generating clarifying questions. See my summary of this [above](#boom-answer-based-adversarial-training-for-generating-clarification-questions).
 
 #### Part 2: New model: preview of "Non-Monotonic Sequential Text Generation"
 
@@ -1297,6 +1359,24 @@ Paper presented at ICML 2019 (coauthored by Welleck, Brantley and K. Cho)
 **Idea:** train a model to generate text in arbitrary orders (rather than left to right). This is learned via "quicksort-esque expert policy imitation learning".
 
 **Code and trained models**:  https://github.com/wellecks/nonmonotonic_text
+
+---
+
+## Accepted Papers
+
+##### Jointly Measuring Diversity and Quality in Text Generation Models
+
+##### (Poster) BERT has a Mouth, and It Must Speak: BERT as a Markov Random Field Language Model
+
+NOTE: there is an error in the math. The poster was changed to: "BERT is not a Markov Random Field".
+
+##### (Poster) Neural Text Simplification in Low-Resource Conditions Using Weak Supervision
+
+##### (Poster) Learning Criteria and Evaluation Metrics for Textual Transfer between Non-Parallel Corpora
+
+##### (Poster) Towards Coherent and Engaging Spoken Dialog Response Generation Using Automatic Conversation Evaluators
+
+---
 
 ## Panel Discussion
 

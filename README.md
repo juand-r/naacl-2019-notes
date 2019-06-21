@@ -459,7 +459,7 @@ Examples of generated sound captions: https://audiocaps.github.io/
 
 ---
 
-##### :boom: Answer-based Adversarial Training for Generating Clarification Questions. Sudha Rao and Hal Daumé III
+##### :boom: Answer-based Adversarial Training for Generating Clarification Questions
 
 Clarification Questions are context aware questions that ask for missing
 Information. For example:
@@ -1270,6 +1270,33 @@ Philip Resnik's question: isn't there tension between the ethical route (tell us
 ---
 
 # NeuralGen Workshop
+
+## Invited speakers
+
+### Hal Daumé III: Out of Order! Flexible neural language generation
+
+What is next for language generation?
+- new tasks (that we can hit with this hammer that we could not before)
+- new models
+
+#### Part 1: New task: review of "Answer-based Adversarial Training for Generating Clarification Questions" (NAACL 2019)
+
+The dominant paradigm for conditional text generation: linear auto-regressive models.  These perform surprisingly well, with huge progress in the last two years.
+
+Advantages of the model:
+- easy to train
+- nice separation between training and inference
+
+Given this model is so flexible and works so well, let's do fun stuf with it!  Example: generating clarifying questions. See my summary of this [above](boom-answer-based-adversarial-training-for-generating-clarification-questions).
+
+
+#### Part 2: New model: preview of "Non-Monotonic Sequential Text Generation"
+
+Paper presented at ICML 2019 (coauthored by Welleck, Brantley and K. Cho)
+
+**Idea:** train a model to generate text in arbitrary orders (rather than left to right). This is learned via "quicksort-esque expert policy imitation learning".
+
+**Code and trained models**:  https://github.com/wellecks/nonmonotonic_text
 
 ## Panel Discussion
 

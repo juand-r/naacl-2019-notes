@@ -284,17 +284,17 @@ BiLM pretraining yields representations that are more transferable in general (e
 
 Despite progress in better word representations (word embeddings), the most popular methods are split between purely local and global approaches:
 
-- Local approaches: co-ocurrence of words in a window of fixed size (e.g., word2vec, GloVe)
+- Local approaches: co-occurrence of words in a window of fixed size (e.g., word2vec, GloVe)
 - Non-local approaches: LSA, LDA
 
 Can we combine the best of both? Words that co-occurr frequently but non-locally within documents may have semantic association that local models are not capturing.
 
-**Idea:** use convex combination of local and non-local co-ocurrence weights in a graph-based framework (each word is a node, and co-ocurrence information is expressed in edge weights).
+**Idea:** use convex combination of local and non-local co-occurrence weights in a graph-based framework (each word is a node, and co-occurrence information is expressed in edge weights).
 
 - word2vec (skip-gram): context of a word is words in a fixed window. Try to predict the context words for each target word.
 - node2vec (Grover and Leskovec, 2016): context to be predicted is a sequence of nodes visited by a random walk starting from a target node.
 - word2vec, graph formulation (unweighted version): rather than do a random walk, let context be the subgraph that is within distance 2 of a given node (two hops).
-- word2vec, graph formulation (weighted version): can adapt this to use weighted edges. The weights are computed using both global information (co-ocurrence probabilities of words in a document) and local information (co-ocurrence probabilities of word pairs within a window, similar to GloVe). Then sample neighbours proportional to the weights of the edges. (The sampling strategy is different than node2vec.)
+- word2vec, graph formulation (weighted version): can adapt this to use weighted edges. The weights are computed using both global information (co-occurrence probabilities of words in a document) and local information (co-occurrence probabilities of word pairs within a window, similar to GloVe). Then sample neighbours proportional to the weights of the edges. (The sampling strategy is different than node2vec.)
 
 **Evaluation:** concept categorization (AP, BLESS, ESSLI), word similarity prediction and word analogy. Word-node2vec outperforms Glove, FastText, and word2vec (but looking at their table, it is often not a very large improvement).
 
@@ -531,7 +531,7 @@ questions).
 - what are the dimensions?
 - where was this manufactured?
 
-There is a tradeoff between being vauge & correct, and being precise and wrong.
+There is a tradeoff between being vague & correct, and being precise and wrong.
 
 This is also a common problem in dialogue generation.
 
@@ -1197,6 +1197,20 @@ Want to extract:
 - food: outstanding
 - salmon dish: outstanding
 - Change Mojito: out of this world
+
+---
+
+##### Generating Animations from Screenplays
+
+(at *SEM workshop)
+
+---
+
+##### Neural Network Prediction of Censorable Language
+
+A new corpus of censored and uncensored tweets from Chinese microblogging website Sina Weibo. A multilayer perceptron achieves 88.50% accuracy using only linguistic features.
+
+Cnsored  posts  generally  "convey  more  negative sentiment and are more idiomatic and semantically complex in terms of word usage."
 
 ---
 

@@ -13,23 +13,20 @@ Full list of papers (main conference and workshops): https://aclweb.org/antholog
     - knowledge graphs, knowledge-base completion
     - clinical/bio-medical applications. There was interesting work presented at the **clinical NLP workshop**, as well as a **clinical NLP tutorial.**
 - I saw a lot of great work on:
-    - low-resource settings (cross-lingual; few-shot learning; zero-shot learning)
-    - information extraction
-    - text generation
+    - low-resource settings (cross-lingual; few-shot learning; zero-shot learning), discourse, information extraction, text generation.
 - Some interesting demos, including:
     - Multilingual Entity, Relation, Event and Human Value Extraction: https://www.youtube.com/watch?v=cQPHaxGLn8k&feature=youtu.be ; Demo: http://nlp.cs.rpi.edu/software/
     - compare-mt
-- It was good to see papers that were not concerned with chasing SOTA:
-    - some nice error analysis papers (e.g., Hayes, "What just happened?")
+- It was refreshing to see papers that were not concerned with chasing SOTA:
+    - good error analysis papers (e.g., Hayes, "What just happened?")
     - papers introducing new datasets (Kim et al., "AudioCaps"; Geva et al., "DiscoFuse"; McHardy et al., "Adversarial Training for Satire Detection", Bamman et al.,"An annotated dataset of literary entities") and benchmarks (e.g., WiC: the Word-in-Context Dataset)
-    - evaluation (which is particuarly difficult for language generation tasks)
+    - evaluation (which is particuarly difficult for language generation tasks). I particularly enjoyed Hashimoto et al., Unifying Human and Statistical Evaluation for Natural Language Generation.
 - It seemed like BERT was everywhere (ELMo too, but mostly BERT), and large language models are here to stay.
     - The good:
         - Interesting work on probing these models (eg. Hewitt and Manning, "A Structural Probe for Finding Syntax in Word Representations")
         - Some good work exploring how best to use them on downstream tasks.
     - The bad:
         - The sentiment "BERT is will solve all your problems" is more common than it should be, and not helpful. There were many great papers that did not use (and perhaps did not need) BERT!
-
 
 See also Sebastian Ruder's highlights: http://ruder.io/naacl2019/index.html
 
@@ -201,6 +198,10 @@ The proposed method is more effective than competing (semi-supervised and retrie
 ---
 
 ##### :repeat: GAN Driven Semi-distant Supervision for Relation Extraction
+
+---
+
+##### Combining Distant and Direct Supervision for Neural Relation Extraction
 
 ---
 
